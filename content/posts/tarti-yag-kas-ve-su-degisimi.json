@@ -1,0 +1,48 @@
+{
+  "slug": "tarti-yag-kas-ve-su-degisimi",
+  "title": "Tartı neden her şeyi söylemez? Yağ, kas ve suyu anlamak",
+  "description": "Kilo ile vücut bileşimi aynı şey değildir. Tartı değişimini, yağ ve kas dokusunu ve BKİ hesaplamasının sınırlarını öğrenin.",
+  "category": "Vücudunu tanı",
+  "date": "2026-09-07",
+  "image": "kas.webp",
+  "image_alt": "Kas lifi, miyofibril ve sarkomerin yapısını gösteren anatomik çizim",
+  "featured": true,
+  "science": true,
+  "intro": "Tartıya çıktığınızda gördüğünüz sayı, vücudunuzun toplam kütlesidir. Bu sayı kasın, yağın veya suyun ayrı ayrı miktarını göstermez. Bu nedenle kilo yönetiminde bir ölçümü nasıl yorumladığınız, ölçümün kendisi kadar önemlidir.",
+  "sections": [
+    {
+      "id": "bilesim",
+      "title": "Vücut ağırlığı ile vücut bileşimi arasındaki fark",
+      "body": "<p>Kas ve yağ farklı dokulardır. İskelet kasları hareket üretir; yağ dokusu enerji depolama gibi işlevlere sahiptir. Kemikler, organlar ve vücuttaki su da toplam ağırlığın parçalarıdır. Kasın yağa veya yağın kasa dönüşmesi şeklinde bir doku değişimi söz konusu değildir.</p><p>Bu ayrımı bilmek, yalnızca tartıdaki değişime bakarak “kas kaybettim” ya da “tamamı yağdan gitti” sonucuna varmamanızı sağlar. Vücut bileşimini değerlendiren yöntemlerin de kendi sınırlılıkları vardır.</p>"
+    },
+    {
+      "id": "kosullar",
+      "title": "Ölçüm koşullarını not etmek neden yararlıdır?",
+      "body": "<p>Ölçümleri karşılaştırırken farklı saatleri ve koşulları birbirine karıştırmamak gerekir. Takip için kararlaştırılan yönteme uygun biçimde aynı tartıyı ve benzer ölçüm koşullarını kullanmak değerlendirmeyi kolaylaştırır.</p><p>Her değişime anında beslenme listenizi değiştirerek yanıt vermek yerine ölçümü not edin. Görüşmede ilgili dönemdeki günlük düzeninizi de paylaşın. Bir tek rakam üzerinden acele yorum yapmak, takipte gereksiz kaygıya yol açabilir.</p>"
+    },
+    {
+      "id": "bki",
+      "title": "BKİ neyi hesaplar, neyi hesaplamaz?",
+      "body": "<p>Beden kütle indeksi, kilogram olarak ağırlığın metre olarak boyun karesine bölünmesiyle hesaplanır. Yetişkinlerde genel bir tarama göstergesidir; doğrudan yağ oranı ölçümü veya tek başına tanı değildir.</p><p>Sitedeki BKİ aracı 20 yaş ve üzerindeki, gebe olmayan yetişkinler için hazırlanmıştır. Kas kütlesi yüksek kişilerde sonuç ayrıca yorumlanmalıdır. Araç, size kişisel bir ideal kilo veya tedavi hedefi belirlemez.</p>"
+    },
+    {
+      "id": "takip",
+      "title": "Takibi tek bir sayının ötesine taşımak",
+      "body": "<p>Bir hafta boyunca planın hangi bölümlerini uygulayabildiğinizi, hangi öğünlerde zorlandığınızı ve görüşmede sormak istediklerinizi not edebilirsiniz. Bu kayıtlar kişisel süreci anlamaya yardımcı olur.</p><p>Online diyetisyen görüşmesinde ölçümleriniz, sağlık bilgileriniz ve günlük alışkanlıklarınız birlikte değerlendirilir. Tartılmak sizde yoğun kaygı yaratıyorsa bunu diyetisyeninizle paylaşın; izlem yaklaşımı kişisel ihtiyacınıza göre ele alınabilir.</p>"
+    }
+  ],
+  "sources": [
+    [
+      "CDC — Adult BMI calculator",
+      "https://www.cdc.gov/bmi/adult-calculator/index.html"
+    ],
+    [
+      "OpenStax — Skeletal muscle",
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/10-2-skeletal-muscle"
+    ],
+    [
+      "OpenStax — Connective tissue",
+      "https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+const assert=require('node:assert/strict');
+const {calculateBMI}=require('../assets/calculator.js');
+const normal=calculateBMI('170','65','30',true);
+assert(Math.abs(normal.value-22.49134948)<0.00001);
+assert.equal(normal.category,'Standart referans aralığı');
+assert.equal(calculateBMI('170,5','65,2','30',true).error,undefined);
+assert(calculateBMI('170','65','19',true).error);
+assert(calculateBMI('170','65','30',false).error);
+for(const bad of ['','NaN','0','-10','1e3','170abc'])assert(calculateBMI(bad,'65','30',true).error);
+assert(calculateBMI('170','65','30,5',true).error);
+assert(calculateBMI('170','351','30',true).error);
+assert.equal(calculateBMI('200','73.999','30',true).category,'Düşük vücut ağırlığı aralığı');
+assert.equal(calculateBMI('200','74','30',true).category,'Standart referans aralığı');
+assert.equal(calculateBMI('200','100','30',true).category,'Yüksek vücut ağırlığı aralığı');
+assert.equal(calculateBMI('200','120','30',true).category,'Obezite sınıflandırması aralığı');
+console.log('PASS: BMI formula, comma decimals, raw boundary classification, age/eligibility and invalid input handling.');
