@@ -13,10 +13,12 @@
 - `tugba-kurumsal.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; kurumsal sayfa kapak görseli olarak kullanılır.
 - `tugba-hizmetler.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç beyaz önlüklü portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; hizmetler sayfası kapak görseli olarak kullanılır.
 - `tugba-blog-calisma.webp`: Yerleşik Imagegen ile, kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı referans alınarak oluşturulan özgün çalışma masası sahnesi. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; blog sayfası kapak görseli olarak kullanılır.
-- `tugba-logo.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait şeffaf arka planlı özgün logo. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; tüm sayfalarda üst menü ve alt bilgi marka işareti olarak kullanılır.
+- `tugba-logo.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait şeffaf arka planlı özgün logo. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; önceki logo sürümü olarak saklanır.
 
 ## Yemek görseli üretim yönergesi
 
 Yerleşik araç kullanıldı; CLI kullanılmadı. Nihai site dosyası: `assets/images/dengeli-beslenme.webp`.
 
 > Use case: photorealistic-natural. Asset type: editorial food photograph for a Turkish dietitian's modern website and nutrition blog. A beautiful real Mediterranean everyday lunch table, top down with slight natural perspective: a large ivory ceramic plate with colorful roasted vegetables, chickpea salad and a small serving of bulgur, a small bowl of plain yogurt, a glass of water, fresh tomatoes, dill and parsley on a pale cream linen tablecloth. Simple attainable Turkish home food, natural proportions, no luxury excess. Airy natural window light, editorial magazine photography, subtle mint and sage accents, authentic food texture, calm welcoming mood. Landscape 3:2 framing, food fills most of frame, balanced negative space along left. No people, no medical devices, no words, no logos, no text, no nutritional chart. This is an illustrative meal scene, not a precise prescribed meal.
+
+- `tugba-monogram.svg`: Kullanıcının seçtiği TŞA monogramı. Yerleşik Imagegen ile oluşturulan ikinci logo alternatifi, 8 Eylül 2026. Özgün PNG baytları SVG içine aynen gömülmüştür; SVG görüntü alanı amblemi gösterir. Üst menü, alt bilgi, sekme simgesi ve kurumun logo bilgisinde kullanılır.
