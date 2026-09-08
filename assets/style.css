@@ -14,3 +14,17 @@
 .brand-copy{display:flex;flex-direction:column;line-height:1.2}
 .site-footer .brand-logo{background:#f7f4ef;border-radius:14px;padding:4px}
 @media(max-width:600px){.brand{gap:9px}.brand-logo{width:54px;height:64px;flex-basis:54px}.brand-copy strong{font-size:20px}}
+.review-section{background:var(--peach)}
+.review-summary{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:0 0 30px}
+.review-score{font-family:Georgia,"Times New Roman",serif;font-size:54px;line-height:1;color:var(--ink)}
+.review-stars{color:#a86b2c;letter-spacing:3px;font-size:22px;line-height:1}
+.review-count{font-size:13px;color:var(--muted)}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.review-card{background:white;border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;min-height:220px;box-shadow:0 10px 28px #173c3808}
+.review-card blockquote{margin:0;color:var(--ink);font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.45}
+.review-card .review-stars{font-size:14px;letter-spacing:2px;margin-bottom:14px}
+.review-card .review-meta{margin-top:auto;padding-top:22px;color:var(--muted);font-size:11px;line-height:1.55}
+.review-card .review-meta strong{color:var(--ink);font-size:13px}
+.review-note{font-size:11px;color:var(--muted);margin-top:18px}
+@media(max-width:850px){.review-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.review-grid{grid-template-columns:1fr}.review-card{min-height:0;padding:22px}.review-card blockquote{font-size:18px}.review-score{font-size:45px}}
