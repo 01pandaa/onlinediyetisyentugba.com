@@ -6,6 +6,7 @@ Türkiye genelinde online danışmanlığı ve Adana Seyhan ofisini anlatan, Tü
 
 - `content/site.json`: İsim, telefon, adres, sosyal hesaplar, içerik güncelleme tarihi.
 - `content/services.json`: Altı danışmanlık alanı ve sayfa içerikleri.
+- `content/online-consultation.json`: Online danışmanlık sayfasının kapsamı, hazırlık, takip ve görüşme bilgileri.
 - `content/posts/*.json`: Yeni makale eklemek için her yazıya bir dosya.
 - `scripts/build.py`: Statik HTML sayfaları, site haritası, RSS ve robots.txt üretir.
 - `assets/`: Ortak tasarım, tarayıcı etkileşimleri, yerel görseller.
@@ -32,10 +33,12 @@ python3 -m http.server 8080 --directory dist
 3. Başlık, özgün açıklama, kategori, gerçek yayın tarihi, giriş, görsel ve bölümleri düzenleyin.
 4. `sources` alanına doğrulanmış birincil kaynaklar ekleyin. İçerikteki tıbbi bilgileri mesleki olarak gözden geçirin; incelenmeyen içeriğe “uzman onaylı” ifadesi eklemeyin.
 5. `assets/images/` içine kullanım hakkı bulunan görseli ekleyip `image` ve açıklayıcı `image_alt` alanını güncelleyin. Anatomik görsellerde kaynak ve lisans atfını koruyun.
-6. `content/site.json` içindeki `updated` tarihini içerik değiştiğinde güncelleyin. Sırf güncel görünmek için tarih değiştirmeyin.
+6. Yazının `date` alanı ilk yayın tarihidir; anlamlı içerik değişikliğinde o yazıya `updated` ekleyin. Hizmet veya liste sayfası değiştiğinde `content/site.json` içindeki `page_updates` alanında yalnızca ilgili yolu güncelleyin. Sırf güncel görünmek için tarih değiştirmeyin.
 7. Derleme ve kontrolleri çalıştırın. `build.py`, yeni sayfayı ve tüm ilgili yayın dosyalarını depo kökünde de günceller. Kaynaklarla birlikte bu dosyaları `main` dalına gönderin. GitHub Pages yayını otomatik yeniler.
 
 Blog listesi, kategori filtreleri, arama, ilgili yazılar, RSS, makale JSON-LD bilgileri ve sitemap otomatik oluşur. `featured: true` ana sayfada öne çıkarmak için kullanılabilir. Bölüm içerikleri güvenilir editöre ait HTML kabul eder; kullanıcıdan gönderilen HTML doğrudan eklenmemelidir.
+
+İsteğe bağlı `seo_title`, görünür uzun makale başlığından ayrı bir arama başlığı tanımlar. `related`, ilgili yazıların mevcut slug değerlerini sıralar. `author_type: "editorial"`, yazarı site işletmesi olarak belirtir; bağımsız bir uzman incelemesi yapıldığını iddia etmez. `editorial_note`, hazırlama yöntemi ve kaynak kontrolü gibi gerçek bilgileri yazının sonunda gösterir. Kaynakların desteklediği açıklamalara içerik içinde de bağlantı verin.
 
 ## Yayın
 

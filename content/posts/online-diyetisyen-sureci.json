@@ -1,10 +1,45 @@
 {
- "slug":"online-diyetisyen-sureci", "title":"Online diyetisyen süreci nasıl işler? İlk görüşmeden takibe", "description":"Online diyetisyen görüşmesine hazırlık, kişisel beslenme planı ve takip adımları. Türkiye genelinde online danışmanlık için anlaşılır başlangıç rehberi.", "category":"Online danışmanlık", "date":"2026-09-07", "image":"tugba-seker-agac.webp", "image_alt":"Diyetisyen Tuğba Şeker Ağaç", "featured":true,
- "intro":"Online diyetisyen görüşmesi, bulunduğunuz şehirden bağımsız olarak beslenme düzeninizi bir diyetisyenle değerlendirebilmenizi sağlar. Sürecin merkezinde yalnızca size bir liste gönderilmesi değil, o listenin sizin hayatınıza nasıl uyduğunun konuşulması yer alır.",
- "sections":[
-  {"id":"hazirlik","title":"İlk görüşmeye nasıl hazırlanabilirsiniz?","body":"<p>Başlamadan önce sıradan bir gününüzü düşünün: kaçta uyanıyorsunuz, hangi saatlerde yemek yiyebiliyorsunuz, yemekleri nerede hazırlıyor veya satın alıyorsunuz? Kusursuz bir gün kurgulamak yerine gerçek düzeninizi anlatmanız daha yararlıdır.</p><p>Kullandığınız ilaçları, hekim tanılarınızı ve mevcut tetkiklerinizi hazır bulundurun. Yeni tetkik gerekip gerekmediği kişisel değerlendirmeyle belirlenir. Ayrıca daha önce denediğiniz diyetleri ve neden sürdüremediğinizi not edebilirsiniz.</p><ul><li>Görüşme için sakin bir alan ve çalışır bir internet bağlantısı hazırlayın.</li><li>Özellikle sormak istediğiniz soruları bir yere yazın.</li><li>Sevdiğiniz ve tüketmediğiniz yiyecekleri belirtin.</li><li>Çalışma, okul ve aile düzeninizi paylaşın.</li></ul>"},
-  {"id":"plan","title":"Kişisel beslenme planında neler bulunur?","body":"<p>Bir beslenme planı günlük hayatın içine yerleşebilmelidir. Evde yemek yapan biri için hazırlanan seçenekler, her öğlen dışarıda yemek zorunda olan birinin seçeneklerinden farklı olabilir. Danışmanlık görüşmesinde bu ayrıntılar konuşulur.</p><p>Örneğin salı akşamları geç çıktığınız bir kursunuz varsa o güne kolay hazırlanabilen bir öğün alternatifi eklenebilir. Bu, yeme düzenini yaşamdan ayrı bir görev haline getirmeden planlamaya yardımcı olur. Planın içeriği ve porsiyonlar kişisel değerlendirmeyle belirlenir.</p>"},
-  {"id":"takip","title":"Takip görüşmesinde sadece kilo mu konuşulur?","body":"<p>Takipte hangi öğünlerin uygulanabildiği, hangi saatlerde zorlandığınız ve daha farklı seçeneklere ihtiyaç duyup duymadığınız ele alınır. Öğün fotoğrafları paylaşımı, uygun olduğunda, porsiyon ve içerik üzerine konuşmayı kolaylaştırabilir. Fotoğraf göndermek bir yarışma veya kusursuz beslenme sınavı değildir.</p><p>Tuğba Şeker Ağaç ile görüşmelerde plan haftalık takip çerçevesinde değerlendirilir. WhatsApp iletişim saatleri pazartesi–cumartesi 08.00–20.00 arasındadır; pazar günleri kapalıdır. Görüşme saati randevu sırasında netleştirilir.</p>"},
-  {"id":"beklenti","title":"Başlamadan önce hangi soruları sormalısınız?","body":"<p>Görüşmelerin nasıl yapılacağını, takip sıklığını, ölçümlerin nasıl paylaşılacağını ve programın kapsamını sorun. Telefonla mı yoksa görüntülü mü görüşeceğinizin önceden belli olması hazırlığınızı kolaylaştırır.</p><p>Belirli bir sürede kesin sonuç vaatleri yerine sürecin nasıl işleyeceğini anlamaya odaklanın. Online görüşme her sağlık durumu için tek başına yeterli olmayabilir. Hekim değerlendirmesi veya yüz yüze görüşme gerektiğinde bu durum birlikte ele alınır.</p>"}
- ],"sources":[["Danışmanlık yöntemi ve iletişim bilgileri","/online-diyetisyen/"]]
+  "slug": "online-diyetisyen-sureci",
+  "title": "Online diyetisyen süreci nasıl işler? İlk görüşmeden takibe",
+  "description": "Online diyetisyen görüşmesine hazırlık, kişisel beslenme planı ve takip adımları. Türkiye genelinde online danışmanlık için anlaşılır başlangıç rehberi.",
+  "category": "Online danışmanlık",
+  "date": "2026-09-07",
+  "image": "tugba-seker-agac.webp",
+  "image_alt": "Diyetisyen Tuğba Şeker Ağaç",
+  "featured": true,
+  "intro": "Online diyetisyen görüşmesi, bulunduğunuz şehirden bağımsız olarak beslenme düzeninizi bir diyetisyenle değerlendirebilmenizi sağlar. Sürecin merkezinde yalnızca size bir liste gönderilmesi değil, o listenin sizin hayatınıza nasıl uyduğunun konuşulması yer alır.",
+  "sections": [
+    {
+      "id": "hazirlik",
+      "title": "İlk görüşmeye nasıl hazırlanabilirsiniz?",
+      "body": "<p>Başlamadan önce sıradan bir gününüzü düşünün: kaçta uyanıyorsunuz, hangi saatlerde yemek yiyebiliyorsunuz, yemekleri nerede hazırlıyor veya satın alıyorsunuz? Kusursuz bir gün kurgulamak yerine gerçek düzeninizi anlatmanız daha yararlıdır.</p><p>Kullandığınız ilaçları, hekim tanılarınızı ve mevcut tetkiklerinizi hazır bulundurun. Yeni tetkik gerekip gerekmediği kişisel değerlendirmeyle belirlenir. Ayrıca daha önce denediğiniz diyetleri ve neden sürdüremediğinizi not edebilirsiniz.</p><ul><li>Görüşme için sakin bir alan ve çalışır bir internet bağlantısı hazırlayın.</li><li>Özellikle sormak istediğiniz soruları bir yere yazın.</li><li>Sevdiğiniz ve tüketmediğiniz yiyecekleri belirtin.</li><li>Çalışma, okul ve aile düzeninizi paylaşın.</li></ul>"
+    },
+    {
+      "id": "plan",
+      "title": "Kişisel beslenme planında neler bulunur?",
+      "body": "<p>Bir beslenme planı günlük hayatın içine yerleşebilmelidir. Evde yemek yapan biri için hazırlanan seçenekler, her öğlen dışarıda yemek zorunda olan birinin seçeneklerinden farklı olabilir. Danışmanlık görüşmesinde bu ayrıntılar konuşulur.</p><p>Örneğin salı akşamları geç çıktığınız bir kursunuz varsa o güne kolay hazırlanabilen bir öğün alternatifi eklenebilir. Bu, yeme düzenini yaşamdan ayrı bir görev haline getirmeden planlamaya yardımcı olur. Planın içeriği ve porsiyonlar kişisel değerlendirmeyle belirlenir.</p>"
+    },
+    {
+      "id": "takip",
+      "title": "Takip görüşmesinde sadece kilo mu konuşulur?",
+      "body": "<p>Takipte hangi öğünlerin uygulanabildiği, hangi saatlerde zorlandığınız ve daha farklı seçeneklere ihtiyaç duyup duymadığınız ele alınır. Öğün fotoğrafları paylaşımı, uygun olduğunda, porsiyon ve içerik üzerine konuşmayı kolaylaştırabilir. Fotoğraf göndermek bir yarışma veya kusursuz beslenme sınavı değildir.</p><p>Tuğba Şeker Ağaç ile görüşmelerde plan haftalık takip çerçevesinde değerlendirilir. WhatsApp iletişim saatleri pazartesi–cumartesi 08.00–20.00 arasındadır; pazar günleri kapalıdır. Görüşme saati randevu sırasında netleştirilir.</p>"
+    },
+    {
+      "id": "beklenti",
+      "title": "Başlamadan önce hangi soruları sormalısınız?",
+      "body": "<p>Görüşmelerin nasıl yapılacağını, takip sıklığını, ölçümlerin nasıl paylaşılacağını ve programın kapsamını sorun. Telefonla mı yoksa görüntülü mü görüşeceğinizin önceden belli olması hazırlığınızı kolaylaştırır.</p><p>Belirli bir sürede kesin sonuç vaatleri yerine sürecin nasıl işleyeceğini anlamaya odaklanın. Online görüşme her sağlık durumu için tek başına yeterli olmayabilir. Hekim değerlendirmesi veya yüz yüze görüşme gerektiğinde bu durum birlikte ele alınır.</p><p>Henüz seçim aşamasındaysanız <a href=\"/blog/online-diyetisyen-nasil-secilir/\">online diyetisyen seçerken sorulacak 8 soru</a> rehberindeki görüşme notunu kullanabilirsiniz. Eğitim bilgisi, bilgi paylaşımı ve danışmanlık kapsamını bir arada değerlendirmenize yardımcı olur.</p>"
+    }
+  ],
+  "sources": [
+    [
+      "Danışmanlık yöntemi ve iletişim bilgileri",
+      "/online-diyetisyen/"
+    ]
+  ],
+  "updated": "2026-09-08",
+  "related": [
+    "online-diyetisyen-nasil-secilir",
+    "tarti-yag-kas-ve-su-degisimi",
+    "saglikli-tabak-nasil-hazirlanir"
+  ]
 }
