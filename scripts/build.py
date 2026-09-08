@@ -27,10 +27,12 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load='fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
-def brand():return '<small>DİYETİSYEN</small><strong>Tuğba Şeker Ağaç</strong><span>BESLENME &amp; DANIŞMANLIK</span>'
+def brand():
+    logo=img('tugba-logo.webp','Diyetisyen Tuğba Şeker Ağaç logosu','brand-logo')
+    return logo+'<div class="brand-copy"><small>DİYETİSYEN</small><strong>Tuğba Şeker Ağaç</strong><span>BESLENME &amp; DANIŞMANLIK</span></div>'
 NAV=[('Ana Sayfa','/'),('Kurumsal','/kurumsal/'),('Online Diyetisyen','/online-diyetisyen/'),('Hizmetler','/hizmetler/'),('Blog','/blog/'),('İletişim','/iletisim/')]
 PAGES=[]
 def layout(route,title,desc,body,kind='WebPage',extra=None,noindex=False,cover='tugba-seker-agac.webp'):
