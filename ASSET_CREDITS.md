@@ -8,6 +8,7 @@
 - Anatomi resimleri yalnızca WebP dönüşümü ve boyutlandırmadan geçirilmiştir; içerik/etiket değişikliği yoktur. Atıflar görsellerin yanında korunur. Kurum onayı veya işbirliği ima edilmez.
 - `video-*.webp`: Kullanıcının verdiği @dyt.tugbasekeragac kanalına ait videoların kapakları. YouTube izleme ve gömme bağlantıları ilgili orijinal videoya gider.
 - `dengeli-beslenme.webp`: Yerleşik Imagegen ile oluşturulmuş temsili beslenme görseli, 7 Eylül 2026. Anatomi veya ölçülü diyet reçetesi değildir.
+- `surdurulebilir-beslenme.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait özgün Canva tasarımı. Web için WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
 
 ## Yemek görseli üretim yönergesi
 

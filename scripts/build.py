@@ -27,7 +27,7 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load='fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
 def brand():return '<small>DİYETİSYEN</small><strong>Tuğba Şeker Ağaç</strong><span>BESLENME &amp; DANIŞMANLIK</span>'
@@ -77,6 +77,7 @@ ANATOMY=[
  ('yag','Yağ dokusu','Bir sayıdan fazlası','Yağ dokusu enerji depolayan ve vücudun yalıtımında rol alan bir dokudur. Tartıdaki toplam ağırlık, bu dokunun miktarını tek başına göstermez.','Beslenme bağlantısı: yağ dokusunu anlamak, kilo takibini daha doğru yorumlamak.','yag-dokusu.webp','Yağ hücreleri, çekirdekleri ve yağ damlacıklarını gösteren çizim ve mikroskop görüntüsü','https://commons.wikimedia.org/wiki/File:409_Adipose_Tissue.jpg','3.0','https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects'),
  ('sindirim','Sindirim','Yediğin besinin yolculuğu','Sindirim ağızda başlar. Mide ve bağırsaklar besinlerin parçalanması ve emiliminde görev alır. Besin öğelerinin büyük bölümü ince bağırsaktan emilir.','Beslenme bağlantısı: öğün düzeni, bireysel tolerans ve sindirim yakınmalarının değerlendirilmesi.','sindirim.webp','Ağız, yemek borusu, mide, karaciğer, pankreas ve bağırsakların anatomik yerleşimi','https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works',None,'https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works')]
 def attribution(file):
+    if file=='surdurulebilir-beslenme.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
     a=next((x for x in ANATOMY if x[5]==file),None)
     if not a:return 'Yapay zekâyla hazırlanmış temsili öğün görseli; kişisel diyet reçetesi değildir.' if file=='dengeli-beslenme.webp' else ''
     license=f' · <a href="https://creativecommons.org/licenses/by/{a[8]}/" target="_blank" rel="noopener noreferrer">CC BY {a[8]}</a>' if a[8] else ''
@@ -91,7 +92,8 @@ def post_cards(posts=POSTS,searchable=False):
     for p in posts:
         u='/blog/'+p['slug']+'/'
         attrs=f' data-post data-category="{e(p["category"])}" data-search="{e(p["title"]+" "+p["description"])}"' if searchable else ''
-        cover=link(u,img(p['image'],p['image_alt']),'post-cover'+(' science' if p.get('science') else ''))
+        cover_class='post-cover'+(' science' if p.get('science') else '')+(' portrait' if p.get('portrait') else '')
+        cover=link(u,img(p['image'],p['image_alt']),cover_class)
         out.append(f'<article class="post-card"{attrs}>{cover}<div class="micro">{e(p["category"])} · {reading_time(p)} dk okuma</div><h3>{link(u,e(p["title"]))}</h3><p>{e(p["description"])}</p>{link(u,"Yazıyı okuyun ↗","text-link")}</article>')
     return '<div class="grid-3">'+''.join(out)+'</div>'
 def reading_time(p):return max(2,round(len(re.sub('<[^>]+>',' ',p['intro']+' '.join(s['body'] for s in p['sections'])).split())/180))
