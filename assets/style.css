@@ -125,3 +125,15 @@
   .home-hero .actions{display:grid;grid-template-columns:minmax(0,1fr)}
   .home-hero .actions .button{width:100%;justify-content:space-between}
 }
+
+/* The brand artwork now contains the name and descriptor in one horizontal lockup. */
+.brand{display:flex;flex-direction:row;align-items:center;gap:0;flex-shrink:0;line-height:1.2}
+.brand-logo{display:block;width:260px;height:auto;aspect-ratio:1977/762;object-fit:contain;flex:0 1 auto}
+.brand-copy{display:none}
+.site-footer .brand-logo{width:min(310px,100%);height:auto;flex-basis:auto;border-radius:0}
+@media(max-width:1120px){.site-header .brand-logo{width:240px}}
+@media(max-width:1060px){.site-header .brand-logo{width:250px}.site-header .brand{flex:1 1 auto}}
+@media(max-width:600px){
+  .site-header .brand-logo{width:min(225px,calc(100vw - 100px));height:auto;flex-basis:auto}
+  .site-footer .brand-logo{width:min(290px,100%)}
+}
