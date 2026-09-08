@@ -1,6 +1,6 @@
 # Görsel kaynakları
 
-- `tugba-seker-agac.webp`, `adana-ofis.webp`, `tugba-klinik.webp`, `tugba-portre.webp`: İşletmeye ait https://onlinediyetisyen.online sitesinden, site sahibinin mevcut fotoğrafları kullanma talebi kapsamında alınmıştır. Fotoğraflar başka bir kişi veya danışan sonucu gibi sunulmaz.
+- `tugba-seker-agac.webp`, `adana-ofis.webp`, `tugba-klinik.webp`, `tugba-portre.webp`: Önceki sürümde kullanılan, işletmeye ait https://onlinediyetisyen.online sitesinden ve site sahibinin kullanım talebi kapsamında alınmış fotoğraflar. Geriye dönük uyumluluk için saklanır.
 - `iskelet.webp`: OpenStax College, 701 Axial Skeleton-01, CC BY 3.0. https://commons.wikimedia.org/wiki/File:701_Axial_Skeleton-01.jpg — https://creativecommons.org/licenses/by/3.0/
 - `kas.webp`: OpenStax, 1002 Organization of Muscle Fiber, CC BY 4.0. https://commons.wikimedia.org/wiki/File:1002_Organization_of_Muscle_Fiber.jpg — https://creativecommons.org/licenses/by/4.0/
 - `yag-dokusu.webp`: OpenStax College, 409 Adipose Tissue, CC BY 3.0. https://commons.wikimedia.org/wiki/File:409_Adipose_Tissue.jpg — https://creativecommons.org/licenses/by/3.0/
@@ -10,9 +10,9 @@
 - `dengeli-beslenme.webp`: Yerleşik Imagegen ile oluşturulmuş temsili beslenme görseli, 7 Eylül 2026. Anatomi veya ölçülü diyet reçetesi değildir.
 - `surdurulebilir-beslenme.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait özgün Canva tasarımı. Web için WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
 - `online-diyetisyen-kapak.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait yatay ve özgün Canva tasarımı. Web için şeffaf kenarları kırpılarak WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
-- `tugba-kurumsal.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; kurumsal sayfa kapak görseli olarak kullanılır.
-- `tugba-hizmetler.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç beyaz önlüklü portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; hizmetler sayfası kapak görseli olarak kullanılır.
+- `tugba-kurumsal.webp`, `tugba-hizmetler.webp`: Önceki kapak görselleri; yeni kullanıcı fotoğraflarıyla değiştirildi ve geriye dönük uyumluluk için saklanır.
 - `tugba-blog-calisma.webp`: Yerleşik Imagegen ile, kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı referans alınarak oluşturulan özgün çalışma masası sahnesi. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; blog sayfası kapak görseli olarak kullanılır.
+- `tugba-ofis-yesil.webp`, `tugba-ofis-onluk.webp`, `tugba-buket.webp`, `tugba-sahil.webp`, `tugba-doga.webp`, `tugba-doga-genis.webp`, `tugba-kirsal.webp`, `tugba-doga-yakin.webp`: Kullanıcının 8 Eylül 2026 tarihinde sağladığı, Diyetisyen Tuğba Şeker Ağaç’a ait özgün fotoğraflar. Web için EXIF bilgileri çıkarılarak WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; ofis, kurumsal, hizmetler ve kurumsal fotoğraf seçkisi alanlarında kullanılır.
 - `tugba-logo.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait şeffaf arka planlı özgün logo. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; önceki logo sürümü olarak saklanır.
 
 ## Yemek görseli üretim yönergesi
