@@ -2,10 +2,28 @@ document.documentElement.classList.add('js');
 document.querySelectorAll('[data-js-only]').forEach(el=>el.hidden=false);
 document.querySelectorAll('[data-bmi-form] fieldset').forEach(el=>el.disabled=false);
 const menuButton=document.querySelector('.menu-toggle'),nav=document.querySelector('.nav');
-function closeMenu(){nav?.classList.remove('open');menuButton?.setAttribute('aria-expanded','false');}
-menuButton?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();}});
+function setMenu(open){
+  if(!menuButton||!nav)return;
+  nav.classList.toggle('open',open);
+  menuButton.setAttribute('aria-expanded',String(open));
+  menuButton.setAttribute('aria-label',open?'Menüyü kapat':'Menüyü aç');
+  const label=menuButton.querySelector('[data-menu-label]');
+  if(label)label.textContent=open?'Kapat':'Menü';
+}
+function closeMenu(){setMenu(false);}
+menuButton?.addEventListener('click',()=>setMenu(menuButton.getAttribute('aria-expanded')!=='true'));
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&menuButton?.getAttribute('aria-expanded')==='true'){
+    closeMenu();menuButton.focus();
+  }
+});
 nav?.addEventListener('click',e=>{if(e.target.closest('a'))closeMenu();});
+function closeMenuFromOutside(e){
+  if(!nav?.contains(e.target)&&!menuButton?.contains(e.target))closeMenu();
+}
+document.addEventListener('click',closeMenuFromOutside);
+document.addEventListener('focusin',closeMenuFromOutside);
+window.matchMedia('(max-width: 1060px)').addEventListener('change',closeMenu);
 document.querySelectorAll('[data-bmi-form]').forEach(form=>{
   form.addEventListener('submit',e=>{
     e.preventDefault();const result=form.querySelector('[data-result]'),err=form.querySelector('[data-error]');
