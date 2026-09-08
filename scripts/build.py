@@ -27,7 +27,7 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-blog-calisma.webp':(1200,800),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load='fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
 def brand():
@@ -145,10 +145,10 @@ def build():
         schema={'@type':'Service','name':s['title'],'provider':{'@id':BASE+'/#kurum'},'areaServed':{'@type':'Country','name':'Türkiye'},'url':BASE+'/hizmetler/'+s['slug']+'/','serviceType':'Beslenme danışmanlığı'}
         layout('/hizmetler/'+s['slug']+'/',s['title']+' | Online Diyetisyen Tuğba',s['short']+' Tuğba Şeker Ağaç ile online ve Adana’da beslenme danışmanlığı.',body,extra=[schema])
 
-    blog=hero('Beslenme üzerine<br><span class="accent">iyi sorular, açık yanıtlar.</span>','Online diyetisyen süreci, günlük öğünler ve vücudun işleyişi hakkında kaynaklı bilgi köşesi.','Blog · Beslenme rehberi')
+    blog=hero('Beslenme üzerine<br><span class="accent">iyi sorular, açık yanıtlar.</span>','Online diyetisyen süreci, günlük öğünler ve vücudun işleyişi hakkında kaynaklı bilgi köşesi.','Blog · Beslenme rehberi','tugba-blog-calisma.webp','blog-cover','Diyetisyen Tuğba Şeker Ağaç çalışma masasında beslenme notlarını incelerken')
     filters='<div data-js-only hidden><div class="search-box"><label>Yazılarda ara<input type="search" data-blog-search placeholder="Konu veya kelime yazın…"></label></div><div class="anatomy-controls" aria-label="Yazı kategorisi">'+''.join(f'<button type="button" class="chip" data-filter="{e(c)}" aria-pressed="{str(c=="Tümü").lower()}">{e(c)}</button>' for c in ['Tümü']+sorted({p['category'] for p in POSTS}))+'</div><p class="micro" data-count aria-live="polite">'+str(len(POSTS))+' yazı</p></div>'
     blog+='<section class="section"><div class="wrap">'+filters+post_cards(searchable=True)+'<p class="empty-state" data-empty hidden>Aramanızla eşleşen yazı bulunamadı. Başka bir kelime deneyin veya Tümü kategorisini seçin.</p></div></section>'
-    layout('/blog/','Online Diyetisyen Blogu | Beslenme ve Vücudunu Tanı','Online diyetisyen rehberleri, kilo yönetimi, sağlıklı öğünler, insülin direnci ve anatomi üzerine kaynaklı beslenme yazıları.',blog,kind='CollectionPage')
+    layout('/blog/','Online Diyetisyen Blogu | Beslenme ve Vücudunu Tanı','Online diyetisyen rehberleri, kilo yönetimi, sağlıklı öğünler, insülin direnci ve anatomi üzerine kaynaklı beslenme yazıları.',blog,kind='CollectionPage',cover='tugba-blog-calisma.webp')
     for p in POSTS:
         toc='<nav class="toc" aria-label="Yazı içindekiler"><strong>Bu yazıda</strong>'+''.join(f'<a href="#{e(s["id"])}">{e(s["title"])}</a>' for s in p['sections'])+'</nav>'
         picture=f'<figure>{img(p["image"],p["image_alt"])}<figcaption>{attribution(p["image"])}</figcaption></figure>'

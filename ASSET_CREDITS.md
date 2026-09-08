@@ -12,6 +12,7 @@
 - `online-diyetisyen-kapak.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait yatay ve özgün Canva tasarımı. Web için şeffaf kenarları kırpılarak WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
 - `tugba-kurumsal.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; kurumsal sayfa kapak görseli olarak kullanılır.
 - `tugba-hizmetler.webp`: Kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç beyaz önlüklü portre fotoğrafı. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; hizmetler sayfası kapak görseli olarak kullanılır.
+- `tugba-blog-calisma.webp`: Yerleşik Imagegen ile, kullanıcının sağladığı Diyetisyen Tuğba Şeker Ağaç portre fotoğrafı referans alınarak oluşturulan özgün çalışma masası sahnesi. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; blog sayfası kapak görseli olarak kullanılır.
 - `tugba-logo.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait şeffaf arka planlı özgün logo. Web için WebP biçimine dönüştürülüp boyutlandırılmıştır; tüm sayfalarda üst menü ve alt bilgi marka işareti olarak kullanılır.
 
 ## Yemek görseli üretim yönergesi
