@@ -11,6 +11,7 @@ OUT=ROOT/'dist'
 S=json.loads((ROOT/'content/site.json').read_text())
 SERVICES=json.loads((ROOT/'content/services.json').read_text())
 ONLINE=json.loads((ROOT/'content/online-consultation.json').read_text())
+FAQ_GROUPS=json.loads((ROOT/'content/faq.json').read_text())
 POSTS=sorted([json.loads(p.read_text()) for p in (ROOT/'content/posts').glob('*.json')],key=lambda p:(p['date'],p.get('featured',False),p['slug']),reverse=True)
 BASE=S['url'].rstrip('/')
 PREFIX=os.environ.get('SITE_PATH_PREFIX','').rstrip('/')
@@ -38,7 +39,7 @@ def img(file,alt,cls='',eager=False):
 def brand(eager=False,light=False):
     logo=LOGO_LIGHT if light else LOGO
     return img(logo,'Diyetisyen Tuğba Şeker Ağaç elma ve kelebek logolu yatay marka işareti','brand-logo',eager=eager)
-NAV=[('Ana Sayfa','/'),('Kurumsal','/kurumsal/'),('Online Diyetisyen','/online-diyetisyen/'),('Hizmetler','/hizmetler/'),('Blog','/blog/'),('İletişim','/iletisim/')]
+NAV=[('Ana Sayfa','/'),('Kurumsal','/kurumsal/'),('Online Diyetisyen','/online-diyetisyen/'),('Hizmetler','/hizmetler/'),('Blog','/blog/'),('SSS','/sikca-sorulan-sorular/'),('İletişim','/iletisim/')]
 PAGES=[]
 def layout(route,title,desc,body,kind='WebPage',extra=None,noindex=False,cover='tugba-ofis-yesil.webp'):
     canonical=BASE+route
@@ -75,7 +76,7 @@ def steps():
     values=[('Tanışalım','Günlük düzeninizi, beklentilerinizi ve mevcut sağlık bilgilerinizi konuşalım.'),('Birlikte planlayalım','Öğünlerinizi yaşam ritminize, tercihlerinize ve gereksinimlerinize göre ele alalım.'),('Takip edelim','Uygulama deneyiminizi haftalık görüşmelerde değerlendirelim.'),('Hayatınıza uyarlayalım','İhtiyaçlarınıza göre alternatifler ve sürdürülebilir alışkanlıklar üzerinde çalışalım.')]
     return '<div class="steps">'+''.join(f'<div class="step"><span aria-hidden="true">{i:02}</span><h3>{a}</h3><p>{b}</p></div>' for i,(a,b) in enumerate(values,1))+'</div>'
 FAQ=[('Online diyetisyen görüşmesi hangi şehirlerde yapılabilir?','Türkiye’nin farklı şehirlerinden online görüşmeye katılabilirsiniz. İhtiyaçlarınız ve online görüşmeye uygunluk ilk iletişimde değerlendirilir. Adana’da yüz yüze görüşme seçeneği de vardır.'),('İlk görüşmede ne konuşulur?','Sağlık öykünüz, mevcut tanılarınız, günlük öğünleriniz, çalışma düzeniniz, hareket alışkanlıklarınız ve beklentileriniz değerlendirilir. Mevcut tetkiklerinizi ve ilaç bilgilerinizi hazır bulundurabilirsiniz.'),('Beslenme listesi herkese aynı mı hazırlanır?','Plan; sağlık durumunuz, gereksinimleriniz ve günlük yaşamınız dikkate alınarak kişiye göre düzenlenir. Öğün alternatifleri takipte yeniden değerlendirilebilir.'),('WhatsApp üzerinden hangi saatlerde iletişim kurabilirim?','Pazartesi–cumartesi günleri 08.00–20.00 arasında iletişim kurabilirsiniz. Pazar günleri kapalıdır. Görüşmeler önceden belirlenen randevu saatinde yapılır.'),('BKİ aracı yağ oranımı gösterir mi?','Hayır. Araç boy ve ağırlık üzerinden beden kütle indeksini hesaplar. Yağ veya kas oranınızı ölçmez; tanı koymaz. 20 yaş altı ve gebelik için kullanılmaz.'),('Ne kadar sürede sonuç alırım?','Süreç kişinin sağlık durumuna, gereksinimlerine ve günlük koşullarına göre değişir. Belirli sürede kesin kilo değişimi veya aynı sonucu elde etme garantisi verilmez.')]
-def faqs(items=FAQ):return '<div class="faq">'+''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in items)+'</div>'
+def faqs(items=FAQ):return '<div class="faq">'+''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q,a in items)+'</div>'+('<p class="faq-more">'+link('/sikca-sorulan-sorular/','Tüm sıkça sorulan sorular','text-link')+'</p>' if items is FAQ else '')
 def bmi():return '''<div class="calc"><h3>Beden kütle indeksini hesapla</h3><p>Boy ve kilo bilgilerinle genel bir tarama göstergesi olan BKİ’ni öğren.</p><form data-bmi-form novalidate><fieldset disabled style="border:0;padding:0;margin:0"><div class="input-grid"><label>Boy (cm)<input name="height" inputmode="decimal" autocomplete="off" placeholder="Örn. 165" aria-label="Boy, santimetre" required></label><label>Kilo (kg)<input name="weight" inputmode="decimal" autocomplete="off" placeholder="Örn. 65" aria-label="Kilo, kilogram" required></label><label>Yaş<input name="age" inputmode="numeric" autocomplete="off" placeholder="20 ve üzeri" required></label></div><label class="checkbox"><input type="checkbox" name="eligible">20 yaş veya üzerindeyim ve gebelik durumum yok. Bu aracın tanı veya yağ ölçümü olmadığını biliyorum.</label><button class="button" type="submit">BKİ’mi hesapla <span aria-hidden="true">↗</span></button></fieldset><p class="calc-error" data-error role="alert"></p><div class="calc-result" data-result aria-live="polite" hidden><strong></strong><p data-category></p><p>Bu sonuç tek başına sağlık durumunuzu göstermez. Kas kütlesi ve sağlık öykünüz gibi etkenlerle birlikte yorumlanmalıdır.</p></div></form><p class="calc-note">Bilgileriniz kaydedilmez veya sunucuya gönderilmez. Hesaplama yalnızca bu cihazda yapılır. <a href="https://www.cdc.gov/bmi/adult-calculator/index.html" target="_blank" rel="noopener noreferrer"><u>Kaynak: CDC</u></a></p><noscript><p>Hesaplayıcı için JavaScript gerekir. Formül: ağırlık (kg) ÷ boy (m)². Yetişkin sınıflaması yalnızca uygun kişilerde yorumlanır.</p></noscript></div>'''
 
 ANATOMY=[
@@ -140,6 +141,17 @@ def build():
     {reviews_block()}
     <section class="section"><div class="wrap">{heading('SIK SORULAN SORULAR','Başlamadan önce aklındakiler.')}{faqs()}</div></section>'''
     layout('/','Online Diyetisyen Tuğba Şeker Ağaç | Türkiye & Adana','Türkiye genelinde online diyetisyen Tuğba Şeker Ağaç ile kişisel beslenme danışmanlığı. Kilo yönetimi, kaynaklı beslenme rehberleri ve Adana ofisi.',body)
+
+    faq_body=hero('Sıkça sorulan<br><span class="accent">sorular.</span>','Online diyetisyen süreci, beslenme planı, takip ve randevu hakkında merak ettikleriniz.','Sıkça Sorulan Sorular')
+    faq_body+='<section class="section faq-page"><div class="wrap">'
+    for group in FAQ_GROUPS:
+        faq_body+='<section class="faq-category"><h2>'+e(group['title'])+'</h2>'+faqs(group['items'])+'</section>'
+    faq_body+='<div class="faq-help"><h2>Sorunuzun yanıtını bulamadınız mı?</h2><p>Kendi koşullarınızı ve görüşme sürecini doğrudan konuşabiliriz.</p><div class="actions">'+btn(WA,'WhatsApp ile sorun')+btn('/online-diyetisyen/','Danışmanlık süreci',True)+'</div></div>'
+    faq_body+='<div class="faq-sources"><h2>Bilgi kaynakları ve kapsam</h2><p>Yanıtlar genel bilgilendirme içindir; kişisel tanı, tedavi veya beslenme planı değildir. Hizmet bilgileri işletmenin paylaştığı bilgilere dayanır. Beslenme yanıtlarında yararlanılan kaynaklar:</p><ul>'
+    for title,url in [('NIDDK — Güvenli kilo yönetimi programı seçimi','https://www.niddk.nih.gov/health-information/weight-management/choosing-a-safe-successful-weight-loss-program'),('NHS — Dengeli beslenme','https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eating-a-balanced-diet/'),('NIDDK — Diyabetle sağlıklı yaşam','https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes')]:
+        faq_body+='<li>'+link(url,e(title),external=True)+'</li>'
+    faq_body+='</ul><p>'+link('/blog/','Beslenme blogunu okuyun','text-link')+'</p></div></div></section>'
+    layout('/sikca-sorulan-sorular/','Online Diyetisyen Sıkça Sorulan Sorular | Tuğba Şeker Ağaç','Online diyetisyen nasıl çalışır? Görüşme, kişisel beslenme planı, ücret bilgisi, takip ve Adana randevusu hakkında 25 soruya yanıt.',faq_body)
 
     online=hero('Türkiye genelinde<br><span class="accent">online diyetisyen danışmanlığı.</span>','Bulunduğunuz şehirden, kendi yaşam düzeniniz içinden beslenme görüşmelerine katılın. Süreci, kapsamını ve takip adımlarını bu sayfada öğrenin.','Online danışmanlık','online-diyetisyen-kapak.webp','wide-cover','Diyetisyen Tuğba Şeker Ağaç markasına ait online beslenme danışmanlığı kapak görseli')
     online+='<section class="section dark"><div class="wrap">'+heading('NASIL İLERLİYORUZ?','Hayatınızı tanıyan bir süreç.')+steps()+'</div></section>'

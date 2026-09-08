@@ -138,6 +138,22 @@
   .site-footer .brand-logo{width:min(290px,100%)}
 }
 
+.faq-page{background:#f1faf4;padding-top:36px}
+.faq-category{max-width:960px;margin:0 auto 52px}
+.faq-category h2{font-size:clamp(26px,4vw,36px);margin:0 0 24px;line-height:1.25}
+.faq-page .faq{max-width:none;display:grid;gap:16px}
+.faq-page details{background:white;border:1px solid #d8e9de;border-radius:20px;padding:0;overflow:hidden}
+.faq-page summary{padding:26px 28px;font-size:clamp(17px,2vw,22px);font-weight:600;line-height:1.5;align-items:center;color:#164e33}
+.faq-page summary:after{flex:0 0 36px;height:36px;display:grid;place-items:center;border-radius:50%;background:#e5f5ec;color:#217a4c;line-height:1}
+.faq-page details[open]{border-color:#7bb992}
+.faq-page details p{padding:0 28px 26px;font-size:16px;line-height:1.85;max-width:850px}
+.faq-help,.faq-sources{max-width:960px;margin:40px auto 0;padding:32px;border-radius:20px;background:#dff2dd}
+.faq-help h2,.faq-sources h2{font-size:28px;line-height:1.3;margin-bottom:18px}
+.faq-sources{background:white;border:1px solid #d8e9de}.faq-sources a{text-decoration:underline}.faq-sources li{margin:12px 0}
+.faq-more{max-width:900px;margin:24px auto 0}
+@media(max-width:1200px) and (min-width:1061px){.site-header .nav{gap:12px}.site-header .nav .button{display:none}.site-header .brand-logo{width:220px}}
+@media(max-width:600px){.faq-page summary{padding:20px 18px;gap:14px}.faq-page details p{padding:0 18px 22px}.faq-help,.faq-sources{padding:24px 20px}.faq-category{margin-bottom:36px}}
+
 /* Authentic portraits supplied by Tuğba Şeker Ağaç. Keep the gallery light and responsive. */
 .photo-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px}
 .gallery-photo{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;border:1px solid var(--line);background:#dcebd4;box-shadow:0 10px 28px #164e3310}
