@@ -27,7 +27,7 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load='fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
 def brand():
@@ -135,9 +135,9 @@ def build():
     about+='<section class="section soft"><div class="wrap">'+social_block()+'</div></section>'
     layout('/kurumsal/','Tuğba Şeker Ağaç Kimdir? | Diyetisyen & Kurumsal','Diyetisyen Tuğba Şeker Ağaç’ın eğitim bilgileri, çalışma yaklaşımı, online danışmanlık ve Adana’daki yüz yüze görüşmeler hakkında.',about,kind='AboutPage',cover='tugba-kurumsal.webp')
 
-    services=hero('Beslenme danışmanlığı<br><span class="accent">ihtiyaçlarınıza göre.</span>','Kilo değişimi hedefinden günlük beslenme düzenine kadar farklı konular, kişisel değerlendirmeyle ele alınır.','Hizmetler')+'<section class="section"><div class="wrap">'+cards()+'</div></section>'
+    services=hero('Beslenme danışmanlığı<br><span class="accent">ihtiyaçlarınıza göre.</span>','Kilo değişimi hedefinden günlük beslenme düzenine kadar farklı konular, kişisel değerlendirmeyle ele alınır.','Hizmetler','tugba-hizmetler.webp','portrait-cover','Diyetisyen Tuğba Şeker Ağaç beyaz önlüğüyle danışmanlık hizmetlerini anlatırken')+'<section class="section"><div class="wrap">'+cards()+'</div></section>'
     services+=article_body('<h2>Her plan değerlendirmeyle başlar</h2><p>Buradaki başlıklar görüşmelerde ele alınabilecek beslenme konularını açıklar. Hizmetin kapsamı ve online görüşmeye uygunluğu ilk iletişimde netleştirilir. Hastalıklarda beslenme, hekimin tanı ve tedavisiyle birlikte yürütülür.</p><h2>Yöntemler</h2><p>Türkiye genelinden online danışmanlık veya Adana Seyhan’daki ofiste yüz yüze görüşme seçenekleri bulunur. Görüşme sıklığı, takip yöntemi ve ihtiyaç duyulan bilgiler randevu sırasında konuşulur.</p>')
-    layout('/hizmetler/','Beslenme Danışmanlığı Hizmetleri | Tuğba Şeker Ağaç','Kilo verme, kilo alma, hastalıklarda beslenme, aktif yaşam, gebelik ve emzirme döneminde online ve Adana’da beslenme danışmanlığı.',services)
+    layout('/hizmetler/','Beslenme Danışmanlığı Hizmetleri | Tuğba Şeker Ağaç','Kilo verme, kilo alma, hastalıklarda beslenme, aktif yaşam, gebelik ve emzirme döneminde online ve Adana’da beslenme danışmanlığı.',services,cover='tugba-hizmetler.webp')
     for s in SERVICES:
         content=''.join(f'<h2>{e(t)}</h2>{b}' for t,b in s['sections'])
         content+='<h2>İlgili beslenme yazısı</h2><p>'+link('/blog/'+s['related']+'/','Konuyu blogda ayrıntılı inceleyin ↗')+'</p><h2>Bilgi kaynağı</h2><p class="source-list">'+link(s['source'],'Konuyla ilgili sağlık kurumu kaynağı ↗',external=True)+'</p>'

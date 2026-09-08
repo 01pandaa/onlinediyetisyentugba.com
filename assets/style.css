@@ -7,6 +7,7 @@
 .post-cover.portrait{background:white;padding:16px;border:1px solid var(--line)}
 .post-cover.portrait img{object-fit:contain}
 .page-hero .split img.wide-cover{height:auto;aspect-ratio:1077/519;object-fit:contain;border-radius:18px;background:#edf1df;box-shadow:0 14px 36px #173c3814}
+.page-hero .split img.portrait-cover{object-position:center 28%;background:#c8c3b0;box-shadow:0 14px 36px #173c3814}
 .brand{flex-direction:row;align-items:center;gap:12px}
 .brand-logo{width:64px;height:76px;object-fit:contain;flex:0 0 64px}
 .brand-copy{display:flex;flex-direction:column;line-height:1.2}
