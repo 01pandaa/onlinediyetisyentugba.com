@@ -7,6 +7,7 @@ from xml.etree import ElementTree as ET
 import json,re
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'dist'
+BASE=json.loads((ROOT/'content/site.json').read_text())['url'].rstrip('/')
 errors=[];titles=set();descs=set()
 class Page(HTMLParser):
     def __init__(self):
@@ -40,7 +41,7 @@ for file in OUT.rglob('*.html'):
     description=p.meta.get('description')
     if not description or description in descs:errors.append(f'{file}: missing/duplicate description')
     descs.add(description)
-    if len(p.canonical)!=1 or not p.canonical[0].startswith('https://onlinediyetisyentugba.com/'):errors.append(f'{file}: canonical')
+    if len(p.canonical)!=1 or not p.canonical[0].startswith(BASE+'/'):errors.append(f'{file}: canonical')
     for s in p.jsons:
         try:
             graph=json.loads(s)['@graph']
@@ -67,3 +68,8 @@ for f in (ROOT/'content/posts').glob('*.json'):
 if errors:
     print('\n'.join(errors));raise SystemExit(1)
 print(f'PASS: {len(pages)} HTML pages; unique titles and descriptions; Turkish language; one H1; valid JSON-LD; internal links, images and fragments; {len(urls)} sitemap URLs.')
+for name in json.loads((ROOT/'.generated-pages.json').read_text()):
+    assert (ROOT/name).read_bytes()==(OUT/name).read_bytes(),f'Published file out of sync: {name}'
+assert (ROOT/'index.html').is_file() and (ROOT/'.nojekyll').is_file()
+assert (ROOT/'CNAME').read_text().strip()==urlsplit(BASE).netloc
+print('PASS: main/root contains the complete generated site and matches the configured custom domain.')

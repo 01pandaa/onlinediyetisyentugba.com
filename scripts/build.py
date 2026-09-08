@@ -197,4 +197,26 @@ def build():
     ElementTree(rss).write(OUT/'feed.xml',encoding='utf-8',xml_declaration=True)
     print(f'Built {len(PAGES)} indexable pages + 404; {len(POSTS)} posts. Output: {OUT}')
 
-if __name__=='__main__':build()
+def sync_publish_root():
+    """Keep GitHub Pages' configured main/root source ready to serve."""
+    manifest=ROOT/'.generated-pages.json'
+    previous=json.loads(manifest.read_text()) if manifest.exists() else []
+    published=[]
+    for source in sorted(OUT.rglob('*')):
+        if not source.is_file():continue
+        relative=source.relative_to(OUT)
+        # Assets are already versioned at the same path. Preserve the owner's CNAME.
+        if relative.parts[0]=='assets' or str(relative)=='CNAME':continue
+        target=ROOT/relative
+        target.parent.mkdir(parents=True,exist_ok=True)
+        shutil.copyfile(source,target)
+        published.append(relative.as_posix())
+    for relative in set(previous)-set(published):
+        target=ROOT/relative
+        if target.is_file() and target.resolve().is_relative_to(ROOT):target.unlink()
+    manifest.write_text(json.dumps(published,ensure_ascii=False,indent=2)+'\n')
+    print(f'Synchronized {len(published)} public files to GitHub Pages main/root.')
+
+if __name__=='__main__':
+    build()
+    if not PREFIX:sync_publish_root()

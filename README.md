@@ -1,6 +1,6 @@
 # Online Diyetisyen Tuğba Şeker Ağaç
 
-Türkiye genelinde online danışmanlığı ve Adana Seyhan ofisini anlatan, Türkçe çok sayfalı web sitesi. Üretim alan adı: https://onlinediyetisyentugba.com
+Türkiye genelinde online danışmanlığı ve Adana Seyhan ofisini anlatan, Türkçe çok sayfalı web sitesi. Üretim alan adı: https://www.onlinediyetisyentugba.com
 
 ## Yapı
 
@@ -9,7 +9,10 @@ Türkiye genelinde online danışmanlığı ve Adana Seyhan ofisini anlatan, Tü
 - `content/posts/*.json`: Yeni makale eklemek için her yazıya bir dosya.
 - `scripts/build.py`: Statik HTML sayfaları, site haritası, RSS ve robots.txt üretir.
 - `assets/`: Ortak tasarım, tarayıcı etkileşimleri, yerel görseller.
-- `dist/`: Üretilen yayın dosyaları. Kaynaklar değişince yeniden üretilir.
+- `dist/`: Üretilen yayın dosyalarının geçici kopyası.
+- `index.html`, sayfa klasörleri, `sitemap.xml`, `robots.txt`, `feed.xml`: GitHub Pages için depo kökünde tutulan yayın dosyaları; `build.py` ile otomatik güncellenir.
+- `.generated-pages.json`: Derleyicinin yönettiği yayın dosyaları.
+- `.nojekyll`: Hazır HTML dosyalarının Jekyll dönüşümü olmadan sunulmasını sağlar.
 
 ## Yerelde derleme
 
@@ -30,15 +33,15 @@ python3 -m http.server 8080 --directory dist
 4. `sources` alanına doğrulanmış birincil kaynaklar ekleyin. İçerikteki tıbbi bilgileri mesleki olarak gözden geçirin; incelenmeyen içeriğe “uzman onaylı” ifadesi eklemeyin.
 5. `assets/images/` içine kullanım hakkı bulunan görseli ekleyip `image` ve açıklayıcı `image_alt` alanını güncelleyin. Anatomik görsellerde kaynak ve lisans atfını koruyun.
 6. `content/site.json` içindeki `updated` tarihini içerik değiştiğinde güncelleyin. Sırf güncel görünmek için tarih değiştirmeyin.
-7. Derleme ve kontrolleri çalıştırıp `main` dalına gönderin. GitHub Actions yayını yeniden oluşturur.
+7. Derleme ve kontrolleri çalıştırın. `build.py`, yeni sayfayı ve tüm ilgili yayın dosyalarını depo kökünde de günceller. Kaynaklarla birlikte bu dosyaları `main` dalına gönderin. GitHub Pages yayını otomatik yeniler.
 
 Blog listesi, kategori filtreleri, arama, ilgili yazılar, RSS, makale JSON-LD bilgileri ve sitemap otomatik oluşur. `featured: true` ana sayfada öne çıkarmak için kullanılabilir. Bölüm içerikleri güvenilir editöre ait HTML kabul eder; kullanıcıdan gönderilen HTML doğrudan eklenmemelidir.
 
 ## Yayın
 
-GitHub Pages için Settings → Pages → Source: GitHub Actions olmalıdır. `publish.yml` kaynağı derler, kontrol eder ve `dist` klasörünü yayımlar. GitHub Pages etkin değilse veya alan adı henüz bağlanmamışsa bu ayarlar ayrıca gerekir. Gerçek alan adı DNS’i doğrulanmadan “canlı” olarak kabul etmeyin.
+Bu deponun mevcut GitHub Pages yayını **Deploy from a branch → main → /(root)** kaynağını kullanır. `build.py` bu konuma tam siteyi yazar. Kök `index.html` ve `.nojekyll` dosyalarını koruyun; yalnızca `README.md` bulunan bir kök dizin yayımlamayın. `publish.yml` derlemeyi, bağlantıları, hesaplayıcıyı ve kaydedilmiş yayın dosyalarının güncelliğini denetler. Ayrı bir `deploy-pages` işi çalıştırılmaz; böylece iki farklı yayın süreci birbirinin çıktısını değiştirmez.
 
-Alan adı GitHub Pages’e bağlanacaksa `onlinediyetisyentugba.com` ve tercih edilen `www` yönlendirmesi GitHub’ın güncel DNS yönergesine göre ayarlanır. Alan adı bilgisi `content/site.json` dosyasında tek yerden yönetilir. Eski `onlinediyetisyen.online` sitesi bu depo tarafından değiştirilmez. Taşıma yapılacaksa eski URL’ler için ayrı bir 301 eşlemesi hazırlanmalıdır.
+GitHub Pages özel alan adı `www.onlinediyetisyentugba.com` olarak ayarlıdır. `CNAME` ve `content/site.json` bu tercihle aynı kalmalıdır. `www` içermeyen kök alan adı da DNS/alan adı sağlayıcısında bu adrese yönlendirilmelidir. Alan adı bilgisi `content/site.json` dosyasında tek yerden yönetilir. Eski `onlinediyetisyen.online` sitesi bu depo tarafından değiştirilmez. Taşıma yapılacaksa eski URL’ler için ayrı bir 301 eşlemesi hazırlanmalıdır.
 
 Başka bir barındırmaya geçildiğinde `dist` içeriği web köküne aktarılabilir. Alt dizinde önizleme için `SITE_PATH_PREFIX=/onlinediyetisyentugba.com python3 scripts/build.py` kullanılabilir; üretimde önek boş olmalıdır.
 

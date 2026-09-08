@@ -1,4 +1,4 @@
-name: Build and publish dietitian website
+name: Check dietitian website
 on:
   push:
     branches: [main]
@@ -25,21 +25,7 @@ jobs:
         run: python3 scripts/check.py
       - name: Check BMI calculation and input handling
         run: node scripts/check-calculator.cjs
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
-      - name: Publish website
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Verify committed publishing files are current
+        run: git diff --exit-code -- '*.html' sitemap.xml robots.txt feed.xml .generated-pages.json
+      # GitHub Pages publishes main/root. Keeping one deployment path avoids
+      # a second workflow replacing the website with a different build.
