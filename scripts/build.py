@@ -27,7 +27,7 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531)}
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load='fetchpriority="high"' if eager else 'loading="lazy"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
 def brand():return '<small>DİYETİSYEN</small><strong>Tuğba Şeker Ağaç</strong><span>BESLENME &amp; DANIŞMANLIK</span>'
@@ -58,10 +58,10 @@ def layout(route,title,desc,body,kind='WebPage',extra=None,noindex=False,cover='
 
 def eyebrow(s):return f'<span class="eyebrow">{e(s)}</span>'
 def heading(kicker,title,desc='',more=None):return '<div class="section-heading"><div>'+eyebrow(kicker)+f'<h2>{title}</h2>'+('<p class="muted">'+desc+'</p>' if desc else '')+'</div>'+(link(more[0],more[1]+' <span aria-hidden="true">↗</span>','text-link') if more else '')+'</div>'
-def hero(title,intro,kicker,photo=None):
+def hero(title,intro,kicker,photo=None,photo_cls='',photo_alt=None):
     crumb=f'<div class="breadcrumb">{link("/","Ana Sayfa")} / {e(kicker)}</div>'
     copy=eyebrow(kicker)+f'<h1>{title}</h1><p class="lead">{intro}</p>'
-    return '<section class="page-hero'+(' has-photo' if photo else '')+'"><div class="wrap">'+crumb+('<div class="split"><div>'+copy+'</div>'+img(photo,S['name'],eager=True)+'</div>' if photo else copy)+'</div></section>'
+    return '<section class="page-hero'+(' has-photo' if photo else '')+'"><div class="wrap">'+crumb+('<div class="split"><div>'+copy+'</div>'+img(photo,photo_alt or S['name'],photo_cls,eager=True)+'</div>' if photo else copy)+'</div></section>'
 def cards(items=SERVICES):
     return '<div class="grid-3">'+''.join(f'<article class="service-card"><span class="number" aria-hidden="true">{i:02}</span><h3>{link("/hizmetler/"+s["slug"]+"/",e(s["title"]))}</h3><p>{e(s["short"])}</p>{link("/hizmetler/"+s["slug"]+"/","İçeriği inceleyin <span aria-hidden=\"true\">↗</span>","text-link")}</article>' for i,s in enumerate(items,1))+'</div>'
 def steps():
@@ -78,6 +78,7 @@ ANATOMY=[
  ('sindirim','Sindirim','Yediğin besinin yolculuğu','Sindirim ağızda başlar. Mide ve bağırsaklar besinlerin parçalanması ve emiliminde görev alır. Besin öğelerinin büyük bölümü ince bağırsaktan emilir.','Beslenme bağlantısı: öğün düzeni, bireysel tolerans ve sindirim yakınmalarının değerlendirilmesi.','sindirim.webp','Ağız, yemek borusu, mide, karaciğer, pankreas ve bağırsakların anatomik yerleşimi','https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works',None,'https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works')]
 def attribution(file):
     if file=='surdurulebilir-beslenme.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
+    if file=='online-diyetisyen-kapak.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
     a=next((x for x in ANATOMY if x[5]==file),None)
     if not a:return 'Yapay zekâyla hazırlanmış temsili öğün görseli; kişisel diyet reçetesi değildir.' if file=='dengeli-beslenme.webp' else ''
     license=f' · <a href="https://creativecommons.org/licenses/by/{a[8]}/" target="_blank" rel="noopener noreferrer">CC BY {a[8]}</a>' if a[8] else ''
@@ -121,11 +122,11 @@ def build():
     <section class="section"><div class="wrap">{heading('SIK SORULAN SORULAR','Başlamadan önce aklındakiler.')}{faqs()}</div></section>'''
     layout('/','Online Diyetisyen Tuğba Şeker Ağaç | Türkiye & Adana','Türkiye genelinde online diyetisyen Tuğba Şeker Ağaç ile kişisel beslenme danışmanlığı. Kilo yönetimi, kaynaklı beslenme rehberleri ve Adana ofisi.',body)
 
-    online=hero('Türkiye genelinde<br><span class="accent">online diyetisyen danışmanlığı.</span>','Bulunduğunuz şehirden, kendi yaşam düzeniniz içinden beslenme görüşmelerine katılın. Süreci, kapsamını ve takip adımlarını bu sayfada öğrenin.','Online danışmanlık','tugba-seker-agac.webp')
+    online=hero('Türkiye genelinde<br><span class="accent">online diyetisyen danışmanlığı.</span>','Bulunduğunuz şehirden, kendi yaşam düzeniniz içinden beslenme görüşmelerine katılın. Süreci, kapsamını ve takip adımlarını bu sayfada öğrenin.','Online danışmanlık','online-diyetisyen-kapak.webp','wide-cover','Diyetisyen Tuğba Şeker Ağaç markasına ait online beslenme danışmanlığı kapak görseli')
     online+='<section class="section dark"><div class="wrap">'+heading('NASIL İLERLİYORUZ?','Hayatınızı tanıyan bir süreç.')+steps()+'</div></section>'
     content=''.join(f'<section id="{e(s["id"])}"><h2>{e(s["title"])}</h2>{s["body"]}</section>' for s in ONLINE['sections'])
     online+=article_body(content)+'<section class="section soft"><div class="wrap">'+heading('DANIŞMANLIK ALANLARI','Hangi konuda birlikte çalışabiliriz?')+cards()+'</div></section><section class="section"><div class="wrap">'+heading('SORULARINIZ','Online görüşme hakkında')+faqs()+'</div></section>'
-    layout('/online-diyetisyen/','Online Diyetisyen | Türkiye Genelinde Tuğba Şeker Ağaç','Online diyetisyen danışmanlığı nasıl işler? İlk görüşme, kişisel beslenme planı, haftalık takip ve Türkiye genelinden katılım bilgileri.',online)
+    layout('/online-diyetisyen/','Online Diyetisyen | Türkiye Genelinde Tuğba Şeker Ağaç','Online diyetisyen danışmanlığı nasıl işler? İlk görüşme, kişisel beslenme planı, haftalık takip ve Türkiye genelinden katılım bilgileri.',online,cover='online-diyetisyen-kapak.webp')
 
     about=hero('Diyetisyen<br><span class="accent">Tuğba Şeker Ağaç.</span>','Bilimsel bilgiyi, günlük hayatın ihtiyaçlarıyla birlikte ele alan bir beslenme yaklaşımı.','Kurumsal · Hakkımda','adana-ofis.webp')
     about+=article_body('''<h2>Eğitim ve mesleki yaklaşım</h2><p>Tuğba Şeker Ağaç, Erciyes Üniversitesi Sağlık Bilimleri Fakültesi Beslenme ve Diyetetik Bölümü mezunudur. Lisans eğitimini 2019–2023 yılları arasında tamamlamıştır.</p><p>Adana’da yüz yüze ve Türkiye genelinde online beslenme danışmanlığı sunar. Danışmanlık görüşmelerinde sağlık öyküsü, yaşam tarzı, beslenme alışkanlıkları ve kişisel gereksinimler birlikte değerlendirilir.</p><h2>Günlük hayatınıza uyum</h2><p>Görüşmelerde yalnızca ne yediğiniz değil, öğünlerinizi nerede ve hangi koşullarda yediğiniz de konuşulur. İş saatleri, aile düzeni, bütçe, alışveriş alışkanlıkları ve sevilen yiyecekler planlama sırasında dikkate alınır.</p><p>Beslenme planının uygulanamayan noktaları takipte yeniden ele alınır. Herkesin aynı listeye uyum sağlaması beklenmez.</p><h2>Bilimsel ve anlaşılır bilgilendirme</h2><p>Sitedeki bilgi merkezinde kaslar, kemikler, yağ dokusu ve sindirim gibi temel konular kaynak bağlantılarıyla anlatılır. Genel bilgiler kişisel tanı veya tedavi iddiasıyla sunulmaz.</p><p>Gerektiğinde hekim veya diğer sağlık profesyonellerinin değerlendirmesiyle birlikte ilerlenir. Mesleki unvan olarak “Diyetisyen” kullanılır.</p><h2>Görüşmeler ve iletişim</h2><p>Online ve ofis görüşmeleri randevuyla planlanır. WhatsApp iletişim saatleri pazartesi–cumartesi 08.00–20.00’dır; pazar günleri kapalıdır.</p>''')

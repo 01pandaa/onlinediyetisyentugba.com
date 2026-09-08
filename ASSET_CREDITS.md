@@ -9,6 +9,7 @@
 - `video-*.webp`: Kullanıcının verdiği @dyt.tugbasekeragac kanalına ait videoların kapakları. YouTube izleme ve gömme bağlantıları ilgili orijinal videoya gider.
 - `dengeli-beslenme.webp`: Yerleşik Imagegen ile oluşturulmuş temsili beslenme görseli, 7 Eylül 2026. Anatomi veya ölçülü diyet reçetesi değildir.
 - `surdurulebilir-beslenme.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait özgün Canva tasarımı. Web için WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
+- `online-diyetisyen-kapak.webp`: Kullanıcının sağladığı, Diyetisyen Tuğba Şeker Ağaç markasına ait yatay ve özgün Canva tasarımı. Web için şeffaf kenarları kırpılarak WebP biçimine dönüştürülmüş ve boyutlandırılmıştır; fiyat veya kampanya bilgisi eklenmemiştir.
 
 ## Yemek görseli üretim yönergesi
 

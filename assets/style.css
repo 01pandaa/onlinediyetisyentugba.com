@@ -6,3 +6,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
 .post-cover.portrait{background:white;padding:16px;border:1px solid var(--line)}
 .post-cover.portrait img{object-fit:contain}
+.page-hero .split img.wide-cover{height:auto;aspect-ratio:1077/519;object-fit:contain;border-radius:18px;background:#edf1df;box-shadow:0 14px 36px #173c3814}
