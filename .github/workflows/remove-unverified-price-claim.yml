@@ -1,0 +1,38 @@
+name: Remove unverified pricing preference claim once
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/remove-unverified-price-claim.yml'
+permissions:
+  contents: write
+jobs:
+  fix-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Remove unsupported claim
+        run: python3 scripts/remove-unverified-price-claim.py
+      - name: Build website
+        run: python3 scripts/build.py
+      - name: Validate website
+        run: python3 scripts/check.py
+      - name: Check calculator
+        run: node scripts/check-calculator.cjs
+      - name: Commit cleanup
+        run: |
+          git config user.name "01pandaa"
+          git config user.email "135593827+01pandaa@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Remove unverified package popularity claim"
+            git push
+          fi
