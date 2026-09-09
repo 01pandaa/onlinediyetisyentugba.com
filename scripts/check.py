@@ -65,9 +65,53 @@ for f in (ROOT/'content/posts').glob('*.json'):
     p=json.loads(f.read_text())
     if not re.fullmatch('[a-z0-9]+(?:-[a-z0-9]+)*',p['slug']):errors.append('Invalid post slug '+str(f))
     if len(p['sections'])<3 or not p['sources']:errors.append('Post needs substantive sections and sources '+str(f))
+
+# Extended technical SEO checks: exact canonicals, social metadata, sitemap completeness and orphan detection.
+def page_route(file):
+    rel=file.relative_to(OUT)
+    if rel.as_posix()=='index.html':return '/'
+    if rel.name=='index.html':return '/'+rel.parent.as_posix().strip('/')+'/'
+    return '/'+rel.as_posix()
+
+indexable={}
+for file,p in pages.items():
+    robots=p.meta.get('robots','') or ''
+    if robots.startswith('noindex'):continue
+    route=page_route(file)
+    expected=BASE+route
+    indexable[route]=(file,p)
+    if p.canonical!=[expected]:errors.append(f'{file}: canonical must equal {expected}')
+    if p.meta.get('viewport')!='width=device-width,initial-scale=1':errors.append(f'{file}: viewport')
+    if robots!='index,follow,max-image-preview:large':errors.append(f'{file}: robots meta')
+    for key in ['og:title','og:description','og:url','og:image']:
+        if not p.meta.get(key):errors.append(f'{file}: missing {key}')
+    if p.meta.get('og:url')!=expected:errors.append(f'{file}: og:url mismatch')
+    if p.meta.get('og:image') and not p.meta['og:image'].startswith(BASE+'/assets/images/'):errors.append(f'{file}: og:image must be absolute')
+
+expected_sitemap={BASE+route for route in indexable}
+actual_sitemap=set(urls)
+if actual_sitemap!=expected_sitemap:
+    missing=sorted(expected_sitemap-actual_sitemap)
+    extra=sorted(actual_sitemap-expected_sitemap)
+    errors.append(f'Sitemap coverage mismatch missing={missing} extra={extra}')
+
+incoming={route:0 for route in indexable}
+for file,p in pages.items():
+    for ref in p.refs:
+        u=urlsplit(ref)
+        if u.scheme or u.netloc or not u.path.startswith('/'):continue
+        target=unquote(u.path)
+        if target in incoming:incoming[target]+=1
+for route,count in incoming.items():
+    if route!='/' and count==0:errors.append(f'Orphan indexable page: {route}')
+
+robots_file=(OUT/'robots.txt').read_text()
+if 'User-agent: *' not in robots_file or 'Allow: /' not in robots_file:errors.append('robots.txt basic directives')
+if f'Sitemap: {BASE}/sitemap.xml' not in robots_file:errors.append('robots.txt sitemap URL')
+
 if errors:
     print('\n'.join(errors));raise SystemExit(1)
-print(f'PASS: {len(pages)} HTML pages; unique titles and descriptions; Turkish language; one H1; valid JSON-LD; internal links, images and fragments; {len(urls)} sitemap URLs.')
+print(f'PASS: {len(pages)} HTML pages; metadata, exact canonicals, JSON-LD, internal links, orphan detection, robots.txt and {len(urls)} sitemap URLs validated.')
 for name in json.loads((ROOT/'.generated-pages.json').read_text()):
     assert (ROOT/name).read_bytes()==(OUT/name).read_bytes(),f'Published file out of sync: {name}'
 assert (ROOT/'index.html').is_file() and (ROOT/'.nojekyll').is_file()
