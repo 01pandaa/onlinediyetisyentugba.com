@@ -18,7 +18,7 @@ jobs:
           python-version: '3.x'
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
       - name: Strengthen internal links and SEO checks
         run: python scripts/strengthen-internal-links-and-seo-checks.py
       - name: Build website
