@@ -1,0 +1,135 @@
+name: Apply services redesign v2
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/apply-services-redesign-v2.yml'
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Patch services section source
+        shell: python
+        run: |
+          from pathlib import Path
+          import json, re
+
+          build_path = Path('scripts/build.py')
+          text = build_path.read_text()
+          pattern = r"def cards\(items=SERVICES\):\n    return .*?\n(?=def steps\(\):)"
+          replacement = r"""SERVICE_CATALOG=[
+              {'icon':'⚖️','title':'Kilo Verme Diyeti','short':'Sağlıklı ve kalıcı kilo yönetimi için günlük yaşamınıza uyarlanabilen beslenme planı.','bullets':['Kişiye özel planlama','Düzenli takip','Günlük yaşama uygun alternatifler'],'url':'/hizmetler/kilo-verme/'},
+              {'icon':'💪','title':'Kilo Alma Diyeti','short':'Kilo alma hedefinde enerji, protein ve öğün düzenini kişisel gereksinimlere göre planlama.','bullets':['Besin çeşitliliği','Öğün planlaması','Düzenli takip'],'url':'/hizmetler/kilo-alma/'},
+              {'icon':'💻','title':'Online Diyet','short':'Bulunduğunuz yerden görüntülü görüşme ve düzenli iletişimle sürdürülen online diyetisyen desteği.','bullets':['Online görüntülü görüşme','WhatsApp iletişimi','Kişisel beslenme planı'],'url':'/online-diyetisyen/'},
+              {'icon':'🩺','title':'Hastalıklarda Beslenme','short':'Hekim tanısı ve tedavi planıyla birlikte değerlendirilen kişisel beslenme danışmanlığı.','bullets':['Sağlık öyküsüne göre değerlendirme','Tedaviyle uyumlu planlama','Gerektiğinde sağlık ekibiyle birlikte ilerleme'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'🧪','title':'Eliminasyon Diyeti','short':'Gerekli görülen durumlarda, kontrollü ve kişiye özel eliminasyon sürecinin planlanması ve takibi.','bullets':['Besin toleransını izleme','Kontrollü eliminasyon','Kademeli yeniden değerlendirme'],'url':'/hizmetler/'},
+              {'icon':'🌾','title':'Glutensiz Beslenme','short':'Çölyak tanısı veya tıbbi gereklilik bulunan durumlarda dengeli glutensiz beslenme düzeni oluşturma.','bullets':['Etiket okuma','Güvenli alternatifler','Günlük yaşama uyarlama'],'url':'/hizmetler/'},
+              {'icon':'🩸','title':'Diyabet Beslenmesi','short':'Kan şekeri yönetimini destekleyen öğün düzeni ve karbonhidrat kaynaklarının kişisel gereksinimlere göre ele alınması.','bullets':['Öğün dengesi','Karbonhidrat farkındalığı','Tedavi planına uyum'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'🔬','title':'İnsülin Direncinde Beslenme','short':'İnsülin direncinde sürdürülebilir öğün düzeni, besin seçimi ve yaşam tarzı alışkanlıklarının birlikte değerlendirilmesi.','bullets':['Öğün düzeni','Lif ve protein dengesi','Sürdürülebilir alışkanlıklar'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'🌸','title':'Polikistik Over (PCOS)','short':'PCOS tanısı bulunan bireylerde hekim takibiyle birlikte kilo yönetimi ve günlük beslenme düzenine yönelik danışmanlık.','bullets':['Kişiye özel planlama','İnsülin direncini dikkate alma','Düzenli takip'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'🏃','title':'Sporcu Beslenmesi','short':'Antrenman saatleri, günlük enerji gereksinimi, toparlanma ve sıvı düzenini birlikte değerlendirme.','bullets':['Antrenmana uygun öğünler','Protein ve enerji dengesi','Sıvı planlaması'],'url':'/hizmetler/sporcu-beslenmesi/'},
+              {'icon':'🤰','title':'Gebelikte Beslenme','short':'Gebelik döneminde annenin gereksinimleri ve hekim takibi doğrultusunda dengeli beslenme planlaması.','bullets':['Gebelik dönemine uygun öğünler','Besin çeşitliliği','Kişisel takip'],'url':'/hizmetler/gebelik-emzirme-beslenmesi/'},
+              {'icon':'🤱','title':'Emzirme Döneminde Beslenme','short':'Emzirme döneminde annenin enerji, sıvı ve besin gereksinimlerini günlük yaşama uygun biçimde planlama.','bullets':['Emzirme dönemine uygun düzen','Pratik öğün seçenekleri','Anne sağlığını gözeten planlama'],'url':'/hizmetler/gebelik-emzirme-beslenmesi/'},
+              {'icon':'🧒','title':'Çocuk ve Ergen Beslenmesi','short':'Büyüme ve gelişme döneminde yaşa, günlük düzene ve aile yaşamına uygun beslenme alışkanlıklarını destekleme.','bullets':['Yaşa uygun değerlendirme','Okul dönemi planlaması','Aileyle uygulanabilir öneriler'],'url':'/hizmetler/'},
+              {'icon':'🥦','title':'Vejetaryen ve Vegan Beslenme','short':'Bitkisel beslenmede protein, demir, B12 ve diğer besin öğelerinin yeterliliğini gözeten planlama.','bullets':['Bitkisel protein çeşitliliği','Besin öğesi yeterliliği','Dengeli öğün oluşturma'],'url':'/hizmetler/saglikli-beslenme/'},
+              {'icon':'🦋','title':'Haşimato Diyeti','short':'Haşimato ve tiroid hastalıklarında hekim tedavisiyle birlikte, kişisel gereksinimlere uygun beslenme düzenini değerlendirme.','bullets':['Tiroid tedavisiyle uyumlu yaklaşım','Besin çeşitliliği','Kişiye göre planlama'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'🦵','title':'Lipödem Diyeti','short':'Lipödem tanısı ve tıbbi takip sürecine eşlik eden, sürdürülebilir kilo yönetimi ve genel beslenme desteği.','bullets':['Dengeli öğün düzeni','Kilo yönetimi desteği','Günlük yaşama uygun planlama'],'url':'/hizmetler/hastaliklarda-beslenme/'},
+              {'icon':'♀️','title':'Menopozda Beslenme','short':'Menopoz döneminde kilo yönetimi, kemik sağlığı ve günlük beslenme alışkanlıklarını kişisel gereksinimlere göre ele alma.','bullets':['Protein ve kalsiyum kaynakları','Liften zengin beslenme','Kilo yönetimi ve yaşam kalitesi'],'url':'/hizmetler/saglikli-beslenme/'}
+          ]
+          def cards(items=None):
+              data=SERVICE_CATALOG if items is None else [{'icon':'•','title':s['title'],'short':s['short'],'bullets':[],'url':'/hizmetler/'+s['slug']+'/'} for s in items]
+              out=[]
+              for s in data:
+                  title=link(s['url'],e(s['title'])) if s.get('url') else e(s['title'])
+                  bullets=''.join('<li>'+e(x)+'</li>' for x in s.get('bullets',[]))
+                  out.append(f'<article class="service-card-v2"><span class="service-icon-v2" aria-hidden="true">{e(s["icon"])}</span><h3>{title}</h3><p>{e(s["short"])}</p>'+('<ul>'+bullets+'</ul>' if bullets else '')+'</article>')
+              return '<div class="services-catalog-grid">'+''.join(out)+'</div>'
+          def services_showcase(page=False):
+              tag='h1' if page else 'h2'
+              crumb=('<div class="breadcrumb">'+link('/','Ana Sayfa')+' / Hizmetler</div>') if page else ''
+              title=f'<{tag}>Online (Uzaktan) Diyetisyen <span class="accent">Hangi Hizmetleri Verir?</span></{tag}>'
+              return f'''<section class="section services-showcase"><div class="wrap">{crumb}<div class="services-showcase-head"><div class="services-showcase-copy">{eyebrow('HİZMETLERİMİZ')}{title}<p class="lead">Online diyetisyen desteği; kilo yönetiminden farklı yaşam dönemlerine ve hekim tanısı bulunan durumlarda beslenme takibine kadar geniş bir alanda, kişisel değerlendirmeyle planlanabilir.</p><div class="services-values"><span>🌿 Kişiye özel yaklaşım</span><span>♡ Sürdürülebilir planlama</span><span>◎ Her yaşam dönemine uygun</span></div></div><figure class="services-showcase-photo">{img('tugba-ofis-yesil.webp','Diyetisyen Tuğba Şeker Ağaç yeşil elbisesiyle Adana ofisinde','',eager=page)}<figcaption><small>DİYETİSYEN</small><strong>Tuğba Şeker Ağaç</strong><span>Online danışmanlık · Adana</span></figcaption></figure></div>{cards()}</div></section>'''
+          """
+          text2, n = re.subn(pattern, replacement, text, count=1, flags=re.S)
+          if n != 1:
+              raise SystemExit('cards() patch target not found')
+          text = text2
+
+          old_home = "    <section class=\"section\"><div class=\"wrap\">{heading('DANIŞMANLIK ALANLARI','Farklı ihtiyaçlar.<br><span class=\"accent\">Kişisel bir yaklaşım.</span>','Kilo yönetiminden günlük beslenme alışkanlıklarına; ihtiyaçlarınızı birlikte değerlendirelim.',('/hizmetler/','Tüm hizmetler'))}{cards()}</div></section>\n"
+          if old_home not in text:
+              raise SystemExit('homepage services section target not found')
+          text = text.replace(old_home, "    {services_showcase()}\n", 1)
+
+          old_services = "    services=hero('Beslenme danışmanlığı<br><span class=\"accent\">ihtiyaçlarınıza göre.</span>','Kilo değişimi hedefinden günlük beslenme düzenine kadar farklı konular, kişisel değerlendirmeyle ele alınır.','Hizmetler','tugba-ofis-yesil.webp','portrait-cover','Diyetisyen Tuğba Şeker Ağaç yeşil elbisesiyle danışmanlık hizmetlerini anlatırken')+'<section class=\"section\"><div class=\"wrap\">'+cards()+'</div></section>'\n"
+          if old_services not in text:
+              raise SystemExit('services page hero target not found')
+          text = text.replace(old_services, "    services=services_showcase(page=True)\n", 1)
+
+          old_meta = "    layout('/hizmetler/','Beslenme Danışmanlığı Hizmetleri | Tuğba Şeker Ağaç','Kilo verme, kilo alma, hastalıklarda beslenme, aktif yaşam, gebelik ve emzirme döneminde online ve Adana’da beslenme danışmanlığı.',services,cover='tugba-ofis-yesil.webp')"
+          new_meta = "    layout('/hizmetler/','Online Diyetisyen Hizmetleri | Tuğba Şeker Ağaç','Online (uzaktan) diyetisyen hizmetleri: kilo verme, kilo alma, diyabet ve insülin direnci, PCOS, Haşimato, lipödem, menopoz, gebelik, emzirme ve farklı yaşam dönemlerinde beslenme danışmanlığı.',services,cover='tugba-ofis-yesil.webp')"
+          if old_meta not in text:
+              raise SystemExit('services meta target not found')
+          text = text.replace(old_meta, new_meta, 1)
+          build_path.write_text(text)
+
+          css_path = Path('assets/style.css')
+          css = css_path.read_text()
+          marker = '/* services-redesign-2026-09-09 */'
+          if marker not in css:
+              css += r'''
+
+          /* services-redesign-2026-09-09 */
+          .services-showcase{background:radial-gradient(circle at 92% 9%,#e7f0dc 0,transparent 28%),radial-gradient(circle at 5% 0,#f3eadb 0,transparent 26%),#fbfcf8;overflow:hidden}
+          .services-showcase .breadcrumb{padding-top:0;margin-bottom:18px}
+          .services-showcase-head{display:grid;grid-template-columns:1.08fr .92fr;gap:62px;align-items:center;padding:22px 0 52px}
+          .services-showcase-copy h1,.services-showcase-copy h2{max-width:760px;font-size:clamp(42px,5vw,70px)}
+          .services-showcase-copy .lead{margin-top:26px;max-width:720px;font-size:18px}
+          .services-values{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+          .services-values span{display:inline-flex;align-items:center;min-height:42px;padding:9px 14px;border:1px solid #cbdcc9;border-radius:999px;background:#ffffffb8;color:#315a43;font-size:12px;font-weight:600;box-shadow:0 8px 24px #173c3810}
+          .services-showcase-photo{position:relative;margin:0;min-height:500px;padding:18px;border:1px solid #d7e4d3;border-radius:34px;background:linear-gradient(145deg,#eef5e7,#dbe9d4);box-shadow:0 24px 65px #173c3820;transform:rotate(1.2deg)}
+          .services-showcase-photo:before{content:'';position:absolute;inset:-24px auto auto -26px;width:120px;height:120px;border-radius:50%;background:#d8e6c8;filter:blur(1px);z-index:0}
+          .services-showcase-photo img{position:relative;z-index:1;width:100%;height:500px;object-fit:cover;object-position:center 40%;border-radius:24px}
+          .services-showcase-photo figcaption{position:absolute;z-index:2;left:-20px;bottom:36px;display:grid;gap:3px;min-width:245px;padding:16px 20px;border:1px solid #d7e4d3;border-radius:16px;background:#fffef9e8;backdrop-filter:blur(12px);box-shadow:0 14px 38px #173c3820}
+          .services-showcase-photo figcaption small{font-size:10px;letter-spacing:.16em;color:#53705c}
+          .services-showcase-photo figcaption strong{font-family:Georgia,serif;font-size:23px;font-weight:400;color:#153d2e}
+          .services-showcase-photo figcaption span{font-size:11px;color:#607765}
+          .services-catalog-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:18px}
+          .service-card-v2{position:relative;display:flex;flex-direction:column;min-height:310px;padding:24px;border:1px solid #dbe6d8;border-radius:22px;background:#fff;box-shadow:0 10px 34px #173c380d;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+          .service-card-v2:hover{transform:translateY(-5px);box-shadow:0 18px 44px #173c3818;border-color:#bcd4ba}
+          .service-icon-v2{display:grid;place-items:center;width:54px;height:54px;margin-bottom:21px;border-radius:17px;background:#e6f4e9;font-size:27px}
+          .service-card-v2 h3{font-size:20px;line-height:1.16;margin-bottom:12px;color:#123e2e}
+          .service-card-v2 h3 a:hover{color:#216e42}
+          .service-card-v2 p{margin:0 0 17px;color:#627268;font-size:14px;line-height:1.55}
+          .service-card-v2 ul{display:grid;gap:7px;margin:auto 0 0;padding:0;list-style:none;font-size:13px;color:#263d30}
+          .service-card-v2 li{position:relative;padding-left:22px}
+          .service-card-v2 li:before{content:'✓';position:absolute;left:0;top:0;color:#2a9a59;font-weight:800}
+          @media(max-width:1180px){.services-catalog-grid{grid-template-columns:repeat(3,1fr)}.services-showcase-head{gap:38px}}
+          @media(max-width:860px){.services-showcase-head{grid-template-columns:1fr;padding-top:5px}.services-showcase-photo{max-width:620px;width:100%;margin:0 auto;transform:none}.services-catalog-grid{grid-template-columns:repeat(2,1fr)}}
+          @media(max-width:580px){.services-showcase{padding-top:64px}.services-showcase-copy h1,.services-showcase-copy h2{font-size:clamp(38px,12vw,54px)}.services-values{display:grid}.services-showcase-photo{min-height:410px;padding:10px}.services-showcase-photo img{height:410px}.services-showcase-photo figcaption{left:12px;right:12px;bottom:20px;min-width:0}.services-catalog-grid{grid-template-columns:1fr;gap:14px}.service-card-v2{min-height:0}}
+          '''
+              css_path.write_text(css)
+
+          site_path = Path('content/site.json')
+          site = json.loads(site_path.read_text())
+          site['updated'] = '2026-09-09'
+          site.setdefault('page_updates', {})['/'] = '2026-09-09'
+          site['page_updates']['/hizmetler/'] = '2026-09-09'
+          site_path.write_text(json.dumps(site, ensure_ascii=False, indent=2) + '\n')
+
+      - name: Build generated pages
+        run: python3 scripts/build.py
+      - name: Validate site
+        run: python3 scripts/check.py
+      - name: Commit redesign and generated pages
+        run: |
+          git config user.name "01pandaa"
+          git config user.email "135593827+01pandaa@users.noreply.github.com"
+          git add -A
+          git commit -m "Redesign services section and expand online dietitian services"
+          git push
