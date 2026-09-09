@@ -1,6 +1,6 @@
 const polish=document.createElement('link');
 polish.rel='stylesheet';
-polish.href='/assets/polish.css?v=home-hero-v1';
+polish.href='/assets/polish.css?v=hero-original-v6';
 document.head.appendChild(polish);
 
 document.documentElement.classList.add('js');
