@@ -213,8 +213,11 @@ def build():
         toc='<nav class="toc" aria-label="Yazı içindekiler"><strong>Bu yazıda</strong>'+''.join(f'<a href="#{e(s["id"])}">{e(s["title"])}</a>' for s in p['sections'])+'</nav>'
         picture=f'<figure>{img(p["image"],p["image_alt"])}<figcaption>{attribution(p["image"])}</figcaption></figure>'
         content=toc+picture+''.join(f'<section id="{e(s["id"])}"><h2>{e(s["title"])}</h2>{s["body"]}</section>' for s in p['sections'])
-        content+='<div class="callout">Bu yazı genel bilgilendirme amaçlıdır. Kişisel tanı, tedavi veya beslenme planı yerine geçmez.</div><h2>Kaynaklar ve ilgili bilgiler</h2><ul class="source-list">'+''.join('<li>'+link(u,e(t),external=u.startswith('http'))+'</li>' for t,u in p['sources'])+'</ul><p class="micro">İçerik: '+e(S['name'])+' beslenme bilgi merkezi. Güncelleme ve içerik soruları için '+link('tel:'+S['phone'],e(S['phone_display']))+'.</p>'
-        if p.get('editorial_note'):content+='<p class="micro">'+e(p['editorial_note'])+'</p>'
+        content+='<div class="callout">Bu yazı genel bilgilendirme amaçlıdır. Kişisel tanı, tedavi veya beslenme planı yerine geçmez.</div>'
+        if p.get('show_sources',True):
+            content+='<h2>Kaynaklar ve ilgili bilgiler</h2><ul class="source-list">'+''.join('<li>'+link(u,e(t),external=u.startswith('http'))+'</li>' for t,u in p['sources'])+'</ul>'
+        content+='<p class="micro">İçerik: '+e(S['name'])+' beslenme bilgi merkezi. Güncelleme ve içerik soruları için '+link('tel:'+S['phone'],e(S['phone_display']))+'.</p>'
+        if p.get('show_sources',True) and p.get('editorial_note'):content+='<p class="micro">'+e(p['editorial_note'])+'</p>'
         editorial=p.get('author_type')=='editorial'
         author_name=S['name']+' · Beslenme rehberi' if editorial else S['name']
         author={'@id':BASE+'/#kurum'} if editorial else {'@id':BASE+'/#diyetisyen'}
