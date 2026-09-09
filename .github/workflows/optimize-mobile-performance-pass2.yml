@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '.github/workflows/optimize-mobile-performance-pass2.yml'
+      - 'scripts/optimize-mobile-performance-pass2.py'
 
 permissions:
   contents: write
