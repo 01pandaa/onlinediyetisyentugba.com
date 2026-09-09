@@ -1,5 +1,7 @@
 # Görsel kaynakları
 
+- `tugba-hero-orijinal.jpg`: Kullanıcının 9 Eylül 2026 tarihinde ana sayfada kullanılmak üzere sağladığı `tuğba 2.jpg` fotoğrafının birebir kopyası (1512 × 1320 piksel). Ana sayfa görseli olarak doğrudan JPEG biçiminde sunulur.
+
 - `tugba-seker-agac.webp`, `adana-ofis.webp`, `tugba-klinik.webp`, `tugba-portre.webp`: Önceki sürümde kullanılan, işletmeye ait https://onlinediyetisyen.online sitesinden ve site sahibinin kullanım talebi kapsamında alınmış fotoğraflar. Geriye dönük uyumluluk için saklanır.
 - `iskelet.webp`: OpenStax College, 701 Axial Skeleton-01, CC BY 3.0. https://commons.wikimedia.org/wiki/File:701_Axial_Skeleton-01.jpg — https://creativecommons.org/licenses/by/3.0/
 - `kas.webp`: OpenStax, 1002 Organization of Muscle Fiber, CC BY 4.0. https://commons.wikimedia.org/wiki/File:1002_Organization_of_Muscle_Fiber.jpg — https://creativecommons.org/licenses/by/4.0/
