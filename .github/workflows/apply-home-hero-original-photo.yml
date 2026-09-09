@@ -36,3 +36,4 @@ jobs:
             git commit -m "Redesign homepage hero with original Tuğba portrait"
             git push
           fi
+# retry-v2
