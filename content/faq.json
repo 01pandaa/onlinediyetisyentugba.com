@@ -1,35 +1,164 @@
 [
-  {"title":"Online danışmanlığa başlarken","items":[
-    ["Online diyetisyen nedir, nasıl çalışır?","Online diyetisyen danışmanlığı, beslenme görüşmelerine uzaktan katılmanıza olanak sağlar. Tuğba Şeker Ağaç ile süreç; günlük yaşamınızı tanıma, kişisel değerlendirme, beslenme planı ve takip adımlarından oluşur. Kullanılacak görüşme kanalı ve takip kapsamı randevu öncesinde netleştirilir."],
-    ["Türkiye’nin her ilinden hizmet alabilir miyim?","Türkiye genelinden online görüşme için iletişim kurabilirsiniz; Adana’da yaşamanız gerekmez. Online yöntemin sizin ihtiyaçlarınıza uygunluğu ilk iletişimde değerlendirilir. Yüz yüze danışmanlık isteyenler için Adana Seyhan’da randevulu ofis görüşmeleri de bulunur."],
-    ["Online ile yüz yüze diyetisyen arasındaki fark nedir?","Temel fark görüşmenin yapıldığı ortamdır. Online süreçte bilgiler uzaktan paylaşılır; yüz yüze görüşmede ofiste buluşulur. Uzaktan görüşme fiziksel muayenenin veya gerektiğinde yerinde yapılacak ölçümlerin yerine geçmez. Yöntem seçimi sağlık durumunuz ve koşullarınıza göre yapılır."],
-    ["Online diyete nasıl başlarım?","İletişim sayfasındaki WhatsApp veya telefon bağlantısıyla ulaşarak online danışmanlık istediğinizi belirtebilirsiniz. Hedefiniz, uygun görüşme zamanı, hizmet kapsamı ve güncel ücret bilgisi konuşulduktan sonra randevu planlanır."],
-    ["İlk görüşme öncesinde neleri hazırlamalıyım?","Günlük öğün düzeniniz, sevdiğiniz ve tüketmediğiniz besinler, çalışma saatleriniz ve hedefleriniz hakkında not alabilirsiniz. Varsa mevcut tanılarınızın, kullandığınız ilaçların ve yakın tarihli tetkiklerinizin bilgisini hazır bulundurun; paylaşım yöntemini görüşme öncesinde teyit edin."],
-    ["Kan tahlili yaptırmam zorunlu mu?","Herkes için aynı tetkik listesi veya zorunluluğu söylenemez. Mevcut sonuçlarınız değerlendirmeye yardımcı olabilir. Yeni tetkik gerekip gerekmediğine sağlık durumunuza göre hekim karar verir; internetten gördüğünüz bir listeye dayanarak tetkik yaptırmayın."]
-  ]},
-  {"title":"Beslenme planı ve takip","items":[
-    ["Online diyet gerçekten etkili mi?","Uzaktan danışmanlık bazı kişiler için uygulanabilir bir destek seçeneğidir; tek başına online olması sonuç garantisi vermez. Programın kişiye uygunluğu, düzenli takip ve alışkanlıkları günlük yaşama taşıyabilmek önemlidir. Beklentiler ve ilerleme kişisel koşullara göre değerlendirilir."],
-    ["Beslenme listesi herkese aynı mı hazırlanır?","Hayır. Sağlık öyküsü, gereksinimler, günlük düzen, besin tercihleri ve erişilebilir seçenekler birlikte ele alınır. Başkasına hazırlanmış bir liste sizin için uygun olmayabilir."],
-    ["Diyet sürecinde aç kalır mıyım, yasak besin var mı?","Amaç sürekli aç kalmak değildir. Açlık ve tokluk deneyiminizi görüşmede paylaşmanız planın yeniden değerlendirilmesine yardımcı olur. Herkese yönelik tek bir yasaklar listesi yoktur; alerji veya hastalık nedeniyle gerekli kısıtlamalar kişiye özeldir."],
-    ["Ekmek, pilav veya makarnayı tamamen bırakmalı mıyım?","Bu besinleri herkesin tamamen bırakması gerekmez. Besin çeşitliliği ve porsiyonlar birlikte düşünülür; sizin için uygun miktar ve seçenekler kişisel değerlendirmede belirlenir. Tıbbi bir kısıtlamanız varsa ayrıca dikkate alınır."],
-    ["Çalışırken veya dışarıda yemek yerken plana uyabilir miyim?","Öğünler yalnızca evde yemek hazırlayabildiğiniz varsayımıyla ele alınmaz. İş saatleri, yemekhane, dışarıda yemek ve alışveriş olanaklarınızı paylaşın; uygulanabilir alternatifleri birlikte konuşalım."],
-    ["Bir öğünde plan dışına çıkarsam ne yapmalıyım?","Tek bir öğünü tüm sürecin başarısızlığı olarak görmeyin. Ne olduğunu takip görüşmesinde paylaşın; planın günlük yaşamınıza uymayan noktaları değerlendirilebilir. Telafi için kendi kendinize aşırı kısıtlama uygulamak yerine destek isteyin."],
-    ["Takip görüşmeleri hangi sıklıkla yapılır?","Sitede anlatılan süreç haftalık değerlendirme yaklaşımını içerir. Size sunulacak görüşme sıklığı, iletişim kanalı ve plan güncelleme kapsamı başlamadan önce netleştirilir; her hizmetin kapsamının aynı olduğunu varsaymayın."],
-    ["Ne kadar sürede kaç kilo veririm?","Belirli bir sürede belirli kilo kaybı garantisi verilemez. Sağlık durumu, başlangıç noktası, ilaçlar ve günlük koşullar süreci etkileyebilir. Hedef ve zaman aralığı birlikte belirlenir; ilerleme yalnızca tartı sayısıyla değerlendirilmez."],
-    ["Tartıdaki her değişim yağ kaybı veya yağ artışı mıdır?","Hayır. Vücut ağırlığı yağın yanında kas, su ve diğer bileşenleri de içerir. Tek bir tartım vücut yağındaki değişimi tek başına göstermez. Ölçüm koşulları ve zaman içindeki seyir takipte birlikte ele alınır."],
-    ["Sitedeki BKİ hesaplayıcı yağ ve kas oranımı ölçer mi?","Hayır. BKİ, boy ve ağırlıkla hesaplanan genel bir tarama göstergesidir; yağ veya kas oranını ölçmez, tanı koymaz. Sitedeki araç 20 yaş ve üzerindeki, gebe olmayan yetişkinler içindir. Sonuç kişisel sağlık değerlendirmesinin yerine geçmez."]
-  ]},
-  {"title":"Farklı ihtiyaçlar ve sağlık durumları","items":[
-    ["Diyabet, PCOS veya insülin direncinde destek alabilir miyim?","Bu durumlarda beslenme gereksinimleri kişiye göre değerlendirilmelidir. Mevcut tanınızı ve tedavinizi ilk iletişimde belirterek hizmetin kapsamını ve online görüşmeye uygunluğunuzu konuşabilirsiniz. Beslenme danışmanlığı hekim takibinin yerini almaz; ilaç değişikliği önerilmez."],
-    ["Kilo almak veya kilomu korumak için de başvurabilir miyim?","Evet, sitedeki hizmetler yalnızca kilo vermeye yönelik değildir. Sağlıklı kilo alma ve günlük beslenme alışkanlıkları da ele alınır. İstemsiz veya açıklanamayan kilo değişiminde önce hekim değerlendirmesi gerekebilir."],
-    ["Gebelik ve emzirme döneminde danışmanlık alabilir miyim?","Gebelik ve emzirme döneminde beslenme ayrı bir hizmet başlığıdır. Amaç ve gereksinimler döneminiz, sağlık bilgileriniz ve hekim takibinizle birlikte değerlendirilir. Bu dönemlerde genel zayıflama listeleri veya yetişkin BKİ aracını kendinize uygulamayın."],
-    ["Alerjilerimi ve tüketmediğim besinleri belirtmeli miyim?","Evet. Tanı konmuş alerjileri, kullandığınız ilaçları ve besin tercihlerinizi başlangıçta paylaşın. Alerji ile kişisel tercih aynı değildir; gerekli önlemler farklı olabilir. Şüpheli belirtilerde kendi kendinize tanı koymak yerine hekime başvurun."]
-  ]},
-  {"title":"Ücret, randevu ve iletişim","items":[
-    ["Online diyetisyen fiyatları ne kadar?","Ücretler hizmet kapsamına ve güncel koşullara göre değişebildiği için burada sabit fiyat yayınlanmıyor. Güncel ücret, görüşme sayısı, takip kapsamı ve ödeme koşullarını WhatsApp veya telefonla öğrenebilirsiniz."],
-    ["WhatsApp üzerinden hangi saatlerde ulaşabilirim?","WhatsApp iletişim saatleri pazartesi–cumartesi 08.00–20.00’dır; pazar günleri kapalıdır. Bu saatler anında yanıt garantisi değildir. Görüşmeler randevuyla planlanır; acil sağlık sorunlarında mesaj yanıtı beklemeyin."],
-    ["Randevumu ertelemek veya iptal etmek istersem ne yapmalıyım?","Değişiklik ihtiyacınızı mümkün olduğunca erken telefon veya WhatsApp üzerinden iletin. Erteleme, iptal ve varsa ücret iadesi koşullarını hizmete başlamadan önce doğrudan teyit edin; bu sayfa ayrıca bir iade taahhüdü oluşturmaz."],
-    ["Adana’daki ofis nerede, randevu gerekiyor mu?","Ofis Kurtuluş Mahallesi, Demokrasi Sokak, Atatürk Caddesi Gülbahçesi Sitesi B/Blok Kat:2 No:205, Seyhan/Adana adresindedir. Görüşmeler randevuludur. İletişim sayfasındaki haritadan yol tarifi alabilir, gelmeden önce adresi ve saati teyit edebilirsiniz."],
-    ["Sağlık bilgilerimi bu siteye girmeli miyim?","Bu sitede sağlık bilgisi toplama formu bulunmaz. BKİ aracındaki bilgiler sunucuya gönderilmez. Tetkik ve diğer hassas bilgilerinizi paylaşmadan önce danışmanlık kapsamındaki güvenli paylaşım ve aydınlatma sürecini doğrudan görüşün."]
-  ]}
+  {
+    "id": "online-diyetisyen-ve-ilk-gorusme",
+    "title": "Online diyetisyen ve ilk görüşme",
+    "items": [
+      [
+        "Online diyetisyen nedir, nasıl çalışır?",
+        "Online diyetisyen danışmanlığı; beslenme değerlendirmesi, kişisel planlama ve takibin uzaktan görüşmelerle yürütülmesidir. Tuğba Şeker Ağaç ile süreç günlük yaşamınızı, sağlık öykünüzü, beslenme alışkanlıklarınızı ve beklentilerinizi tanımakla başlar; görüşme kanalı ve takip kapsamı randevu öncesinde netleştirilir."
+      ],
+      [
+        "Online diyetisyen görüşmesi nasıl yapılır?",
+        "Görüşme sesli veya görüntülü olarak planlanabilir. Görüşme öncesinde gerekli bilgiler, mevcut tetkikleriniz ve kullandığınız ilaçlar hakkında nasıl bilgi paylaşacağınız konuşulur. Online yöntem fiziksel muayenenin yerine geçmez; gerektiğinde hekim veya yüz yüze değerlendirme önerilebilir."
+      ],
+      [
+        "Türkiye’nin her ilinden online diyetisyen desteği alabilir miyim?",
+        "Evet. Türkiye’nin farklı şehirlerinden online görüşme için iletişim kurabilirsiniz; Adana’da yaşamanız gerekmez. Online danışmanlığın sizin ihtiyaçlarınıza uygunluğu ilk iletişimde değerlendirilir. Adana’da yüz yüze görüşme seçeneği de bulunur."
+      ],
+      [
+        "Online diyetisyen güvenilir mi, nasıl seçilir?",
+        "Diyetisyen seçerken mesleki unvanın, eğitim bilgisinin, iletişim bilgilerinin ve hizmet kapsamının açıkça paylaşılmasına dikkat edin. Kesin kilo kaybı, mucize sonuç veya herkese aynı program gibi vaatler güvenilir bir yaklaşım değildir. Sağlık durumunuzla ilgili tanı ve ilaç değişikliği için hekiminizle görüşmeniz gerekir."
+      ],
+      [
+        "Online diyetisyen ile yüz yüze diyetisyen arasındaki fark nedir?",
+        "Temel fark görüşmenin yapıldığı ortamdır. Online süreçte değerlendirme ve takip uzaktan yürütülür; yüz yüze görüşmede ofiste buluşulur. Gerektiğinde fiziksel ölçüm veya yerinde değerlendirme ihtiyacı yöntem seçiminde dikkate alınır."
+      ],
+      [
+        "Online diyete nasıl başlarım?",
+        "WhatsApp veya iletişim sayfası üzerinden online danışmanlık istediğinizi belirterek başlayabilirsiniz. İhtiyacınız, uygun görüşme zamanı, hizmet kapsamı ve güncel ücret bilgisi konuşulduktan sonra randevu planlanır."
+      ],
+      [
+        "İlk online diyetisyen görüşmesinde neler konuşulur?",
+        "Sağlık öykünüz, mevcut tanılarınız, günlük öğün düzeniniz, çalışma saatleriniz, hareket düzeyiniz, sevdiğiniz ve tüketmediğiniz besinler ile hedefleriniz değerlendirilir. Amaç yalnızca ne yediğinizi değil, beslenme düzeninizin günlük hayatınızla nasıl birlikte ilerlediğini anlamaktır."
+      ],
+      [
+        "Online diyetisyen için kan tahlili gerekli mi?",
+        "Herkes için aynı kan tahlili listesi veya zorunluluğu yoktur. Yakın tarihli mevcut sonuçlar değerlendirmeye yardımcı olabilir. Yeni tetkik gerekip gerekmediğine sağlık durumunuza göre hekim karar verir; yalnızca internette gördüğünüz bir listeye dayanarak tetkik yaptırmanız önerilmez."
+      ]
+    ]
+  },
+  {
+    "id": "beslenme-plani-ve-takip",
+    "title": "Beslenme planı, takip ve günlük yaşam",
+    "items": [
+      [
+        "Beslenme listesi herkese aynı mı hazırlanır?",
+        "Hayır. Sağlık öyküsü, enerji ve besin gereksinimleri, günlük düzen, besin tercihleri, ulaşılabilir seçenekler ve kişisel hedefler birlikte değerlendirilir. Başka bir kişi için hazırlanmış bir liste sizin için uygun olmayabilir."
+      ],
+      [
+        "Kişiye özel beslenme planı ne demektir?",
+        "Kişiye özel plan; yalnızca kalori veya porsiyon hesabı yapmak değil, sağlık bilgilerinizi, yaşam düzeninizi, çalışma saatlerinizi, yemek hazırlama olanaklarınızı ve besin tercihlerinizi birlikte değerlendirmek anlamına gelir. Plan takip görüşmelerinde ihtiyaçlara göre yeniden ele alınabilir."
+      ],
+      [
+        "Beslenme listesi ne sıklıkla değişir?",
+        "Takip sürecinde haftalık değerlendirmelerle hangi öğünlerin uygulanabildiği ve nerede zorlanıldığı konuşulur. Liste veya alternatiflerde yapılacak değişiklikler ihtiyaca göre planlanır; her hafta değişiklik yapılması tek başına bir hedef değildir."
+      ],
+      [
+        "Online takip nasıl yapılır?",
+        "Takipte planın günlük hayatta nasıl uygulandığı, zorlandığınız öğünler, açlık-tokluk deneyiminiz ve ihtiyaç duyduğunuz alternatifler değerlendirilir. Görüşme sıklığı ve iletişim kapsamı hizmet başlamadan önce netleştirilir."
+      ],
+      [
+        "Öğün fotoğrafları değerlendirilir mi?",
+        "Uygun olduğunda öğün fotoğrafları günlük düzeni anlamaya yardımcı bir takip aracı olarak kullanılabilir. Fotoğraf tek başına besinin tam miktarını veya sağlık etkisini göstermez; değerlendirme görüşmedeki diğer bilgilerle birlikte yapılır."
+      ],
+      [
+        "Diyet sürecinde aç kalır mıyım, yasak besin var mı?",
+        "Amaç sürekli aç kalmak veya uzun bir yasaklar listesi oluşturmak değildir. Herkese yönelik tek bir yasak listesi yoktur; alerji, intolerans veya tıbbi durum nedeniyle gerekli kısıtlamalar kişiye özel değerlendirilir."
+      ],
+      [
+        "Ekmek, pilav veya makarnayı tamamen bırakmalı mıyım?",
+        "Bu besinleri herkesin tamamen bırakması gerekmez. Porsiyon, öğünün bütünü, besin çeşitliliği ve kişisel gereksinimler birlikte değerlendirilir. Tıbbi bir kısıtlamanız varsa ayrıca dikkate alınır."
+      ],
+      [
+        "Çalışırken, seyahatte veya dışarıda yemek yerken plana uyabilir miyim?",
+        "Plan yalnızca evde yemek hazırlayabildiğiniz varsayımıyla oluşturulmaz. İş yeri yemekleri, seyahat, aile sofraları, restoran seçenekleri ve değişen çalışma saatleri görüşmede konuşularak uygulanabilir alternatifler planlanabilir."
+      ]
+    ]
+  },
+  {
+    "id": "kilo-yonetimi-ve-beklentiler",
+    "title": "Kilo yönetimi ve beklentiler",
+    "items": [
+      [
+        "Online diyetisyen ile kilo verilir mi?",
+        "Online görüşme kilo yönetimi sürecinde kişisel planlama ve düzenli takip için kullanılabilir. Ancak sonuçlar kişiden kişiye değişir; yalnızca görüşmenin online olması kilo kaybı garantisi vermez. Sağlık durumu, günlük yaşam, uyku, hareket, ilaçlar ve sürdürülebilir alışkanlıklar birlikte önem taşır."
+      ],
+      [
+        "Online diyet gerçekten etkili mi?",
+        "Uzaktan danışmanlık bazı kişiler için uygulanabilir ve sürdürülebilir bir destek seçeneğidir. Etkililik; planın kişiye uygunluğu, takip, iletişim ve değişikliklerin günlük yaşama taşınabilmesiyle ilişkilidir. Herkes için aynı sonuç veya süre vaat edilemez."
+      ],
+      [
+        "Ne kadar sürede kaç kilo veririm?",
+        "Belirli bir sürede belirli kilo kaybı garantisi verilemez. Başlangıç ağırlığı, sağlık durumu, ilaçlar, uyku, aktivite ve günlük koşullar süreci etkileyebilir. İlerleme yalnızca tartı sayısıyla değil, sürdürülebilir alışkanlıklar ve genel süreçle birlikte değerlendirilir."
+      ],
+      [
+        "Bir öğünde plan dışına çıkarsam diyet bozulur mu?",
+        "Tek bir öğün tüm süreci belirlemez. Planın günlük yaşama uymayan kısmını takipte paylaşmak, aşırı kısıtlayıcı telafi davranışları yerine bir sonraki öğünde olağan düzene dönmek daha uygulanabilir bir yaklaşımdır."
+      ],
+      [
+        "Tartıdaki her değişim yağ kaybı veya yağ artışı mıdır?",
+        "Hayır. Vücut ağırlığı; yağ dokusunun yanında kas, su, glikojen ve sindirim sistemi içeriği gibi farklı bileşenlerden etkilenir. Tek bir tartım vücut yağındaki değişimi tek başına göstermez; zaman içindeki seyir ve ölçüm koşulları önemlidir."
+      ]
+    ]
+  },
+  {
+    "id": "saglik-durumlari-ve-ozel-donemler",
+    "title": "Sağlık durumları ve özel dönemler",
+    "items": [
+      [
+        "Diyabet veya insülin direncinde online diyetisyen desteği alınabilir mi?",
+        "Bu durumlarda beslenme planı mevcut tanı, tedavi, ilaç kullanımı ve günlük yaşamla birlikte değerlendirilmelidir. Beslenme danışmanlığı hekim takibinin yerini almaz ve diyetisyen ilaç dozunu değiştirmez."
+      ],
+      [
+        "PCOS’ta beslenme danışmanlığı online yürütülebilir mi?",
+        "PCOS’ta beslenme yaklaşımı kişinin sağlık bulguları, yaşam biçimi, beslenme alışkanlıkları ve varsa hekim tedavisiyle birlikte ele alınabilir. Tek bir mucize diyet veya takviye yaklaşımı yoktur; online görüşmeye uygunluk ilk değerlendirmede konuşulur."
+      ],
+      [
+        "Haşimato için online beslenme planı hazırlanabilir mi?",
+        "Haşimato tanısı bulunan kişilerde beslenme değerlendirmesi mevcut tedavi, laboratuvar bulguları ve kişisel gereksinimlerle birlikte yapılır. Her Haşimato tanısında glutensiz beslenmenin zorunlu olduğu söylenemez; tıbbi kararlar hekiminizle birlikte ele alınmalıdır."
+      ],
+      [
+        "Gebelikte online diyetisyen desteği alınabilir mi?",
+        "Gebelikte beslenme; gebelik haftası, başlangıç durumu, hekim takibi, laboratuvar sonuçları, besin güvenliği ve kişisel gereksinimler birlikte değerlendirilerek planlanır. Gebelikte gelişigüzel zayıflama diyeti uygulanmamalıdır."
+      ],
+      [
+        "Emzirme döneminde online beslenme danışmanlığı alınabilir mi?",
+        "Emzirme döneminde enerji ve besin gereksinimleri, süt üretimiyle ilgili günlük düzen, uyku, sıvı alımı ve kişisel sağlık bilgileri birlikte ele alınabilir. Hızlı kilo kaybı hedefleri yerine anne ve bebeğin gereksinimlerini gözeten sürdürülebilir planlama önemlidir."
+      ],
+      [
+        "Glutensiz veya eliminasyon diyeti online yürütülebilir mi?",
+        "Gerektiğinde bu beslenme yaklaşımları online takipte değerlendirilebilir; ancak gereksiz ve uzun süreli kısıtlamalar besin yetersizliklerine yol açabilir. Çölyak şüphesinde tanı süreci tamamlanmadan gluteni gelişigüzel kesmek testleri etkileyebileceği için hekim değerlendirmesi önemlidir."
+      ]
+    ]
+  },
+  {
+    "id": "ucret-randevu-ve-adana",
+    "title": "Ücret, randevu, iletişim ve Adana",
+    "items": [
+      [
+        "Online diyetisyen fiyatları neye göre değişir?",
+        "Online diyetisyen ücretleri; görüşme ve takip kapsamı, görüşme sıklığı ve sunulan hizmetin içeriğine göre değişebilir. Sitede sabit fiyat yayınlanmadığı için güncel ücret ve kapsam bilgisini WhatsApp veya telefon üzerinden öğrenebilirsiniz."
+      ],
+      [
+        "WhatsApp üzerinden hangi saatlerde ulaşabilirim?",
+        "WhatsApp iletişim saatleri pazartesi–cumartesi 08.00–20.00’dır; pazar günleri kapalıdır. Bu saatler anında yanıt garantisi anlamına gelmez. Acil sağlık sorunlarında mesaj yanıtı beklemek yerine uygun sağlık kuruluşuna başvurun."
+      ],
+      [
+        "Randevumu ertelemek veya iptal etmek istersem ne yapmalıyım?",
+        "Değişiklik ihtiyacınızı mümkün olduğunca erken telefon veya WhatsApp üzerinden iletebilirsiniz. Erteleme, iptal ve varsa ödeme koşullarını hizmet başlamadan önce doğrudan teyit etmeniz en doğru yaklaşımdır."
+      ],
+      [
+        "Adana’da yüz yüze diyetisyen görüşmesi yapıyor musunuz?",
+        "Evet. Online danışmanlığa ek olarak Adana Seyhan’daki ofiste randevulu yüz yüze görüşme seçeneği bulunur. Gelmeden önce randevu saatini ve adres bilgisini teyit edebilirsiniz."
+      ],
+      [
+        "Adana’daki diyetisyen ofisi nerede?",
+        "Ofis Kurtuluş Mahallesi, Demokrasi Sokak, Atatürk Caddesi, Gülbahçesi Sitesi B/Blok Kat:2 No:205, Seyhan / Adana adresindedir. İletişim sayfasındaki harita bağlantısından konumu açabilirsiniz."
+      ],
+      [
+        "Sağlık bilgilerimi bu siteye girmeli miyim?",
+        "Sitede doğrudan sağlık bilgisi toplayan bir form bulunmaz. BKİ aracındaki bilgiler sunucuya gönderilmez. Tetkik ve diğer hassas sağlık bilgilerinizi paylaşmadan önce danışmanlık sürecindeki güvenli paylaşım yöntemini doğrudan görüşün."
+      ]
+    ]
+  }
 ]
