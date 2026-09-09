@@ -109,6 +109,29 @@ robots_file=(OUT/'robots.txt').read_text()
 if 'User-agent: *' not in robots_file or 'Allow: /' not in robots_file:errors.append('robots.txt basic directives')
 if f'Sitemap: {BASE}/sitemap.xml' not in robots_file:errors.append('robots.txt sitemap URL')
 
+
+# Core Web Vitals regression checks.
+asset_limits={
+    'assets/images/tugba-hero-cwv.webp':220_000,
+    'assets/images/tugba-logo-yatay-cwv.webp':80_000,
+    'assets/images/tugba-logo-yatay-light-cwv.webp':80_000,
+}
+for rel,limit in asset_limits.items():
+    p=ROOT/rel
+    if not p.exists():errors.append(f'Missing optimized asset: {rel}')
+    elif p.stat().st_size>limit:errors.append(f'Optimized asset too large: {rel}={p.stat().st_size}')
+for file,p in pages.items():
+    text=file.read_text()
+    if '/assets/polish.css?v=cwv-v1' not in text:errors.append(f'{file}: polish.css must be linked in head')
+    if 'tugba-logo-yatay.png' in text or 'tugba-logo-yatay-light.png' in text:errors.append(f'{file}: legacy PNG logo reference')
+    has_bmi='data-bmi-form' in text
+    has_calc='/assets/calculator.js' in text
+    if has_bmi!=has_calc:errors.append(f'{file}: calculator script loading mismatch')
+home=(OUT/'index.html').read_text()
+if 'rel="preload" as="image" type="image/webp" href="/assets/images/tugba-hero-cwv.webp" fetchpriority="high"' not in home:
+    errors.append('Homepage hero preload missing')
+if 'tugba-hero-orijinal.jpg' in home:errors.append('Homepage still references legacy hero JPEG')
+
 if errors:
     print('\n'.join(errors));raise SystemExit(1)
 print(f'PASS: {len(pages)} HTML pages; metadata, exact canonicals, JSON-LD, internal links, orphan detection, robots.txt and {len(urls)} sitemap URLs validated.')

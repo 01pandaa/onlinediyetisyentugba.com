@@ -1,8 +1,3 @@
-const polish=document.createElement('link');
-polish.rel='stylesheet';
-polish.href='/assets/polish.css?v=hero-original-v6';
-document.head.appendChild(polish);
-
 document.documentElement.classList.add('js');
 document.querySelectorAll('[data-js-only]').forEach(el=>el.hidden=false);
 document.querySelectorAll('[data-bmi-form] fieldset').forEach(el=>el.disabled=false);
