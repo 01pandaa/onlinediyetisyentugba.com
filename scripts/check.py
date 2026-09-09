@@ -122,14 +122,20 @@ for rel,limit in asset_limits.items():
     elif p.stat().st_size>limit:errors.append(f'Optimized asset too large: {rel}={p.stat().st_size}')
 for file,p in pages.items():
     text=file.read_text()
-    if '/assets/polish.css?v=cwv-v1' not in text:errors.append(f'{file}: polish.css must be linked in head')
+    if '/assets/polish.css' in text:errors.append(f'{file}: polish.css should not be a render-blocking request')
     if 'tugba-logo-yatay.png' in text or 'tugba-logo-yatay-light.png' in text:errors.append(f'{file}: legacy PNG logo reference')
     has_bmi='data-bmi-form' in text
     has_calc='/assets/calculator.js' in text
     if has_bmi!=has_calc:errors.append(f'{file}: calculator script loading mismatch')
+    if 'loading="lazy"' in text and 'fetchpriority="low"' not in text:errors.append(f'{file}: lazy images should be low priority')
+    high=re.findall(r'<img src="([^"]+)"[^>]*loading="eager" fetchpriority="high"',text[:12000])
+    for src in high:
+        if f'<link rel="preload" as="image" type="image/webp" href="{src}" fetchpriority="high">' not in text:
+            errors.append(f'{file}: high-priority hero image must be preloaded: {src}')
 home=(OUT/'index.html').read_text()
 if 'rel="preload" as="image" type="image/webp" href="/assets/images/tugba-hero-cwv.webp" fetchpriority="high"' not in home:
     errors.append('Homepage hero preload missing')
+if '<style data-home-critical>' not in home:errors.append('Homepage critical hero CSS must be inline')
 if 'tugba-hero-orijinal.jpg' in home:errors.append('Homepage still references legacy hero JPEG')
 
 if errors:
