@@ -1,0 +1,38 @@
+name: Refresh FAQ SEO once
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-faq-seo.yml'
+permissions:
+  contents: write
+jobs:
+  refresh-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Refresh FAQ content and SEO layout
+        run: python3 scripts/refresh-faq-seo.py
+      - name: Build website
+        run: python3 scripts/build.py
+      - name: Validate website
+        run: python3 scripts/check.py
+      - name: Check calculator
+        run: node scripts/check-calculator.cjs
+      - name: Commit FAQ refresh
+        run: |
+          git config user.name "01pandaa"
+          git config user.email "135593827+01pandaa@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Expand FAQ page for online dietitian search intent"
+            git push
+          fi
