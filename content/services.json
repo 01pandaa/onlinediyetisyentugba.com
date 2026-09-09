@@ -21,9 +21,7 @@
         "Online takipte neler konuşulur?",
         "<p>Haftanın nasıl geçtiği, hangi öğünlerin uygulanabildiği ve hangi noktalarda değişiklik gerektiği konuşulur. Gerektiğinde listeye alternatifler eklenir. Seyahat, vardiya veya aile düzeni değiştiğinde plan da yeniden ele alınabilir.</p>"
       ]
-    ],
-    "related": "tarti-yag-kas-ve-su-degisimi",
-    "source": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity"
+    ]
   },
   {
     "slug": "kilo-alma",
@@ -47,9 +45,7 @@
         "İzlemde neler değerlendirilir?",
         "<ul><li>Öğünleri uygularken yaşanan tokluk ve iştah durumu.</li><li>Besinlere tolerans ve sindirim yakınmaları.</li><li>Uygun aralıklarla takip edilen vücut ağırlığı.</li><li>Günlük yaşamda sürdürülebilen değişiklikler.</li></ul><p>Hazır kilo aldırıcı ürün veya takviye kullanımı otomatik olarak önerilmez; gereksinim ve güvenlik kişisel olarak değerlendirilir.</p>"
       ]
-    ],
-    "related": "kilo-almak-icin-ogun-duzeni",
-    "source": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/"
+    ]
   },
   {
     "slug": "hastaliklarda-beslenme",
@@ -73,9 +69,7 @@
         "Görüşmeye nasıl hazırlanabilirsiniz?",
         "<ul><li>Mevcut tanılarınızı ve kullandığınız ilaçları not edin.</li><li>Hekiminizin verdiği güncel tetkik sonuçlarını hazır bulundurun.</li><li>Yakınmaların ne zaman başladığını ve öğünlerle ilişkisini yazın.</li><li>Hekim veya diğer sağlık profesyonellerinin önerilerini paylaşın.</li></ul><p>Hassas sağlık bilgilerinizi bu web sitesine girmeyin. Görüşme için uygun paylaşım yöntemi doğrudan iletişimde belirlenir.</p>"
       ]
-    ],
-    "related": "insulin-direncinde-beslenme",
-    "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes"
+    ]
   },
   {
     "slug": "saglikli-beslenme",
@@ -99,9 +93,7 @@
         "Sürdürülebilir olanı bulmak",
         "<p>Bir uygulama sizi sürekli zorluyorsa bu durum görüşmede ele alınır. Planı kusursuz uygulama beklentisi yerine, neden zorlandığınızı anlamaya ve günlük yaşamınıza uyarlamaya odaklanılır.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+    ]
   },
   {
     "slug": "sporcu-beslenmesi",
@@ -125,9 +117,7 @@
         "Online görüşmede takip",
         "<ul><li>Antrenman öncesi ve sonrası öğünlerin uygulanabilirliği.</li><li>Günlük yemek ve sıvı düzeni.</li><li>İştah, enerji hissi ve toparlanma rutini.</li><li>İş, okul ve antrenman saatleriyle uyum.</li></ul>"
       ]
-    ],
-    "related": "kemik-kas-ve-beslenme",
-    "source": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/"
+    ]
   },
   {
     "slug": "gebelik-emzirme-beslenmesi",
@@ -151,9 +141,7 @@
         "Emzirme döneminde yaklaşım",
         "<p>Hızlı kilo verme veya belirli bir besinle süt artırma sözü verilmez. Düzenli beslenme ve günlük ihtiyaçlar üzerine çalışılır. Bebeğin büyümesi veya süt alımıyla ilgili kaygılar çocuk hekimi ve ilgili sağlık profesyonelleriyle değerlendirilir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.nhs.uk/pregnancy/keeping-well/have-a-healthy-diet/"
+    ]
   },
   {
     "slug": "insulin-direncinde-beslenme",
@@ -161,27 +149,25 @@
     "seo_title": "İnsülin Direncinde Beslenme | Online Diyetisyen",
     "meta_description": "İnsülin direncinde beslenme nasıl planlanır? Öğün düzeni, karbonhidrat kalitesi, lif-protein dengesi ve sürdürülebilir kilo yönetimi hakkında online diyetisyen desteği.",
     "short": "İnsülin direncinde öğün düzeni, besin seçimi ve yaşam tarzı alışkanlıklarını birlikte değerlendiren kişisel beslenme danışmanlığı.",
-    "intro": "İnsülin direncinde tek bir yasak listesi yerine; günlük öğün düzeni, karbonhidrat kaynakları, lif ve protein dengesi, hareket, uyku ve varsa hekim tedavisi birlikte değerlendirilir. Amaç uygulanabilir ve sürdürülebilir bir beslenme düzeni oluşturmaktır.",
+    "intro": "İnsülin direncinde beslenme yalnızca şekeri azaltmakla sınırlı değildir. Öğün düzeni, karbonhidratın türü ve porsiyonu, lif ve protein dengesi, fiziksel aktivite, uyku, vücut ağırlığı ve varsa hekim tedavisi birlikte değerlendirilir. Amaç kısa süreli yasaklar yerine insülin duyarlılığını ve metabolik sağlığı destekleyen sürdürülebilir bir yaşam düzeni oluşturmaktır.",
     "sections": [
       [
-        "İnsülin direncinde beslenme yaklaşımı",
-        "<p>İnsülin direnci bulunan kişilerde beslenme planı kişisel sağlık öyküsü, günlük yaşam ve varsa ilaç tedavisi dikkate alınarak hazırlanır. Herkese aynı öğün sayısı veya aynı karbonhidrat miktarı önerilmez.</p><p>Öğünlerde sebze, tam tahıl, baklagil ve diğer lif kaynakları ile uygun protein kaynaklarının dengelenmesi; rafine karbonhidratların sıklığının ve porsiyonlarının kişiye göre değerlendirilmesi sürecin parçasıdır.</p>"
+        "İnsülin direnci nedir ve beslenmeyle ilişkisi nasıldır?",
+        "<p>İnsülin direnci, hücrelerin insülin hormonunun etkisine verdiği yanıtın azalmasıyla ilişkilidir. Bu durumda pankreas kan şekerini dengede tutabilmek için daha fazla insülin salgılayabilir. Beslenme tedavisinde temel hedef; kan şekeri dalgalanmalarını azaltmak, öğünlerin tokluk süresini artırmak ve toplam enerji dengesini kişiye göre düzenlemektir.</p><p>Tek bir besin, takviye veya “insülin direnci diyeti” herkeste aynı sonucu vermez. Kişinin vücut ağırlığı, kas kütlesi, hareket düzeyi, uyku süresi ve eşlik eden sağlık durumları planlamada önemlidir.</p>"
       ],
       [
-        "Kilo yönetimi ve günlük düzen",
-        "<p>Kilo kaybı gerekiyorsa hedef hızlı sonuç değil, sürdürülebilir ilerlemedir. İş saatleri, dışarıda yeme, uyku ve fiziksel aktivite planın uygulanabilirliğini etkiler.</p><ul><li>Öğün atlama ve uzun açlık dönemlerinin değerlendirilmesi.</li><li>Pratik ara öğün gereksiniminin kişiye göre belirlenmesi.</li><li>Ev ve iş ortamına uygun alternatifler.</li></ul>"
+        "Karbonhidrat kalitesi, lif ve protein dengesi",
+        "<p>Karbonhidrat tamamen kesilmek zorunda değildir. Tam tahıllar, baklagiller, sebzeler ve meyveler gibi liften zengin kaynakların uygun porsiyonlarda kullanılması; rafine karbonhidratların ve yüksek oranda işlenmiş ürünlerin sıklığının azaltılması metabolik açıdan daha dengeli bir öğün yapısına katkı sağlayabilir.</p><p>Protein ve lif içeren öğünler tokluk süresini destekleyebilir. Öğün içeriği kişisel gereksinime göre düzenlenir; herkese aynı karbonhidrat miktarı veya aynı öğün sayısı önerilmez.</p>"
       ],
       [
-        "Takipte neleri değerlendiriyoruz?",
-        "<p>Açlık-tokluk durumu, öğünlerin uygulanabilirliği, enerji düzeyi ve varsa hekim tarafından izlenen laboratuvar sonuçları birlikte ele alınabilir. İlaç dozları diyetisyen tarafından değiştirilmez.</p>"
+        "Kilo yönetimi ve fiziksel aktivitenin rolü",
+        "<p>Fazla kilo varsa mütevazı ve sürdürülebilir kilo kaybı insülin duyarlılığını olumlu etkileyebilir. Ancak normal kiloda olup insülin direnci bulunan bireylerde hedef her zaman kilo vermek değildir.</p><p>Düzenli fiziksel aktivite, özellikle aerobik hareket ile direnç egzersizlerinin birlikte kullanılması, kas dokusunun glukoz kullanımını destekleyebilir. Beslenme ve hareket planı birlikte ele alındığında metabolik sonuçlar daha güçlü olabilir.</p>"
       ],
       [
-        "Online diyetisyen desteği",
-        "<p>Online görüşmelerde günlük rutininize göre plan hazırlanır ve takipte uygulanamayan noktalar yeniden düzenlenir. Amaç kısa süreli bir liste değil, günlük hayata uyarlanabilen bir sistem oluşturmaktır.</p>"
+        "Takipte hangi göstergeler değerlendirilir?",
+        "<p>Öğünlerin uygulanabilirliği, açlık-tokluk durumu, bel çevresi veya vücut ağırlığındaki değişim ve hekim tarafından takip edilen açlık glukozu, HbA1c, insülin veya lipid profili gibi tetkikler birlikte değerlendirilebilir. Laboratuvar sonuçları tek başına diyetisyenin tanı koyması veya ilaç dozunu değiştirmesi için kullanılmaz.</p>"
       ]
-    ],
-    "related": "insulin-direncinde-beslenme",
-    "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+    ]
   },
   {
     "slug": "hasimato-diyeti",
@@ -189,27 +175,25 @@
     "seo_title": "Haşimato Diyeti ve Beslenme | Online Diyetisyen",
     "meta_description": "Haşimato tiroiditinde beslenme; tiroid tedavisi, öğün düzeni, besin çeşitliliği ve kişisel gereksinimlerle birlikte ele alınır. Online diyetisyen desteği.",
     "short": "Haşimato ve tiroid hastalıklarında hekim tedavisiyle uyumlu, kişiye göre planlanan beslenme danışmanlığı.",
-    "intro": "Haşimato için herkese uyan tek bir diyet yoktur. Beslenme yaklaşımı tiroid fonksiyonları, hekim tedavisi, mevcut tetkikler, günlük yaşam, besin toleransı ve kişisel hedefler birlikte değerlendirilerek planlanır.",
+    "intro": "Haşimato tiroiditinde beslenme, tiroid hormon replasmanının yerine geçmez. Amaç; yeterli enerji ve protein alımını sağlamak, micronutrient yetersizliklerini önlemek, varsa çölyak gibi eşlik eden durumları dikkate almak ve gereksiz kısıtlamalardan kaçınan dengeli bir beslenme düzeni oluşturmaktır.",
     "sections": [
       [
-        "Haşimato için tek bir özel diyet var mı?",
-        "<p>Haşimato tiroiditini tek başına iyileştirdiği kanıtlanmış belirli bir besin veya standart bir diyet bulunmaz. Gereksiz kısıtlamalar yerine yeterli ve dengeli beslenme, kişisel gereksinimler ve tıbbi takip esas alınır.</p>"
+        "Haşimato için özel bir diyet var mı?",
+        "<p>Mevcut bilimsel veriler Haşimato tiroiditini tedavi eden tek bir standart diyet göstermemektedir. Beslenme desteği; genel diyet kalitesi, vücut ağırlığı yönetimi gerekiyorsa enerji dengesi ve kişisel besin toleransı üzerinden planlanır.</p><p>Tiroid hormon tedavisi hekim tarafından düzenlenir; diyetisyen ilaç dozuna müdahale etmez.</p>"
       ],
       [
-        "Gluten, süt ürünleri ve eliminasyon",
-        "<p>Çölyak hastalığı, alerji veya başka bir tıbbi gerekçe yoksa besin gruplarını otomatik olarak çıkarmak uygun değildir. Eliminasyon gerekiyorsa süre, kapsam ve yeniden deneme adımları planlı biçimde yürütülür.</p>"
+        "Glutensiz beslenme herkese gerekli mi?",
+        "<p>Çölyak hastalığı veya doğrulanmış glutenle ilişkili bir durum yoksa Haşimato tanısı olan herkese rutin glutensiz diyet önerilmesini destekleyen yeterli kanıt yoktur. Gereksiz gluten kısıtlaması lif, B vitaminleri ve besin çeşitliliğini azaltabilir.</p><p>Çölyak şüphesi varsa gluteni kendi kendine kesmeden önce hekim değerlendirmesi önemlidir; aksi halde tanısal testler etkilenebilir.</p>"
       ],
       [
-        "Tiroid ilacı ve öğün düzeni",
-        "<p>Kullanılan tiroid ilacının zamanlaması ve hekim önerileri beslenme görüşmesinde dikkate alınır. İlaç dozuna müdahale edilmez. Demir, kalsiyum veya başka takviyeler kullanılıyorsa bunlar da görüşmede belirtilmelidir.</p>"
+        "İyot, selenyum, demir ve D vitamini",
+        "<p>Tiroid fonksiyonu için iyot, selenyum ve demir gibi mikrobesinler önemlidir; ancak “fazlası daha iyidir” yaklaşımı doğru değildir. Özellikle aşırı iyot alımı bazı tiroid hastalıklarında olumsuz olabilir.</p><p>Selenyum veya D vitamini takviyesi rutin olarak herkese başlanmamalı; yetersizlik, beslenme durumu ve hekim değerlendirmesi dikkate alınmalıdır.</p>"
       ],
       [
-        "Kilo yönetimi ve takip",
-        "<p>Kilo değişimi hedefleniyorsa enerji dengesi, protein ve lif alımı, hareket, uyku ve günlük yaşam birlikte değerlendirilir. Hızlı kilo kaybı yerine sürdürülebilir bir plan oluşturulur.</p>"
+        "Tiroid ilacı ve besin etkileşimleri",
+        "<p>Levotiroksin gibi tiroid ilaçlarının emilimi; yemek zamanı, kahve, kalsiyum ve demir içeren takviyelerden etkilenebilir. İlacın kullanım şekli reçeteyi düzenleyen hekimin önerisine göre sürdürülmeli, beslenme planı bu zamanlamaya uyarlanmalıdır.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease"
+    ]
   },
   {
     "slug": "lipodem-diyeti",
@@ -217,27 +201,25 @@
     "seo_title": "Lipödem Diyeti ve Beslenme | Online Diyetisyen",
     "meta_description": "Lipödemde beslenme; kilo yönetimi, yeterli protein-lif alımı, günlük öğün düzeni ve multidisipliner tedaviyi destekleyen sürdürülebilir alışkanlıklarla ele alınır.",
     "short": "Lipödem tanısı bulunan bireylerde tıbbi takip sürecine eşlik eden, sürdürülebilir beslenme ve kilo yönetimi desteği.",
-    "intro": "Lipödem yalnızca beslenmeyle tedavi edilen bir durum değildir. Beslenme danışmanlığı; kilo yönetimi gerekiyorsa bunu desteklemek, yeterli ve dengeli öğünler oluşturmak ve günlük yaşamı kolaylaştırmak amacıyla multidisipliner sürecin bir parçası olarak ele alınır.",
+    "intro": "Lipödem kronik bir yağ dokusu hastalığıdır ve yalnızca diyetle ortadan kaldırılan bir durum değildir. Beslenme desteğinin amacı; eşlik eden fazla kiloyu yönetmek, metabolik sağlığı desteklemek, yeterli beslenmeyi sürdürmek ve günlük yaşamı kolaylaştırmaktır. Yaklaşım multidisipliner tedavinin bir parçası olmalıdır.",
     "sections": [
       [
-        "Lipödemde beslenmenin rolü",
-        "<p>Beslenme planının amacı lipödemi tek başına ortadan kaldırmak değildir. Genel sağlık, vücut ağırlığı yönetimi ve yeterli besin alımı desteklenir. Tedavi planı hekim ve gerekli diğer sağlık profesyonelleriyle birlikte yürütülmelidir.</p>"
+        "Lipödemde beslenmenin bilimsel rolü",
+        "<p>Lipödem dokusunu tamamen ortadan kaldırdığı kanıtlanmış özel bir diyet bulunmamaktadır. Bununla birlikte fazla kilo ve metabolik bozukluklar belirtilerin yönetimini zorlaştırabileceği için sağlıklı vücut ağırlığı ve dengeli beslenme önemlidir.</p><p>Beslenme tedavisi; ağrı, hareket kapasitesi, yeme davranışı ve eşlik eden hastalıklar dikkate alınarak kişiselleştirilir.</p>"
       ],
       [
-        "Sürdürülebilir öğün düzeni",
-        "<p>Sebze, meyve, tam tahıl, baklagil ve uygun protein kaynaklarının günlük yaşama yerleştirilmesi; yüksek oranda işlenmiş besinlerin sıklığının azaltılması kişisel koşullara göre ele alınabilir.</p>"
+        "Akdeniz tipi beslenme ve işlenmiş gıdalar",
+        "<p>Sebze, meyve, baklagil, tam tahıl, zeytinyağı, balık ve yağlı tohumlardan zengin Akdeniz tipi beslenme genel kardiyometabolik sağlık açısından güçlü kanıta sahiptir. Lipödemde de inflamasyonla ilişkili belirteçler açısından umut verici bulgular vardır; ancak bu veriler henüz kesin tedavi kanıtı değildir.</p><p>Ultra işlenmiş ürünlerin sık tüketimini azaltmak, toplam beslenme kalitesini artırmak açısından daha güvenli ve sürdürülebilir bir yaklaşımdır.</p>"
       ],
       [
-        "Ödem ve sıvı konusu",
-        "<p>Sıvı ve sodyum düzeni kişisel sağlık durumuna göre değerlendirilir. Aşırı kısıtlayıcı detokslar veya hızlı sıvı kaybı vadeden yöntemler önerilmez.</p>"
+        "Düşük karbonhidrat veya ketojenik diyet şart mı?",
+        "<p>Lipödemde düşük karbonhidratlı veya ketojenik diyetlerle ilgili çalışmalar artmaktadır. Bazı çalışmalarda kilo, ağrı veya vücut kompozisyonunda iyileşmeler bildirilse de uzun dönem güvenlik ve üstünlük konusunda kanıt sınırlıdır.</p><p>Bu nedenle ketojenik diyet “her lipödem hastasına gerekli” şeklinde sunulmamalı; kişinin sağlık durumu ve sürdürülebilirliği dikkate alınmalıdır.</p>"
       ],
       [
-        "Online takipte neler konuşulur?",
-        "<p>Öğünlerin uygulanabilirliği, kilo yönetimi hedefi, hareket düzeyi, iş ve sosyal yaşam koşulları takip görüşmelerinde değerlendirilir ve plan gerektiğinde güncellenir.</p>"
+        "Ödem, sıvı ve tuz yönetimi",
+        "<p>Yeterli sıvı alımı ve sodyum tüketiminin kişinin sağlık durumuna göre değerlendirilmesi önemlidir. Hızlı sıvı kaybı vadeden detokslar, diüretik bitki karışımları veya aşırı tuz kısıtlaması bilimsel bir lipödem tedavisi değildir.</p>"
       ]
-    ],
-    "related": "tarti-yag-kas-ve-su-degisimi",
-    "source": "https://www.ncbi.nlm.nih.gov/books/NBK573066/"
+    ]
   },
   {
     "slug": "menopozda-beslenme",
@@ -245,27 +227,25 @@
     "seo_title": "Menopozda Beslenme | Online Diyetisyen",
     "meta_description": "Menopozda beslenme; kilo yönetimi, protein, kalsiyum, D vitamini kaynakları, lif ve kalp sağlığını destekleyen öğünlerle kişiye göre planlanır.",
     "short": "Menopoz döneminde kilo yönetimi, kemik ve kalp sağlığı ile günlük yaşamı destekleyen kişisel beslenme danışmanlığı.",
-    "intro": "Menopoz döneminde enerji gereksinimi, vücut kompozisyonu, kemik sağlığı ve kardiyometabolik riskler kişiden kişiye değişebilir. Beslenme planı yaş, hareket düzeyi, sağlık öyküsü ve günlük yaşamla birlikte ele alınır.",
+    "intro": "Menopoz döneminde östrojen düzeylerindeki değişim; yağ dağılımı, kas kütlesi, kemik sağlığı ve kardiyometabolik riskler üzerinde etkili olabilir. Beslenme planı yalnızca kilo vermeye değil, kas ve kemik dokusunu korumaya, yeterli protein ve mikrobesin alımına ve kalp sağlığını destekleyen uzun vadeli alışkanlıklara odaklanır.",
     "sections": [
       [
-        "Menopozda kilo yönetimi",
-        "<p>Vücut ağırlığındaki değişimler yalnızca tek bir hormona bağlanmaz. Toplam enerji dengesi, kas kütlesi, hareket, uyku ve günlük alışkanlıklar birlikte değerlendirilir. Hedef hızlı kilo kaybı değil sürdürülebilir bir düzendir.</p>"
+        "Vücut kompozisyonu neden değişebilir?",
+        "<p>Menopoz geçişinde karın çevresinde yağlanma artabilir ve yaşla birlikte yağsız vücut kütlesi azalabilir. Tartıdaki kilo çok değişmese bile vücut kompozisyonu değişebilir.</p><p>Bu nedenle değerlendirmede yalnızca kilogram değil; bel çevresi, kas kütlesi, hareket düzeyi ve günlük protein dağılımı da önem taşır.</p>"
       ],
       [
-        "Protein, kalsiyum ve kemik sağlığı",
-        "<p>Protein kaynaklarının gün içine dengeli dağılımı ile kalsiyum ve D vitamini gereksinimlerinin yeterliliği önemlidir. Takviye gereksinimi varsa hekim değerlendirmesiyle planlanır.</p>"
+        "Protein ve kas dokusunu koruma",
+        "<p>Yeterli protein alımı ve proteinin gün içine dengeli dağıtılması, özellikle direnç egzersiziyle birlikte kas dokusunun korunmasını destekler. Gereksinim yaş, vücut ağırlığı, böbrek sağlığı ve aktivite düzeyine göre kişiselleştirilir.</p>"
       ],
       [
-        "Lif ve kalp sağlığı",
-        "<p>Sebze, meyve, tam tahıl, baklagil, yağlı tohumlar ve uygun yağ kaynaklarının dengeli kullanımı genel kardiyometabolik sağlığı destekleyen bir beslenme düzeninin parçasıdır.</p>"
+        "Kalsiyum, D vitamini ve kemik sağlığı",
+        "<p>Menopoz sonrası kemik kaybı riski artar. Süt ve süt ürünleri veya uygun alternatifler, yeşil yapraklı sebzeler ve diğer kalsiyum kaynakları beslenmede değerlendirilir. D vitamini gereksinimi ise kan düzeyi, güneş maruziyeti ve hekim değerlendirmesine göre ele alınır.</p>"
       ],
       [
-        "Günlük hayata uyarlama",
-        "<p>Sıcak basması, uyku düzeni, iştah değişiklikleri veya sosyal yaşam gibi kişisel durumlar konuşulur. Öğün planı bu günlük gerçekliğe göre şekillendirilir.</p>"
+        "Kalp sağlığı ve beslenme modeli",
+        "<p>Akdeniz tipi beslenme; sebze, meyve, tam tahıl, baklagil, zeytinyağı, balık ve kuruyemişlerden zengin yapısıyla kalp-damar ve metabolik sağlık açısından güçlü bir seçenektir. Menopozda beslenme planı bu ilkeler temelinde kişiselleştirilebilir.</p><p>Sıcak basması gibi belirtilerde tek bir besinin kesin tedavi etkisi gösterilmemiştir; kişisel tetikleyiciler ayrıca değerlendirilebilir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://womenshealth.gov/menopause"
+    ]
   },
   {
     "slug": "emzirme-doneminde-beslenme",
@@ -273,27 +253,25 @@
     "seo_title": "Emzirme Döneminde Beslenme | Online Diyetisyen",
     "meta_description": "Emzirme döneminde beslenme; annenin enerji, protein, sıvı ve mikrobesin gereksinimleri ile günlük yaşamına uygun pratik öğünler üzerinden kişisel olarak planlanır.",
     "short": "Emzirme döneminde annenin artan enerji ve besin gereksinimlerini günlük yaşama uygun biçimde ele alan beslenme danışmanlığı.",
-    "intro": "Emzirme döneminde amaç katı yasaklar değil; annenin enerji, protein, sıvı ve mikrobesin gereksinimlerini karşılayan, pratik ve sürdürülebilir bir beslenme düzeni oluşturmaktır. Gereksinimler annenin sağlık durumu ve emzirme sürecine göre değişebilir.",
+    "intro": "Emzirme döneminde beslenme; annenin artan enerji ve besin öğesi gereksinimlerini karşılamayı, toparlanmayı desteklemeyi ve süt üretimini sürdürebilecek yeterli bir beslenme düzeni oluşturmayı amaçlar. Katı yasaklar veya hızlı kilo kaybı programları yerine besin çeşitliliği ve yeterlilik ön plandadır.",
     "sections": [
       [
-        "Emzirme döneminde enerji ve öğün düzeni",
-        "<p>Günün koşullarına göre ana ve ara öğünler planlanabilir. Uykusuzluk, bebeğin bakım düzeni ve yemek hazırlamaya ayrılabilen zaman dikkate alınır. Her anneye aynı kalori veya aynı öğün sayısı önerilmez.</p>"
+        "Enerji gereksinimi neden artar?",
+        "<p>Süt üretimi enerji gerektiren bir süreçtir. Ancak ihtiyaç; annenin vücut ağırlığı, gebelikte aldığı kilo, günlük hareketi, emzirme sıklığı ve doğum sonrası döneme göre değişir. Her emziren anneye aynı kalori düzeyi uygun değildir.</p><p>Çok düşük kalorili diyetler yorgunluğu artırabilir ve besin öğesi yeterliliğini zorlaştırabilir.</p>"
       ],
       [
         "Protein, sıvı ve besin çeşitliliği",
-        "<p>Yeterli protein, sebze-meyve, tahıl, süt veya uygun alternatifler ve yağ kaynakları dengeli biçimde ele alınır. Susama sinyallerine göre yeterli sıvı alımı desteklenir; aşırı sıvı tüketmenin süt miktarını otomatik artırdığı varsayılmaz.</p>"
+        "<p>Yeterli protein; yumurta, et, balık, süt ürünleri, baklagiller veya uygun bitkisel alternatiflerle sağlanabilir. Susama hissine göre düzenli sıvı tüketmek önemlidir; aşırı su içmenin süt miktarını otomatik artırdığı gösterilmemiştir.</p><p>Emzirme döneminde tek tip beslenme yerine farklı besin gruplarını içeren çeşitli bir plan hedeflenir.</p>"
       ],
       [
-        "Kilo verme hedefi varsa",
-        "<p>Doğum sonrası kilo yönetimi hızlı ve kısıtlayıcı diyetlerle değil, annenin toparlanması ve emzirme süreci gözetilerek planlanır. Enerji kısıtlaması kişisel koşullara göre değerlendirilmelidir.</p>"
+        "İyot, B12, D vitamini ve omega-3",
+        "<p>Anne beslenmesi bazı mikrobesinlerin anne sütündeki düzeyini etkileyebilir. İyot, B12 vitamini, D vitamini ve uzun zincirli omega-3 yağ asitleri özellikle değerlendirilmesi gereken öğelerdir.</p><p>Vegan veya çok kısıtlı beslenen annelerde B12 başta olmak üzere bazı eksiklik riskleri artabilir. Takviyeler kişisel durum ve hekim önerisiyle planlanmalıdır.</p>"
       ],
       [
-        "Takviyeler ve özel durumlar",
-        "<p>Vitamin-mineral takviyeleri, vegan-vejetaryen beslenme, alerji veya kronik hastalık gibi özel durumlarda gereksinimler ayrıca değerlendirilir. Takviye kullanımı hekim önerileriyle uyumlu ele alınır.</p>"
+        "Emzirirken kilo verme",
+        "<p>Doğum sonrası kilo kaybı hedefleniyorsa hızlı ve agresif kısıtlamalar yerine kademeli bir yaklaşım daha uygundur. Beslenme planı annenin açlık düzeyi, uyku durumu, süt üretimi ve genel sağlık hali dikkate alınarak düzenlenir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.cdc.gov/breastfeeding-special-circumstances/hcp/diet-micronutrients/maternal-diet.html"
+    ]
   },
   {
     "slug": "pcos-beslenmesi",
@@ -301,27 +279,25 @@
     "seo_title": "PCOS Beslenmesi | Online Diyetisyen Tuğba Şeker Ağaç",
     "meta_description": "PCOS'ta beslenme; öğün düzeni, kilo yönetimi, insülin direnci, lif ve protein dengesi ile kişisel sağlık öyküsüne göre planlanır.",
     "short": "PCOS tanısı bulunan bireylerde günlük beslenme düzeni, kilo yönetimi ve insülin direncini dikkate alan kişisel danışmanlık.",
-    "intro": "PCOS'ta tek bir yasak listesi veya herkese uyan standart bir diyet yoktur. Beslenme yaklaşımı; kilo yönetimi gereksinimi, insülin direnci, adet düzeni, günlük yaşam, kullanılan ilaçlar ve hekim takibi birlikte değerlendirilerek planlanır.",
+    "intro": "Polikistik Over Sendromu (PCOS) heterojen bir durumdur; her bireyde insülin direnci, kilo artışı veya aynı hormonal bulgular görülmez. Beslenme yaklaşımı kişinin metabolik durumu, adet düzeni, hekim tedavisi, kilo hedefi, yaşam biçimi ve yeme davranışı dikkate alınarak kişiselleştirilir.",
     "sections": [
       [
-        "PCOS'ta beslenme yaklaşımı",
-        "<p>Öğün içeriği ve zamanlaması kişisel yaşam düzenine göre ele alınır. Sebze, tam tahıl, baklagil ve diğer lif kaynakları ile uygun protein kaynaklarının dengelenmesi üzerinde çalışılır. Tek bir besinin veya takviyenin PCOS'u tedavi ettiği iddia edilmez.</p>"
+        "PCOS’ta beslenme yaklaşımının temel amacı",
+        "<p>PCOS için bilimsel olarak kanıtlanmış tek bir “mucize diyet” yoktur. Güncel yaklaşım; beslenme kalitesini artırmak, metabolik riskleri azaltmak ve uygulanabilir yaşam tarzı değişiklikleri oluşturmaktır.</p><p>Kilo kaybı gereksinimi varsa küçük ve sürdürülebilir değişiklikler bile metabolik göstergeler açısından yarar sağlayabilir. Normal kilolu bireylerde ise yalnızca kilo odaklı bir yaklaşım doğru değildir.</p>"
       ],
       [
-        "İnsülin direnci ve kilo yönetimi",
-        "<p>İnsülin direnci veya kilo yönetimi gereksinimi varsa hızlı ve aşırı kısıtlayıcı diyetler yerine sürdürülebilir bir enerji dengesi hedeflenir. Hareket, uyku ve günlük stres de sürecin uygulanabilirliğini etkileyebilir.</p>"
+        "İnsülin direnci ve öğün yapısı",
+        "<p>PCOS’ta insülin direnci sık görülebilir ancak herkeste bulunmaz. Liften zengin karbonhidrat kaynakları, yeterli protein, sebze ağırlığı ve uygun yağ kaynaklarıyla dengelenmiş öğünler kan şekeri kontrolünü destekleyebilir.</p><p>Karbonhidratın tamamen kesilmesi veya uzun süreli aşırı kısıtlama şart değildir. Plan kişisel tolerans, fiziksel aktivite ve toplam enerji gereksinimine göre düzenlenir.</p>"
       ],
       [
-        "Takipte neler değerlendirilir?",
-        "<ul><li>Öğünlerin uygulanabilirliği ve açlık-tokluk durumu.</li><li>Besin çeşitliliği ve porsiyonlar.</li><li>Hekim tarafından izlenen laboratuvar sonuçları ve tedavi planı.</li><li>Günlük yaşam ve sosyal ortama uyum.</li></ul>"
+        "Yağ kalitesi ve kardiyometabolik sağlık",
+        "<p>PCOS; dislipidemi, tip 2 diyabet ve kardiyometabolik risklerle ilişkili olabilir. Bu nedenle zeytinyağı, yağlı tohumlar, balık gibi doymamış yağ kaynaklarının dengeli kullanılması; aşırı işlenmiş gıdaların ve doymuş yağın azaltılması genel sağlık açısından önem taşır.</p>"
       ],
       [
-        "Online diyetisyen desteği",
-        "<p>Online görüşmelerde plan günlük rutininize göre hazırlanır; takipte uygulanamayan noktalar yeniden düzenlenir. İlaç tedavisi veya hormonal tedaviye diyetisyen tarafından müdahale edilmez.</p>"
+        "Takviyeler konusunda neden dikkatli olunmalı?",
+        "<p>D vitamini, inositol ve benzeri takviyelerle ilgili çalışmalar bulunmakla birlikte sonuçlar kişiden kişiye değişir ve kanıt düzeyi her ürün için aynı değildir. Takviye kullanımı laboratuvar sonuçları, kullanılan ilaçlar ve hekim önerileriyle birlikte değerlendirilmelidir.</p>"
       ]
-    ],
-    "related": "insulin-direncinde-beslenme",
-    "source": "https://womenshealth.gov/a-z-topics/polycystic-ovary-syndrome"
+    ]
   },
   {
     "slug": "diyabet-beslenmesi",
@@ -329,27 +305,25 @@
     "seo_title": "Diyabet Beslenmesi | Online Diyetisyen",
     "meta_description": "Diyabette beslenme; karbonhidrat kaynakları, öğün düzeni, lif-protein dengesi ve kullanılan tedaviyle uyumlu kişisel planlama üzerinden ele alınır.",
     "short": "Diyabette kan şekeri yönetimini destekleyen, tedavi planı ve günlük yaşama göre kişiselleştirilen beslenme danışmanlığı.",
-    "intro": "Diyabet beslenmesinde amaç yasaklarla ilerlemek değil; karbonhidrat kaynaklarını, porsiyonları, öğün zamanlamasını ve günlük yaşamı kullanılan tedaviyle birlikte değerlendirmektir. Plan diyabet tipi, ilaç veya insülin kullanımı ve bireysel gereksinimlere göre değişir.",
+    "intro": "Diyabette tıbbi beslenme tedavisi; kan şekeri kontrolünü desteklemek, kardiyometabolik riski azaltmak ve bireyin günlük yaşamına uyarlanabilen bir beslenme düzeni oluşturmak amacıyla kişiselleştirilir. İlaç ve insülin tedavisiyle uyum, öğün zamanlaması ve hipoglisemi riski mutlaka dikkate alınır.",
     "sections": [
       [
-        "Karbonhidratları nasıl ele alıyoruz?",
-        "<p>Karbonhidrat içeren besinlerin türü, miktarı ve öğünlere dağılımı kişiye göre değerlendirilir. Tam tahıl, sebze, meyve ve baklagil gibi lif kaynaklarının uygun porsiyonlarda kullanımı desteklenebilir.</p>"
+        "Diyabette tek bir doğru diyet var mı?",
+        "<p>Tip 1 veya tip 2 diyabet için herkesin uygulaması gereken tek bir makro besin dağılımı yoktur. Karbonhidrat, protein ve yağ oranları; kişinin tedavisi, yeme alışkanlıkları, kilo hedefi ve metabolik durumuna göre düzenlenir.</p><p>Tıbbi beslenme tedavisinin diyetisyen tarafından bireyselleştirilmesi, glisemik ve kardiyometabolik sonuçları iyileştirebilir.</p>"
       ],
       [
-        "İlaç ve insülin kullananlarda dikkat",
-        "<p>İnsülin veya hipoglisemi riski taşıyan ilaçlar kullanılıyorsa öğün değişiklikleri sağlık ekibiyle uyumlu yürütülmelidir. İlaç veya insülin dozu diyetisyen tarafından değiştirilmez.</p>"
+        "Karbonhidrat miktarı kadar kalitesi de önemlidir",
+        "<p>Tam tahıl, baklagil, sebze ve meyve gibi lif içeren karbonhidrat kaynakları; rafine tahıllar ve şekerli içeceklere göre daha dengeli seçeneklerdir. Karbonhidratın öğünlere dağılımı kullanılan ilaç veya insülin tedavisine göre planlanabilir.</p>"
       ],
       [
-        "Günlük yaşam ve takip",
-        "<p>İş saatleri, dışarıda yemek, fiziksel aktivite ve uyku düzeni planın uygulanabilirliğini etkiler. Takip görüşmelerinde öğünlerin nasıl gittiği ve hangi noktalarda düzenleme gerektiği konuşulur.</p>"
+        "Protein, yağ ve kalp sağlığı",
+        "<p>Diyabet kalp-damar hastalığı riskini artırabildiği için yağ kalitesi önemlidir. Zeytinyağı, balık, kuruyemiş ve tohumlar gibi doymamış yağ kaynakları önceliklendirilebilir; doymuş yağ ve ultra işlenmiş ürünlerin sıklığı azaltılabilir.</p>"
       ],
       [
-        "Online görüşmede neler konuşulur?",
-        "<ul><li>Öğün saatleri ve porsiyonlar.</li><li>Karbonhidrat kaynakları ve lif alımı.</li><li>Hipoglisemi öyküsü ve günlük rutin.</li><li>Hekim tarafından izlenen güncel sağlık bilgileri.</li></ul>"
+        "Hipoglisemi ve ilaç uyumu",
+        "<p>İnsülin veya hipoglisemi riski oluşturan ilaç kullanan bireylerde öğün düzenini ani biçimde değiştirmek risk yaratabilir. Açlık, egzersiz ve karbonhidrat miktarındaki değişiklikler sağlık ekibiyle uyumlu planlanmalıdır. Diyetisyen ilaç dozunu değiştirmez.</p>"
       ]
-    ],
-    "related": "insulin-direncinde-beslenme",
-    "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/diet-eating-physical-activity"
+    ]
   },
   {
     "slug": "eliminasyon-diyeti",
@@ -357,27 +331,25 @@
     "seo_title": "Eliminasyon Diyeti | Online Diyetisyen",
     "meta_description": "Eliminasyon diyeti; gerekli durumlarda belirli besinlerin kontrollü olarak çıkarılması, belirtilerin izlenmesi ve uygun şekilde yeniden değerlendirilmesiyle planlanır.",
     "short": "Gerekli görülen durumlarda besin toleransını değerlendirmek için kontrollü ve süreli biçimde planlanan eliminasyon süreci.",
-    "intro": "Eliminasyon diyeti rastgele çok sayıda besini uzun süre çıkarmak anlamına gelmez. Hangi besinlerin ne kadar süreyle çıkarılacağı, belirtilerin nasıl izleneceği ve yeniden deneme aşaması kişisel sağlık öyküsüne göre planlanır.",
+    "intro": "Eliminasyon diyeti, belirli bir besin veya besin grubunun semptomlarla ilişkisini değerlendirmek amacıyla geçici ve planlı olarak uygulanır. Bilimsel yaklaşım; gereksiz yasaklardan kaçınmak, kısıtlama süresini sınırlamak, besin yeterliliğini korumak ve uygun zamanda kontrollü yeniden deneme yapmaktır.",
     "sections": [
       [
-        "Eliminasyon ne zaman düşünülür?",
-        "<p>Belirli sindirim yakınmaları, hekim tarafından değerlendirilen intolerans şüphesi veya başka tıbbi gerekçelerde kontrollü eliminasyon gündeme gelebilir. Şiddetli, yeni başlayan veya açıklanamayan belirtilerde öncelikle hekim değerlendirmesi gerekir.</p>"
+        "Eliminasyon diyeti ne zaman düşünülür?",
+        "<p>Eliminasyon yaklaşımı; doğrulanmış alerji, intolerans, çölyak gibi tıbbi durumlarda veya belirli gastrointestinal yakınmalarda hekim ve diyetisyen değerlendirmesiyle kullanılabilir. Rastgele çok sayıda besini aynı anda çıkarmak neden-sonuç ilişkisini anlamayı zorlaştırır.</p>"
       ],
       [
-        "Süre ve yeniden deneme neden önemlidir?",
-        "<p>Gereksiz ve uzun süreli kısıtlamalar besin çeşitliliğini azaltabilir. Bu nedenle eliminasyon mümkün olduğunca hedefli, süreli ve yeniden değerlendirme adımı içeren bir süreç olmalıdır.</p>"
+        "Kısıtlama aşaması neden geçici olmalıdır?",
+        "<p>Uzun süreli ve geniş kapsamlı kısıtlamalar enerji, protein, lif, vitamin ve mineral alımını azaltabilir. Ayrıca sosyal yaşamı ve yeme davranışını olumsuz etkileyebilir. Bu nedenle eliminasyonun amacı mümkün olduğunca az kısıtlamayla semptom kontrolünü sağlamaktır.</p>"
       ],
       [
-        "Besin günlüğü ve belirti takibi",
-        "<p>Öğünler, belirtilerin zamanı ve şiddeti not edilebilir. Tek bir gün veya tek bir besin üzerinden kesin sonuç çıkarılmaz; örüntüler zaman içinde değerlendirilir.</p>"
+        "Yeniden deneme ve kişiselleştirme",
+        "<p>Örneğin düşük FODMAP yaklaşımında bilimsel uygulama yalnızca kısıtlama aşamasından oluşmaz; yeniden deneme ve kişiselleştirme aşamaları da sürecin temel parçasıdır. Tolere edilen besinlerin yeniden diyete eklenmesi beslenme çeşitliliğini artırır.</p>"
       ],
       [
-        "Online takip",
-        "<p>Online görüşmelerde alışveriş, dışarıda yemek, tarif alternatifleri ve yeniden deneme aşaması günlük yaşama göre planlanır. Gerektiğinde hekim veya ilgili sağlık profesyoneline yönlendirme yapılır.</p>"
+        "IgG gıda testleri neden tek başına yeterli değildir?",
+        "<p>Semptomlara neden olan besinleri belirlemek için ticari IgG gıda panellerinin rutin kullanımını destekleyen güçlü klinik kanıt yoktur. Eliminasyon kararı sağlık öyküsü, semptom kaydı ve gerektiğinde tıbbi tanı süreciyle verilmelidir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.niddk.nih.gov/health-information/digestive-diseases/irritable-bowel-syndrome/eating-diet-nutrition"
+    ]
   },
   {
     "slug": "glutensiz-beslenme",
@@ -385,27 +357,25 @@
     "seo_title": "Glutensiz Beslenme | Online Diyetisyen",
     "meta_description": "Glutensiz beslenme; çölyak hastalığı veya tıbbi gereklilik bulunan durumlarda güvenli ürün seçimi, etiket okuma ve dengeli öğün planlamasıyla ele alınır.",
     "short": "Çölyak tanısı veya tıbbi gereklilik bulunan durumlarda güvenli ve dengeli glutensiz beslenme düzeni oluşturma desteği.",
-    "intro": "Glutensiz beslenme özellikle çölyak hastalığında tedavinin temel parçasıdır. Ancak tıbbi gerekçe olmadan gluten içeren tüm besinleri çıkarmak herkes için gerekli değildir. Plan; güvenli ürün seçimi, çapraz bulaş riski, etiket okuma ve besin çeşitliliği dikkate alınarak hazırlanır.",
+    "intro": "Glutensiz beslenme çölyak hastalığında yaşam boyu tedavinin temelidir. Bunun dışında glutenin çıkarılması ancak tıbbi gerekçe olduğunda planlanmalıdır. Amaç yalnızca gluteni kesmek değil, besin yeterliliğini ve lif alımını koruyan dengeli bir glutensiz düzen oluşturmaktır.",
     "sections": [
       [
-        "Hangi besinler doğal olarak glutensizdir?",
-        "<p>Pirinç, patates, mısır, karabuğday, baklagiller, sebze, meyve, et, yumurta ve süt ürünlerinin pek çoğu doğal olarak gluten içermez. Paketli ürünlerde ise içerik ve üretim koşulları ayrıca kontrol edilmelidir.</p>"
+        "Çölyak hastalığında neden tamamen glutensiz beslenilir?",
+        "<p>Çölyak hastalığında gluten bağışıklık aracılı ince bağırsak hasarına yol açar. Bu nedenle buğday, arpa ve çavdar kaynaklı glutenin tamamen çıkarılması gerekir. Az miktarda gluten maruziyeti bile bağırsak hasarını sürdürebileceği için çapraz bulaşma konusunda eğitim önemlidir.</p>"
       ],
       [
-        "Etiket okuma ve çapraz bulaş",
-        "<p>Çölyak hastalığında yalnızca içerik değil, üretim ve hazırlama sırasında çapraz bulaş olasılığı da önemlidir. Evde, restoranda ve alışverişte güvenli uygulamalar kişiye göre konuşulur.</p>"
+        "Glutensiz ürünler otomatik olarak daha sağlıklı değildir",
+        "<p>Glutensiz paketli ürünlerin bazıları liften fakir, yağ veya şekerden zengin olabilir. Bu nedenle glutensiz beslenme yalnızca özel ürünlere dayanmak yerine patates, pirinç, karabuğday, kinoa, mısır, baklagil, sebze ve meyve gibi doğal olarak glutensiz kaynaklarla çeşitlendirilmelidir.</p>"
       ],
       [
-        "Besin çeşitliliğini korumak",
-        "<p>Glutensiz ürün seçerken lif, protein, demir ve diğer mikrobesinlerin yeterliliği gözden geçirilir. Sadece paketli glutensiz ürünlere dayalı tekdüze bir düzen önerilmez.</p>"
+        "Demir, folat, B vitaminleri ve lif",
+        "<p>Çölyak tanısı sırasında demir, folat, B12 veya D vitamini gibi eksiklikler görülebilir. Ayrıca uzun dönem glutensiz diyette lif ve bazı mikrobesinlerin yetersiz kalma riski vardır. Bu nedenle beslenme kalitesi ve gerektiğinde laboratuvar sonuçları izlenmelidir.</p>"
       ],
       [
-        "Online danışmanlıkta destek",
-        "<p>Market ürünleri, mutfak düzeni, dışarıda yemek ve pratik öğün alternatifleri günlük yaşama göre ele alınır. Çölyak tanısı ve tıbbi takip hekim tarafından yürütülür.</p>"
+        "Gluteni kesmeden önce tanı neden önemlidir?",
+        "<p>Çölyak şüphesi varsa glutenli beslenme tanı testleri tamamlanmadan kesilmemelidir. Glutensiz diyete erken başlamak antikor testleri ve biyopsi sonuçlarını etkileyerek tanıyı zorlaştırabilir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition"
+    ]
   },
   {
     "slug": "cocuk-ergen-beslenmesi",
@@ -413,26 +383,24 @@
     "seo_title": "Çocuk ve Ergen Beslenmesi | Diyetisyen Tuğba Şeker Ağaç",
     "meta_description": "Çocuk ve ergen beslenmesi; büyüme-gelişme, okul düzeni, aile alışkanlıkları ve yaşa uygun besin çeşitliliği üzerinden kişisel olarak değerlendirilir.",
     "short": "Büyüme ve gelişme döneminde yaşa, okul düzenine ve aile yaşamına uygun beslenme alışkanlıklarını destekleyen danışmanlık.",
-    "intro": "Çocuk ve ergenlerde beslenme yalnızca kilo üzerinden değerlendirilmez. Büyüme-gelişme, yaş, aktivite, okul düzeni, aile sofraları, sağlık öyküsü ve yeme davranışı birlikte ele alınır. Amaç çocuğun gereksinimlerini karşılayan, aile içinde uygulanabilir bir düzen oluşturmaktır.",
+    "intro": "Çocuk ve ergen beslenmesinde temel hedef yalnızca kilo kontrolü değildir; büyüme, puberte, kemik gelişimi, okul performansı ve sağlıklı yeme davranışının desteklenmesi ön plandadır. Plan; yaşa, büyüme eğrisine, aktivite düzeyine, aile düzenine ve varsa sağlık durumuna göre hazırlanır.",
     "sections": [
       [
-        "Büyüme ve gelişme önceliklidir",
-        "<p>Çocuk ve ergenlerde enerji ve besin gereksinimleri yaşa, büyüme hızına ve aktivite düzeyine göre değişir. Yetişkinlere yönelik hızlı kilo verme diyetleri doğrudan çocuklara uygulanmaz.</p>"
+        "Büyüme eğrisi neden önemlidir?",
+        "<p>Çocuklarda kilo tek başına değerlendirilmez. Boy, kilo, yaş, cinsiyet ve zaman içindeki büyüme eğilimi birlikte incelenir. Ani kilo kaybı, büyümede duraklama veya hızlı kilo artışı varsa çocuk hekimi değerlendirmesi gerekebilir.</p>"
       ],
       [
-        "Okul ve günlük yaşam",
-        "<p>Kahvaltı, okul öğünü, kantin seçenekleri, spor saatleri ve evdeki yemek düzeni birlikte değerlendirilir. Pratik ve ulaşılabilir alternatifler aileyle birlikte planlanır.</p>"
+        "Enerji ve protein gereksinimi yetişkinlerden farklıdır",
+        "<p>Çocuklar büyüme döneminde oldukları için enerji ve protein yetersizliği gelişimi etkileyebilir. Bu nedenle yetişkinlere yönelik düşük kalorili veya çok düşük karbonhidratlı diyetlerin çocuklara uyarlanması doğru değildir.</p>"
       ],
       [
-        "Aile yaklaşımı ve yeme davranışı",
-        "<p>Besinleri ödül-ceza aracı yapmak veya çocuğu sürekli kilosu üzerinden eleştirmek yerine, düzenli öğün ortamı ve çeşitli besinlerle karşılaşma desteklenir. Gerektiğinde ilgili sağlık profesyonelleriyle birlikte çalışılır.</p>"
+        "Demir, kalsiyum ve D vitamini",
+        "<p>Ergenlik döneminde özellikle demir, kalsiyum ve D vitamini gereksinimleri önem kazanır. Adet gören ergen kızlarda demir eksikliği riski artabilir; süt ürünlerini tüketmeyen çocuklarda kalsiyum kaynakları ayrıca planlanmalıdır.</p>"
       ],
       [
-        "Ne zaman hekim değerlendirmesi gerekir?",
-        "<p>Belirgin büyüme geriliği, hızlı ve açıklanamayan kilo değişimi, yutma güçlüğü, sürekli kusma, ciddi besin reddi veya başka sağlık belirtilerinde çocuk hekimi değerlendirmesi önceliklidir.</p>"
+        "Aile temelli yaklaşım ve yeme davranışı",
+        "<p>Sağlıklı beslenme alışkanlıklarının kalıcı olması için yalnızca çocuğa yasak koymak yerine evdeki yemek düzeni, erişilebilir besinler ve aile modeli birlikte ele alınır. Aşırı kilo odaklı dil, katı yasaklar ve sürekli tartılma çocuklarda beden algısını ve yeme davranışını olumsuz etkileyebilir.</p>"
       ]
-    ],
-    "related": "saglikli-tabak-nasil-hazirlanir",
-    "source": "https://www.cdc.gov/healthy-weight-growth/healthy-eating/index.html"
+    ]
   }
 ]

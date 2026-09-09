@@ -200,7 +200,6 @@ def build():
     layout('/hizmetler/','Online Diyetisyen Hizmetleri | Tuğba Şeker Ağaç','Online (uzaktan) diyetisyen hizmetleri: kilo verme, kilo alma, diyabet ve insülin direnci, PCOS, Haşimato, lipödem, menopoz, gebelik, emzirme ve farklı yaşam dönemlerinde beslenme danışmanlığı.',services,cover='tugba-ofis-yesil.webp')
     for s in SERVICES:
         content=''.join(f'<h2>{e(t)}</h2>{b}' for t,b in s['sections'])
-        content+='<h2>İlgili beslenme yazısı</h2><p>'+link('/blog/'+s['related']+'/','Konuyu blogda ayrıntılı inceleyin ↗')+'</p><h2>Bilgi kaynağı</h2><p class="source-list">'+link(s['source'],'Konuyla ilgili sağlık kurumu kaynağı ↗',external=True)+'</p>'
         body=hero(e(s['title']),e(s['intro']),'Danışmanlık alanı')+article_body(content)
         schema={'@type':'Service','name':s['title'],'provider':{'@id':BASE+'/#kurum'},'areaServed':{'@type':'Country','name':'Türkiye'},'url':BASE+'/hizmetler/'+s['slug']+'/','serviceType':'Beslenme danışmanlığı'}
         layout('/hizmetler/'+s['slug']+'/',s.get('seo_title',s['title']+' | Online Diyetisyen Tuğba Şeker Ağaç'),s.get('meta_description',s['short']+' Tuğba Şeker Ağaç ile online ve Adana’da beslenme danışmanlığı.'),body,extra=[schema])
