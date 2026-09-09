@@ -1,0 +1,45 @@
+name: Optimize Core Web Vitals once
+
+on:
+  push:
+    paths:
+      - '.github/workflows/optimize-core-web-vitals.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  optimize-build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install image optimizer
+        run: python -m pip install --disable-pip-version-check pillow
+      - name: Optimize images and critical loading
+        run: python scripts/optimize-core-web-vitals.py
+      - name: Build website
+        run: python scripts/build.py
+      - name: Validate technical SEO, links and performance guards
+        run: python scripts/check.py
+      - name: Check calculator
+        run: node scripts/check-calculator.cjs
+      - name: Show optimized asset sizes
+        run: |
+          ls -lh assets/images/tugba-hero-cwv.webp assets/images/tugba-logo-yatay-cwv.webp assets/images/tugba-logo-yatay-light-cwv.webp
+      - name: Commit optimized site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/build.py scripts/check.py assets/app.js assets/images/tugba-hero-cwv.webp assets/images/tugba-logo-yatay-cwv.webp assets/images/tugba-logo-yatay-light-cwv.webp .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Optimize Core Web Vitals and critical loading"
+            git push
+          fi
