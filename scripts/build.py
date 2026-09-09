@@ -39,7 +39,7 @@ def img(file,alt,cls='',eager=False):
 def brand(eager=False,light=False):
     logo=LOGO_LIGHT if light else LOGO
     return img(logo,'Diyetisyen Tuğba Şeker Ağaç elma ve kelebek logolu yatay marka işareti','brand-logo',eager=eager)
-NAV=[('Ana Sayfa','/'),('Kurumsal','/kurumsal/'),('Online Diyetisyen','/online-diyetisyen/'),('Hizmetler','/hizmetler/'),('Blog','/blog/'),('SSS','/sikca-sorulan-sorular/'),('İletişim','/iletisim/')]
+NAV=[('Ana Sayfa','/'),('Hakkında','/kurumsal/'),('Online Diyetisyen','/online-diyetisyen/'),('Hizmetler','/hizmetler/'),('Fiyatlar','/online-diyetisyen-fiyatlari/'),('Blog','/blog/'),('SSS','/sikca-sorulan-sorular/'),('İletişim','/iletisim/')]
 PAGES=[]
 def layout(route,title,desc,body,kind='WebPage',extra=None,noindex=False,cover='tugba-ofis-yesil.webp'):
     canonical=BASE+route
