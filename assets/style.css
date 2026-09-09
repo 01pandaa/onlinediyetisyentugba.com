@@ -303,3 +303,26 @@
 .faq-link-card span{color:#d7e5dc;font-size:14px;line-height:1.55}
 .faq-help{margin-top:34px}
 @media (max-width:820px){.faq-intro-card,.faq-category,.faq-seo-links{padding:24px}.faq-seo-links{grid-template-columns:1fr}.faq-link-grid{grid-template-columns:1fr}.faq-category-head{align-items:flex-start;flex-direction:column-reverse;gap:8px}}
+
+
+/* online-price-page-v1 */
+.price-preview{padding-top:0}
+.price-preview-inner{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:30px 34px;border:1px solid rgba(22,78,51,.14);border-radius:28px;background:linear-gradient(135deg,#f7f1e5,#eef7f0)}
+.price-preview-inner h2{margin:8px 0 10px}
+.price-preview-inner p{margin:0;max-width:720px}
+.price-page-heading{max-width:780px;margin-bottom:34px}
+.price-page-heading h2{margin:8px 0 12px}
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.price-card{position:relative;display:flex;flex-direction:column;gap:16px;min-height:360px;padding:34px;border:1px solid rgba(22,78,51,.15);border-radius:28px;background:#fff;box-shadow:0 18px 45px rgba(22,78,51,.07)}
+.price-card.featured{border:2px solid #237a50;transform:translateY(-8px);box-shadow:0 24px 55px rgba(22,78,51,.13)}
+.price-badge{align-self:flex-start;margin-top:-50px;margin-bottom:4px;padding:8px 14px;border-radius:999px;background:#164e33;color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.08em}
+.price-term{color:#164e33;font-size:.86rem;font-weight:800;letter-spacing:.07em}
+.price-amount{display:block;color:#237a50;font-size:clamp(2.1rem,4vw,3.4rem);line-height:1;font-weight:800}
+.price-card p{flex:1;margin:0;color:#607066;line-height:1.7}
+.price-card .button{align-self:flex-start}
+.price-update-note{margin:26px 0 0;text-align:center;color:#66756c;font-size:.92rem}
+.price-cta{display:flex;align-items:center;justify-content:space-between;gap:36px}
+.price-cta h2{margin:8px 0 10px}
+.price-cta p{margin:0;max-width:700px}
+@media (max-width:900px){.price-grid{grid-template-columns:1fr}.price-card.featured{transform:none;margin-top:12px}.price-preview-inner,.price-cta{align-items:flex-start;flex-direction:column}.price-card{min-height:0}}
+@media (max-width:560px){.price-card,.price-preview-inner{padding:26px 22px;border-radius:22px}.price-badge{margin-top:-42px}.price-amount{font-size:2.45rem}}
