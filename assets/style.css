@@ -266,3 +266,9 @@
   .services-catalog-grid{grid-template-columns:1fr!important;gap:16px!important;}
   .service-card-v2{min-height:0!important;padding:23px!important;}
 }
+
+
+/* service-detail-links-2026-09-09 */
+.service-detail-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px;padding-top:14px;border-top:1px solid #dfe9df;color:#185b3a;font-size:13px;font-weight:700;letter-spacing:.01em}
+.service-detail-link:hover{color:#0f432b}
+.service-card-v2 .service-detail-link{margin-top:20px}

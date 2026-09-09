@@ -1,62 +1,298 @@
 [
   {
-    "slug":"kilo-verme", "title":"Kilo verme ve kilo yönetimi", "short":"Günlük hayatınıza uyarlanabilen öğünler, beslenme alışkanlıkları ve düzenli takip.",
-    "intro":"Kilo yönetimi; çalışma saatlerinizi, yemek kültürünüzü, sağlık durumunuzu ve sürdürebileceğiniz alışkanlıkları birlikte ele alan bir süreçtir. Online görüşmelerde yalnızca tartıdaki sayı değil, planın günlük hayatınızda nasıl karşılık bulduğu da konuşulur.",
-    "sections":[
-      ["İlk adım: günlük düzeninizi anlamak", "<p>Bir gününüzün nasıl geçtiği, nerede yemek yediğiniz, açlık hissettiğiniz saatler ve daha önce denediğiniz yöntemler değerlendirilir. Başlangıç görüşmesinde sevdiğiniz yiyecekleri ve zorlandığınız durumları anlatmanız, planın size uygun olmasını sağlar.</p><p>Hekim tarafından konmuş tanılar, kullanılan ilaçlar ve mevcut tetkikler de değerlendirmeye dahildir. Kilo artışını tek bir besine bağlayan ya da herkese aynı listeyi öneren bir yaklaşım izlenmez.</p>"],
-      ["Beslenme planı nasıl hazırlanır?", "<p>Ev yemekleri, iş yerindeki seçenekler, dışarıda yemek ve sosyal hayat birlikte düşünülür. Öğünlerin düzeni ve porsiyonlar kişisel gereksinimlerinize göre belirlenir. Listeyi uygularken karşılaştığınız güçlükler takip görüşmelerinde ele alınır.</p><ul><li>Alışveriş ve yemek hazırlama için uygulanabilir seçenekler.</li><li>Yoğun günler için alternatif öğünler.</li><li>Açlık, tokluk ve yeme davranışı üzerine farkındalık.</li><li>Hareket ve uyku düzeninin genel değerlendirmesi.</li></ul>"],
-      ["Tartı sonucunu nasıl yorumlarız?", "<p>Vücut ağırlığı; yağ, kas, kemik, organlar ve suyun toplamından etkilenir. Bu nedenle tek bir ölçüm, yağ kaybını doğrudan göstermez. İzlemde uygun koşullarda alınan ölçümler ve zaman içindeki değişim birlikte değerlendirilir.</p><p>Belirli sürede belirli kilogram verme sözü verilmez. Hedefler sağlık durumunuz ve sürdürülebilirlik dikkate alınarak birlikte belirlenir.</p>"],
-      ["Online takipte neler konuşulur?", "<p>Haftanın nasıl geçtiği, hangi öğünlerin uygulanabildiği ve hangi noktalarda değişiklik gerektiği konuşulur. Gerektiğinde listeye alternatifler eklenir. Seyahat, vardiya veya aile düzeni değiştiğinde plan da yeniden ele alınabilir.</p>"]
-    ],"related":"tarti-yag-kas-ve-su-degisimi","source":"https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity"
+    "slug": "kilo-verme",
+    "title": "Kilo verme ve kilo yönetimi",
+    "short": "Günlük hayatınıza uyarlanabilen öğünler, beslenme alışkanlıkları ve düzenli takip.",
+    "intro": "Kilo yönetimi; çalışma saatlerinizi, yemek kültürünüzü, sağlık durumunuzu ve sürdürebileceğiniz alışkanlıkları birlikte ele alan bir süreçtir. Online görüşmelerde yalnızca tartıdaki sayı değil, planın günlük hayatınızda nasıl karşılık bulduğu da konuşulur.",
+    "sections": [
+      [
+        "İlk adım: günlük düzeninizi anlamak",
+        "<p>Bir gününüzün nasıl geçtiği, nerede yemek yediğiniz, açlık hissettiğiniz saatler ve daha önce denediğiniz yöntemler değerlendirilir. Başlangıç görüşmesinde sevdiğiniz yiyecekleri ve zorlandığınız durumları anlatmanız, planın size uygun olmasını sağlar.</p><p>Hekim tarafından konmuş tanılar, kullanılan ilaçlar ve mevcut tetkikler de değerlendirmeye dahildir. Kilo artışını tek bir besine bağlayan ya da herkese aynı listeyi öneren bir yaklaşım izlenmez.</p>"
+      ],
+      [
+        "Beslenme planı nasıl hazırlanır?",
+        "<p>Ev yemekleri, iş yerindeki seçenekler, dışarıda yemek ve sosyal hayat birlikte düşünülür. Öğünlerin düzeni ve porsiyonlar kişisel gereksinimlerinize göre belirlenir. Listeyi uygularken karşılaştığınız güçlükler takip görüşmelerinde ele alınır.</p><ul><li>Alışveriş ve yemek hazırlama için uygulanabilir seçenekler.</li><li>Yoğun günler için alternatif öğünler.</li><li>Açlık, tokluk ve yeme davranışı üzerine farkındalık.</li><li>Hareket ve uyku düzeninin genel değerlendirmesi.</li></ul>"
+      ],
+      [
+        "Tartı sonucunu nasıl yorumlarız?",
+        "<p>Vücut ağırlığı; yağ, kas, kemik, organlar ve suyun toplamından etkilenir. Bu nedenle tek bir ölçüm, yağ kaybını doğrudan göstermez. İzlemde uygun koşullarda alınan ölçümler ve zaman içindeki değişim birlikte değerlendirilir.</p><p>Belirli sürede belirli kilogram verme sözü verilmez. Hedefler sağlık durumunuz ve sürdürülebilirlik dikkate alınarak birlikte belirlenir.</p>"
+      ],
+      [
+        "Online takipte neler konuşulur?",
+        "<p>Haftanın nasıl geçtiği, hangi öğünlerin uygulanabildiği ve hangi noktalarda değişiklik gerektiği konuşulur. Gerektiğinde listeye alternatifler eklenir. Seyahat, vardiya veya aile düzeni değiştiğinde plan da yeniden ele alınabilir.</p>"
+      ]
+    ],
+    "related": "tarti-yag-kas-ve-su-degisimi",
+    "source": "https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity"
   },
   {
-    "slug":"kilo-alma", "title":"Sağlıklı kilo alma", "short":"İştahınıza ve günlük düzeninize uygun, besin çeşitliliğini gözeten bir plan.",
-    "intro":"Kilo alma sürecinde amaç yalnızca daha fazla yemek değildir. Yeterli besin alımını kolaylaştıran, rahatsızlık vermeden uygulanabilen ve kişinin sağlık durumuna uygun bir öğün düzeni oluşturulur.",
-    "sections":[
-      ["Düşük kilonun nedenini anlamak", "<p>Uzun süredir düşük kiloda olmak ile yakın zamanda istemsiz kilo kaybetmek aynı durum değildir. İstemsiz veya açıklanamayan kilo kaybında öncelikle hekim değerlendirmesi gerekir. İştah, sindirim yakınmaları ve kullanılan ilaçlar görüşmede paylaşılmalıdır.</p>"],
-      ["Öğünleri günlük hayata yerleştirmek", "<p>Çok büyük porsiyonlar her zaman kolay uygulanmaz. Görüşmede günün hangi saatlerinde yemek yemenin daha rahat olduğu belirlenir. Gerekirse küçük ve pratik ara öğün seçenekleri planlanır.</p><p>Örneğin işe giderken kahvaltıyı atlayan biriyle, akşam yemeğinden sonra erken doyan biri için aynı düzen kurulmaz. Alışveriş listesi ve hazırlanabilir seçenekler bu farklara göre oluşturulur.</p>"],
-      ["Kas, hareket ve beslenme ilişkisi", "<p>İskelet kaslarının çalışması hareketle, beslenme gereksinimleri ise toplam günlük düzenle ilişkilidir. Yalnızca protein içeren ürünlere yönelmek yerine öğünlerin bütününe bakılır. Aktivite düzeyi ve varsa hekim önerileri dikkate alınır.</p>"],
-      ["İzlemde neler değerlendirilir?", "<ul><li>Öğünleri uygularken yaşanan tokluk ve iştah durumu.</li><li>Besinlere tolerans ve sindirim yakınmaları.</li><li>Uygun aralıklarla takip edilen vücut ağırlığı.</li><li>Günlük yaşamda sürdürülebilen değişiklikler.</li></ul><p>Hazır kilo aldırıcı ürün veya takviye kullanımı otomatik olarak önerilmez; gereksinim ve güvenlik kişisel olarak değerlendirilir.</p>"]
-    ],"related":"kilo-almak-icin-ogun-duzeni","source":"https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/"
+    "slug": "kilo-alma",
+    "title": "Sağlıklı kilo alma",
+    "short": "İştahınıza ve günlük düzeninize uygun, besin çeşitliliğini gözeten bir plan.",
+    "intro": "Kilo alma sürecinde amaç yalnızca daha fazla yemek değildir. Yeterli besin alımını kolaylaştıran, rahatsızlık vermeden uygulanabilen ve kişinin sağlık durumuna uygun bir öğün düzeni oluşturulur.",
+    "sections": [
+      [
+        "Düşük kilonun nedenini anlamak",
+        "<p>Uzun süredir düşük kiloda olmak ile yakın zamanda istemsiz kilo kaybetmek aynı durum değildir. İstemsiz veya açıklanamayan kilo kaybında öncelikle hekim değerlendirmesi gerekir. İştah, sindirim yakınmaları ve kullanılan ilaçlar görüşmede paylaşılmalıdır.</p>"
+      ],
+      [
+        "Öğünleri günlük hayata yerleştirmek",
+        "<p>Çok büyük porsiyonlar her zaman kolay uygulanmaz. Görüşmede günün hangi saatlerinde yemek yemenin daha rahat olduğu belirlenir. Gerekirse küçük ve pratik ara öğün seçenekleri planlanır.</p><p>Örneğin işe giderken kahvaltıyı atlayan biriyle, akşam yemeğinden sonra erken doyan biri için aynı düzen kurulmaz. Alışveriş listesi ve hazırlanabilir seçenekler bu farklara göre oluşturulur.</p>"
+      ],
+      [
+        "Kas, hareket ve beslenme ilişkisi",
+        "<p>İskelet kaslarının çalışması hareketle, beslenme gereksinimleri ise toplam günlük düzenle ilişkilidir. Yalnızca protein içeren ürünlere yönelmek yerine öğünlerin bütününe bakılır. Aktivite düzeyi ve varsa hekim önerileri dikkate alınır.</p>"
+      ],
+      [
+        "İzlemde neler değerlendirilir?",
+        "<ul><li>Öğünleri uygularken yaşanan tokluk ve iştah durumu.</li><li>Besinlere tolerans ve sindirim yakınmaları.</li><li>Uygun aralıklarla takip edilen vücut ağırlığı.</li><li>Günlük yaşamda sürdürülebilen değişiklikler.</li></ul><p>Hazır kilo aldırıcı ürün veya takviye kullanımı otomatik olarak önerilmez; gereksinim ve güvenlik kişisel olarak değerlendirilir.</p>"
+      ]
+    ],
+    "related": "kilo-almak-icin-ogun-duzeni",
+    "source": "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/healthy-ways-to-gain-weight/"
   },
   {
-    "slug":"hastaliklarda-beslenme", "title":"Hastalıklarda beslenme danışmanlığı", "short":"Hekim tanısı ve tedavi planıyla birlikte değerlendirilen kişisel beslenme desteği.",
-    "intro":"Diyabet, insülin direnci, tiroid hastalıkları ve sindirim sistemi sorunlarında beslenme planı kişiye göre değişir. Danışmanlık, hekimin koyduğu tanı ve yürüttüğü tedaviyle birlikte ele alınır; tanı koyma veya ilaç düzenleme hizmeti değildir.",
-    "sections":[
-      ["Diyabet ve insülin direncinde yaklaşım", "<p>Öğün içeriği ve zamanlaması, kullanılan ilaçlar ve günlük aktivite birlikte değerlendirilir. Karbonhidrat kaynaklarının türü ve miktarı üzerine çalışılır. Herkese aynı yasaklar listesi veya aynı öğün sayısı önerilmez.</p><p>İnsülin veya hipoglisemi riski taşıyan ilaç kullanan kişilerin öğün değişiklikleri sağlık ekibiyle uyumlu planlanmalıdır. İlaç dozlarını kendi başınıza değiştirmeyin.</p>"],
-      ["Tiroid hastalıklarında beslenme", "<p>Tiroid hastalığının türü, mevcut tedavi, tetkikler ve günlük alışkanlıklar bilinmeden özel bir diyet önerilemez. Tek bir yiyeceğin tiroid hastalığını iyileştirdiği iddia edilmez. Gluten veya süt ürünleri gibi besin gruplarının çıkarılması için kişisel ve tıbbi gerekçe değerlendirilir.</p>"],
-      ["Sindirim sistemi yakınmaları", "<p>Şişkinlik, kabızlık veya reflü yakınmalarında öğünlerin zamanı, porsiyonlar, sıvı alımı ve kişisel tolerans kaydedilebilir. Kapsamlı eliminasyon diyetleri rastgele uygulanmaz. Gerekli durumlarda hekim değerlendirmesine yönlendirilir.</p><p>Şiddetli ya da yeni başlayan ağrı, dışkıda kan ve açıklanamayan kilo kaybı gibi belirtiler yalnızca diyetle çözülmeye çalışılmamalıdır.</p>"],
-      ["Görüşmeye nasıl hazırlanabilirsiniz?", "<ul><li>Mevcut tanılarınızı ve kullandığınız ilaçları not edin.</li><li>Hekiminizin verdiği güncel tetkik sonuçlarını hazır bulundurun.</li><li>Yakınmaların ne zaman başladığını ve öğünlerle ilişkisini yazın.</li><li>Hekim veya diğer sağlık profesyonellerinin önerilerini paylaşın.</li></ul><p>Hassas sağlık bilgilerinizi bu web sitesine girmeyin. Görüşme için uygun paylaşım yöntemi doğrudan iletişimde belirlenir.</p>"]
-    ],"related":"insulin-direncinde-beslenme","source":"https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes"
+    "slug": "hastaliklarda-beslenme",
+    "title": "Hastalıklarda beslenme danışmanlığı",
+    "short": "Hekim tanısı ve tedavi planıyla birlikte değerlendirilen kişisel beslenme desteği.",
+    "intro": "Diyabet, insülin direnci, tiroid hastalıkları ve sindirim sistemi sorunlarında beslenme planı kişiye göre değişir. Danışmanlık, hekimin koyduğu tanı ve yürüttüğü tedaviyle birlikte ele alınır; tanı koyma veya ilaç düzenleme hizmeti değildir.",
+    "sections": [
+      [
+        "Diyabet ve insülin direncinde yaklaşım",
+        "<p>Öğün içeriği ve zamanlaması, kullanılan ilaçlar ve günlük aktivite birlikte değerlendirilir. Karbonhidrat kaynaklarının türü ve miktarı üzerine çalışılır. Herkese aynı yasaklar listesi veya aynı öğün sayısı önerilmez.</p><p>İnsülin veya hipoglisemi riski taşıyan ilaç kullanan kişilerin öğün değişiklikleri sağlık ekibiyle uyumlu planlanmalıdır. İlaç dozlarını kendi başınıza değiştirmeyin.</p>"
+      ],
+      [
+        "Tiroid hastalıklarında beslenme",
+        "<p>Tiroid hastalığının türü, mevcut tedavi, tetkikler ve günlük alışkanlıklar bilinmeden özel bir diyet önerilemez. Tek bir yiyeceğin tiroid hastalığını iyileştirdiği iddia edilmez. Gluten veya süt ürünleri gibi besin gruplarının çıkarılması için kişisel ve tıbbi gerekçe değerlendirilir.</p>"
+      ],
+      [
+        "Sindirim sistemi yakınmaları",
+        "<p>Şişkinlik, kabızlık veya reflü yakınmalarında öğünlerin zamanı, porsiyonlar, sıvı alımı ve kişisel tolerans kaydedilebilir. Kapsamlı eliminasyon diyetleri rastgele uygulanmaz. Gerekli durumlarda hekim değerlendirmesine yönlendirilir.</p><p>Şiddetli ya da yeni başlayan ağrı, dışkıda kan ve açıklanamayan kilo kaybı gibi belirtiler yalnızca diyetle çözülmeye çalışılmamalıdır.</p>"
+      ],
+      [
+        "Görüşmeye nasıl hazırlanabilirsiniz?",
+        "<ul><li>Mevcut tanılarınızı ve kullandığınız ilaçları not edin.</li><li>Hekiminizin verdiği güncel tetkik sonuçlarını hazır bulundurun.</li><li>Yakınmaların ne zaman başladığını ve öğünlerle ilişkisini yazın.</li><li>Hekim veya diğer sağlık profesyonellerinin önerilerini paylaşın.</li></ul><p>Hassas sağlık bilgilerinizi bu web sitesine girmeyin. Görüşme için uygun paylaşım yöntemi doğrudan iletişimde belirlenir.</p>"
+      ]
+    ],
+    "related": "insulin-direncinde-beslenme",
+    "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/healthy-living-with-diabetes"
   },
   {
-    "slug":"saglikli-beslenme", "title":"Sağlıklı beslenme alışkanlıkları", "short":"Kendi mutfağınıza, bütçenize ve yaşam ritminize uygun beslenme düzeni.",
-    "intro":"Beslenme danışmanlığı almak için mutlaka kilo değiştirme hedefiniz olması gerekmez. Öğün düzeninizi geliştirmek, alışverişi kolaylaştırmak ve yiyeceklerle daha esnek bir ilişki kurmak da görüşmenin konusu olabilir.",
-    "sections":[
-      ["Nereden başlamak gerekir?", "<p>Günlük hayatınızda en çok zorlandığınız noktayı seçmek iyi bir başlangıçtır. Sabah aceleyle evden çıkmak, iş yerinde seçenek bulamamak veya akşam ne pişireceğine karar verememek farklı çözümler gerektirir. İlk görüşmede bu durumlar birlikte ele alınır.</p>"],
-      ["Besin çeşitliliği ve öğün dengesi", "<p>Sağlıklı beslenme tek bir süper besine dayanmaz. Sebzeler, meyveler, tahıllar, protein kaynakları ve yağlar öğün düzeninin farklı parçalarıdır. Bireysel gereksinimler yaşa, aktiviteye ve sağlık durumuna göre değişir.</p><p>Günlük plan oluşturulurken ülkemizde erişilebilir ev yemekleri ve mevsiminde ürünler dikkate alınır. Her öğünde karmaşık tarifler hazırlamanız beklenmez.</p>"],
-      ["Alışveriş ve mutfak planı", "<ul><li>Haftalık rutininize uygun temel bir alışveriş listesi.</li><li>Evde ve dışarıda uygulanabilir alternatifler.</li><li>Etiket okuma ve porsiyon farkındalığı.</li><li>Yoğun günlerde öğün hazırlamayı kolaylaştıran düzenlemeler.</li></ul>"],
-      ["Sürdürülebilir olanı bulmak", "<p>Bir uygulama sizi sürekli zorluyorsa bu durum görüşmede ele alınır. Planı kusursuz uygulama beklentisi yerine, neden zorlandığınızı anlamaya ve günlük yaşamınıza uyarlamaya odaklanılır.</p>"]
-    ],"related":"saglikli-tabak-nasil-hazirlanir","source":"https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
+    "slug": "saglikli-beslenme",
+    "title": "Sağlıklı beslenme alışkanlıkları",
+    "short": "Kendi mutfağınıza, bütçenize ve yaşam ritminize uygun beslenme düzeni.",
+    "intro": "Beslenme danışmanlığı almak için mutlaka kilo değiştirme hedefiniz olması gerekmez. Öğün düzeninizi geliştirmek, alışverişi kolaylaştırmak ve yiyeceklerle daha esnek bir ilişki kurmak da görüşmenin konusu olabilir.",
+    "sections": [
+      [
+        "Nereden başlamak gerekir?",
+        "<p>Günlük hayatınızda en çok zorlandığınız noktayı seçmek iyi bir başlangıçtır. Sabah aceleyle evden çıkmak, iş yerinde seçenek bulamamak veya akşam ne pişireceğine karar verememek farklı çözümler gerektirir. İlk görüşmede bu durumlar birlikte ele alınır.</p>"
+      ],
+      [
+        "Besin çeşitliliği ve öğün dengesi",
+        "<p>Sağlıklı beslenme tek bir süper besine dayanmaz. Sebzeler, meyveler, tahıllar, protein kaynakları ve yağlar öğün düzeninin farklı parçalarıdır. Bireysel gereksinimler yaşa, aktiviteye ve sağlık durumuna göre değişir.</p><p>Günlük plan oluşturulurken ülkemizde erişilebilir ev yemekleri ve mevsiminde ürünler dikkate alınır. Her öğünde karmaşık tarifler hazırlamanız beklenmez.</p>"
+      ],
+      [
+        "Alışveriş ve mutfak planı",
+        "<ul><li>Haftalık rutininize uygun temel bir alışveriş listesi.</li><li>Evde ve dışarıda uygulanabilir alternatifler.</li><li>Etiket okuma ve porsiyon farkındalığı.</li><li>Yoğun günlerde öğün hazırlamayı kolaylaştıran düzenlemeler.</li></ul>"
+      ],
+      [
+        "Sürdürülebilir olanı bulmak",
+        "<p>Bir uygulama sizi sürekli zorluyorsa bu durum görüşmede ele alınır. Planı kusursuz uygulama beklentisi yerine, neden zorlandığınızı anlamaya ve günlük yaşamınıza uyarlamaya odaklanılır.</p>"
+      ]
+    ],
+    "related": "saglikli-tabak-nasil-hazirlanir",
+    "source": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
   },
   {
-    "slug":"sporcu-beslenmesi", "title":"Spor ve aktif yaşamda beslenme", "short":"Antrenman saatleri, günlük beslenme ve toparlanma düzenini birlikte değerlendirme.",
-    "intro":"Düzenli yürüyüş yapan biriyle yoğun antrenman programı olan birinin beslenme gereksinimleri aynı değildir. Aktivite türü, süresi, hedefler ve günlük yaşam koşulları birlikte ele alınır.",
-    "sections":[
-      ["Antrenman düzeninizi tanımak", "<p>Görüşmede haftalık hareket programınız, antrenman saatleri, günlük öğünleriniz ve yaşadığınız güçlükler konuşulur. İşten sonra spora giderken öğün atlamak veya sabah antrenmanında rahatsızlık hissetmek gibi konulara uygun seçenekler hazırlanır.</p>"],
-      ["Kas dokusu ve besin gereksinimleri", "<p>Kaslar hareket üretmek için enerji kullanır. Protein, karbonhidrat ve sıvı gereksinimleri tüm beslenme düzeni içinde değerlendirilir. Protein miktarını tek başına artırmak her durumda daha iyi sonuç anlamına gelmez.</p><p>Kas gelişimi veya sportif performans için sonuç garantisi verilmez. Beslenme planı, antrenman ve sağlık durumuna uygun biçimde düzenlenir.</p>"],
-      ["Takviyeler ilk adım değildir", "<p>Günlük besin alımı değerlendirilmeden protein tozu, yağ yakıcı veya performans ürünü önerilmez. Kullanılan ürünler, içerikleri ve varsa ilaçlarla birlikte güvenlik açısından ele alınır. Rekabetçi sporcularda ilgili spor kuruluşunun kuralları da dikkate alınmalıdır.</p>"],
-      ["Online görüşmede takip", "<ul><li>Antrenman öncesi ve sonrası öğünlerin uygulanabilirliği.</li><li>Günlük yemek ve sıvı düzeni.</li><li>İştah, enerji hissi ve toparlanma rutini.</li><li>İş, okul ve antrenman saatleriyle uyum.</li></ul>"]
-    ],"related":"kemik-kas-ve-beslenme","source":"https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/"
+    "slug": "sporcu-beslenmesi",
+    "title": "Spor ve aktif yaşamda beslenme",
+    "short": "Antrenman saatleri, günlük beslenme ve toparlanma düzenini birlikte değerlendirme.",
+    "intro": "Düzenli yürüyüş yapan biriyle yoğun antrenman programı olan birinin beslenme gereksinimleri aynı değildir. Aktivite türü, süresi, hedefler ve günlük yaşam koşulları birlikte ele alınır.",
+    "sections": [
+      [
+        "Antrenman düzeninizi tanımak",
+        "<p>Görüşmede haftalık hareket programınız, antrenman saatleri, günlük öğünleriniz ve yaşadığınız güçlükler konuşulur. İşten sonra spora giderken öğün atlamak veya sabah antrenmanında rahatsızlık hissetmek gibi konulara uygun seçenekler hazırlanır.</p>"
+      ],
+      [
+        "Kas dokusu ve besin gereksinimleri",
+        "<p>Kaslar hareket üretmek için enerji kullanır. Protein, karbonhidrat ve sıvı gereksinimleri tüm beslenme düzeni içinde değerlendirilir. Protein miktarını tek başına artırmak her durumda daha iyi sonuç anlamına gelmez.</p><p>Kas gelişimi veya sportif performans için sonuç garantisi verilmez. Beslenme planı, antrenman ve sağlık durumuna uygun biçimde düzenlenir.</p>"
+      ],
+      [
+        "Takviyeler ilk adım değildir",
+        "<p>Günlük besin alımı değerlendirilmeden protein tozu, yağ yakıcı veya performans ürünü önerilmez. Kullanılan ürünler, içerikleri ve varsa ilaçlarla birlikte güvenlik açısından ele alınır. Rekabetçi sporcularda ilgili spor kuruluşunun kuralları da dikkate alınmalıdır.</p>"
+      ],
+      [
+        "Online görüşmede takip",
+        "<ul><li>Antrenman öncesi ve sonrası öğünlerin uygulanabilirliği.</li><li>Günlük yemek ve sıvı düzeni.</li><li>İştah, enerji hissi ve toparlanma rutini.</li><li>İş, okul ve antrenman saatleriyle uyum.</li></ul>"
+      ]
+    ],
+    "related": "kemik-kas-ve-beslenme",
+    "source": "https://ods.od.nih.gov/factsheets/ExerciseAndAthleticPerformance-Consumer/"
   },
   {
-    "slug":"gebelik-emzirme-beslenmesi", "title":"Gebelik ve emzirme döneminde beslenme", "short":"Anne sağlığı ve değişen gereksinimler için hekim takibiyle uyumlu beslenme desteği.",
-    "intro":"Gebelik ve emzirme döneminde beslenme, kişisel sağlık durumu ve değişen gereksinimler dikkate alınarak planlanır. Kadın doğum hekiminin takibi ve önerileri sürecin önemli bir parçasıdır.",
-    "sections":[
-      ["Kişisel değerlendirmede neler konuşulur?", "<p>Gebeliğin haftası veya emzirme dönemi, mevcut beslenme alışkanlıkları, iştah değişimleri, tetkikler ve hekimin önerileri görüşmede ele alınır. Bu dönemde yetişkinler için genel BKİ hesaplama aracı üzerinden kilo hedefi belirlenmez.</p>"],
-      ["Günlük öğünleri kolaylaştırmak", "<p>Yemek hazırlamaya ayrılabilen zaman, besinlere tolerans ve evdeki destek göz önünde bulundurulur. Yoğun veya yorgun hissedilen günler için pratik seçenekler hazırlanır. Besin gruplarını gereksiz yere kısıtlayan listelerden kaçınılır.</p>"],
-      ["Besin güvenliği ve takviyeler", "<p>Besinlerin güvenli hazırlanması ve saklanması değerlendirilir. Vitamin ve mineral takviyeleri hekimin önerileri ve bireysel gereksinimle birlikte ele alınır. Bitkisel ürünlerin doğal olması her zaman güvenli oldukları anlamına gelmez.</p>"],
-      ["Emzirme döneminde yaklaşım", "<p>Hızlı kilo verme veya belirli bir besinle süt artırma sözü verilmez. Düzenli beslenme ve günlük ihtiyaçlar üzerine çalışılır. Bebeğin büyümesi veya süt alımıyla ilgili kaygılar çocuk hekimi ve ilgili sağlık profesyonelleriyle değerlendirilir.</p>"]
-    ],"related":"saglikli-tabak-nasil-hazirlanir","source":"https://www.nhs.uk/pregnancy/keeping-well/have-a-healthy-diet/"
+    "slug": "gebelik-emzirme-beslenmesi",
+    "title": "Gebelik ve emzirme döneminde beslenme",
+    "short": "Anne sağlığı ve değişen gereksinimler için hekim takibiyle uyumlu beslenme desteği.",
+    "intro": "Gebelik ve emzirme döneminde beslenme, kişisel sağlık durumu ve değişen gereksinimler dikkate alınarak planlanır. Kadın doğum hekiminin takibi ve önerileri sürecin önemli bir parçasıdır.",
+    "sections": [
+      [
+        "Kişisel değerlendirmede neler konuşulur?",
+        "<p>Gebeliğin haftası veya emzirme dönemi, mevcut beslenme alışkanlıkları, iştah değişimleri, tetkikler ve hekimin önerileri görüşmede ele alınır. Bu dönemde yetişkinler için genel BKİ hesaplama aracı üzerinden kilo hedefi belirlenmez.</p>"
+      ],
+      [
+        "Günlük öğünleri kolaylaştırmak",
+        "<p>Yemek hazırlamaya ayrılabilen zaman, besinlere tolerans ve evdeki destek göz önünde bulundurulur. Yoğun veya yorgun hissedilen günler için pratik seçenekler hazırlanır. Besin gruplarını gereksiz yere kısıtlayan listelerden kaçınılır.</p>"
+      ],
+      [
+        "Besin güvenliği ve takviyeler",
+        "<p>Besinlerin güvenli hazırlanması ve saklanması değerlendirilir. Vitamin ve mineral takviyeleri hekimin önerileri ve bireysel gereksinimle birlikte ele alınır. Bitkisel ürünlerin doğal olması her zaman güvenli oldukları anlamına gelmez.</p>"
+      ],
+      [
+        "Emzirme döneminde yaklaşım",
+        "<p>Hızlı kilo verme veya belirli bir besinle süt artırma sözü verilmez. Düzenli beslenme ve günlük ihtiyaçlar üzerine çalışılır. Bebeğin büyümesi veya süt alımıyla ilgili kaygılar çocuk hekimi ve ilgili sağlık profesyonelleriyle değerlendirilir.</p>"
+      ]
+    ],
+    "related": "saglikli-tabak-nasil-hazirlanir",
+    "source": "https://www.nhs.uk/pregnancy/keeping-well/have-a-healthy-diet/"
+  },
+  {
+    "slug": "insulin-direncinde-beslenme",
+    "title": "İnsülin Direncinde Beslenme",
+    "seo_title": "İnsülin Direncinde Beslenme | Online Diyetisyen",
+    "meta_description": "İnsülin direncinde beslenme nasıl planlanır? Öğün düzeni, karbonhidrat kalitesi, lif-protein dengesi ve sürdürülebilir kilo yönetimi hakkında online diyetisyen desteği.",
+    "short": "İnsülin direncinde öğün düzeni, besin seçimi ve yaşam tarzı alışkanlıklarını birlikte değerlendiren kişisel beslenme danışmanlığı.",
+    "intro": "İnsülin direncinde tek bir yasak listesi yerine; günlük öğün düzeni, karbonhidrat kaynakları, lif ve protein dengesi, hareket, uyku ve varsa hekim tedavisi birlikte değerlendirilir. Amaç uygulanabilir ve sürdürülebilir bir beslenme düzeni oluşturmaktır.",
+    "sections": [
+      [
+        "İnsülin direncinde beslenme yaklaşımı",
+        "<p>İnsülin direnci bulunan kişilerde beslenme planı kişisel sağlık öyküsü, günlük yaşam ve varsa ilaç tedavisi dikkate alınarak hazırlanır. Herkese aynı öğün sayısı veya aynı karbonhidrat miktarı önerilmez.</p><p>Öğünlerde sebze, tam tahıl, baklagil ve diğer lif kaynakları ile uygun protein kaynaklarının dengelenmesi; rafine karbonhidratların sıklığının ve porsiyonlarının kişiye göre değerlendirilmesi sürecin parçasıdır.</p>"
+      ],
+      [
+        "Kilo yönetimi ve günlük düzen",
+        "<p>Kilo kaybı gerekiyorsa hedef hızlı sonuç değil, sürdürülebilir ilerlemedir. İş saatleri, dışarıda yeme, uyku ve fiziksel aktivite planın uygulanabilirliğini etkiler.</p><ul><li>Öğün atlama ve uzun açlık dönemlerinin değerlendirilmesi.</li><li>Pratik ara öğün gereksiniminin kişiye göre belirlenmesi.</li><li>Ev ve iş ortamına uygun alternatifler.</li></ul>"
+      ],
+      [
+        "Takipte neleri değerlendiriyoruz?",
+        "<p>Açlık-tokluk durumu, öğünlerin uygulanabilirliği, enerji düzeyi ve varsa hekim tarafından izlenen laboratuvar sonuçları birlikte ele alınabilir. İlaç dozları diyetisyen tarafından değiştirilmez.</p>"
+      ],
+      [
+        "Online diyetisyen desteği",
+        "<p>Online görüşmelerde günlük rutininize göre plan hazırlanır ve takipte uygulanamayan noktalar yeniden düzenlenir. Amaç kısa süreli bir liste değil, günlük hayata uyarlanabilen bir sistem oluşturmaktır.</p>"
+      ]
+    ],
+    "related": "insulin-direncinde-beslenme",
+    "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/prediabetes-insulin-resistance"
+  },
+  {
+    "slug": "hasimato-diyeti",
+    "title": "Haşimato Diyeti ve Beslenme",
+    "seo_title": "Haşimato Diyeti ve Beslenme | Online Diyetisyen",
+    "meta_description": "Haşimato tiroiditinde beslenme; tiroid tedavisi, öğün düzeni, besin çeşitliliği ve kişisel gereksinimlerle birlikte ele alınır. Online diyetisyen desteği.",
+    "short": "Haşimato ve tiroid hastalıklarında hekim tedavisiyle uyumlu, kişiye göre planlanan beslenme danışmanlığı.",
+    "intro": "Haşimato için herkese uyan tek bir diyet yoktur. Beslenme yaklaşımı tiroid fonksiyonları, hekim tedavisi, mevcut tetkikler, günlük yaşam, besin toleransı ve kişisel hedefler birlikte değerlendirilerek planlanır.",
+    "sections": [
+      [
+        "Haşimato için tek bir özel diyet var mı?",
+        "<p>Haşimato tiroiditini tek başına iyileştirdiği kanıtlanmış belirli bir besin veya standart bir diyet bulunmaz. Gereksiz kısıtlamalar yerine yeterli ve dengeli beslenme, kişisel gereksinimler ve tıbbi takip esas alınır.</p>"
+      ],
+      [
+        "Gluten, süt ürünleri ve eliminasyon",
+        "<p>Çölyak hastalığı, alerji veya başka bir tıbbi gerekçe yoksa besin gruplarını otomatik olarak çıkarmak uygun değildir. Eliminasyon gerekiyorsa süre, kapsam ve yeniden deneme adımları planlı biçimde yürütülür.</p>"
+      ],
+      [
+        "Tiroid ilacı ve öğün düzeni",
+        "<p>Kullanılan tiroid ilacının zamanlaması ve hekim önerileri beslenme görüşmesinde dikkate alınır. İlaç dozuna müdahale edilmez. Demir, kalsiyum veya başka takviyeler kullanılıyorsa bunlar da görüşmede belirtilmelidir.</p>"
+      ],
+      [
+        "Kilo yönetimi ve takip",
+        "<p>Kilo değişimi hedefleniyorsa enerji dengesi, protein ve lif alımı, hareket, uyku ve günlük yaşam birlikte değerlendirilir. Hızlı kilo kaybı yerine sürdürülebilir bir plan oluşturulur.</p>"
+      ]
+    ],
+    "related": "saglikli-tabak-nasil-hazirlanir",
+    "source": "https://www.niddk.nih.gov/health-information/endocrine-diseases/hashimotos-disease"
+  },
+  {
+    "slug": "lipodem-diyeti",
+    "title": "Lipödem Diyeti ve Beslenme",
+    "seo_title": "Lipödem Diyeti ve Beslenme | Online Diyetisyen",
+    "meta_description": "Lipödemde beslenme; kilo yönetimi, yeterli protein-lif alımı, günlük öğün düzeni ve multidisipliner tedaviyi destekleyen sürdürülebilir alışkanlıklarla ele alınır.",
+    "short": "Lipödem tanısı bulunan bireylerde tıbbi takip sürecine eşlik eden, sürdürülebilir beslenme ve kilo yönetimi desteği.",
+    "intro": "Lipödem yalnızca beslenmeyle tedavi edilen bir durum değildir. Beslenme danışmanlığı; kilo yönetimi gerekiyorsa bunu desteklemek, yeterli ve dengeli öğünler oluşturmak ve günlük yaşamı kolaylaştırmak amacıyla multidisipliner sürecin bir parçası olarak ele alınır.",
+    "sections": [
+      [
+        "Lipödemde beslenmenin rolü",
+        "<p>Beslenme planının amacı lipödemi tek başına ortadan kaldırmak değildir. Genel sağlık, vücut ağırlığı yönetimi ve yeterli besin alımı desteklenir. Tedavi planı hekim ve gerekli diğer sağlık profesyonelleriyle birlikte yürütülmelidir.</p>"
+      ],
+      [
+        "Sürdürülebilir öğün düzeni",
+        "<p>Sebze, meyve, tam tahıl, baklagil ve uygun protein kaynaklarının günlük yaşama yerleştirilmesi; yüksek oranda işlenmiş besinlerin sıklığının azaltılması kişisel koşullara göre ele alınabilir.</p>"
+      ],
+      [
+        "Ödem ve sıvı konusu",
+        "<p>Sıvı ve sodyum düzeni kişisel sağlık durumuna göre değerlendirilir. Aşırı kısıtlayıcı detokslar veya hızlı sıvı kaybı vadeden yöntemler önerilmez.</p>"
+      ],
+      [
+        "Online takipte neler konuşulur?",
+        "<p>Öğünlerin uygulanabilirliği, kilo yönetimi hedefi, hareket düzeyi, iş ve sosyal yaşam koşulları takip görüşmelerinde değerlendirilir ve plan gerektiğinde güncellenir.</p>"
+      ]
+    ],
+    "related": "tarti-yag-kas-ve-su-degisimi",
+    "source": "https://www.ncbi.nlm.nih.gov/books/NBK573066/"
+  },
+  {
+    "slug": "menopozda-beslenme",
+    "title": "Menopozda Beslenme",
+    "seo_title": "Menopozda Beslenme | Online Diyetisyen",
+    "meta_description": "Menopozda beslenme; kilo yönetimi, protein, kalsiyum, D vitamini kaynakları, lif ve kalp sağlığını destekleyen öğünlerle kişiye göre planlanır.",
+    "short": "Menopoz döneminde kilo yönetimi, kemik ve kalp sağlığı ile günlük yaşamı destekleyen kişisel beslenme danışmanlığı.",
+    "intro": "Menopoz döneminde enerji gereksinimi, vücut kompozisyonu, kemik sağlığı ve kardiyometabolik riskler kişiden kişiye değişebilir. Beslenme planı yaş, hareket düzeyi, sağlık öyküsü ve günlük yaşamla birlikte ele alınır.",
+    "sections": [
+      [
+        "Menopozda kilo yönetimi",
+        "<p>Vücut ağırlığındaki değişimler yalnızca tek bir hormona bağlanmaz. Toplam enerji dengesi, kas kütlesi, hareket, uyku ve günlük alışkanlıklar birlikte değerlendirilir. Hedef hızlı kilo kaybı değil sürdürülebilir bir düzendir.</p>"
+      ],
+      [
+        "Protein, kalsiyum ve kemik sağlığı",
+        "<p>Protein kaynaklarının gün içine dengeli dağılımı ile kalsiyum ve D vitamini gereksinimlerinin yeterliliği önemlidir. Takviye gereksinimi varsa hekim değerlendirmesiyle planlanır.</p>"
+      ],
+      [
+        "Lif ve kalp sağlığı",
+        "<p>Sebze, meyve, tam tahıl, baklagil, yağlı tohumlar ve uygun yağ kaynaklarının dengeli kullanımı genel kardiyometabolik sağlığı destekleyen bir beslenme düzeninin parçasıdır.</p>"
+      ],
+      [
+        "Günlük hayata uyarlama",
+        "<p>Sıcak basması, uyku düzeni, iştah değişiklikleri veya sosyal yaşam gibi kişisel durumlar konuşulur. Öğün planı bu günlük gerçekliğe göre şekillendirilir.</p>"
+      ]
+    ],
+    "related": "saglikli-tabak-nasil-hazirlanir",
+    "source": "https://womenshealth.gov/menopause"
+  },
+  {
+    "slug": "emzirme-doneminde-beslenme",
+    "title": "Emzirme Döneminde Beslenme",
+    "seo_title": "Emzirme Döneminde Beslenme | Online Diyetisyen",
+    "meta_description": "Emzirme döneminde beslenme; annenin enerji, protein, sıvı ve mikrobesin gereksinimleri ile günlük yaşamına uygun pratik öğünler üzerinden kişisel olarak planlanır.",
+    "short": "Emzirme döneminde annenin artan enerji ve besin gereksinimlerini günlük yaşama uygun biçimde ele alan beslenme danışmanlığı.",
+    "intro": "Emzirme döneminde amaç katı yasaklar değil; annenin enerji, protein, sıvı ve mikrobesin gereksinimlerini karşılayan, pratik ve sürdürülebilir bir beslenme düzeni oluşturmaktır. Gereksinimler annenin sağlık durumu ve emzirme sürecine göre değişebilir.",
+    "sections": [
+      [
+        "Emzirme döneminde enerji ve öğün düzeni",
+        "<p>Günün koşullarına göre ana ve ara öğünler planlanabilir. Uykusuzluk, bebeğin bakım düzeni ve yemek hazırlamaya ayrılabilen zaman dikkate alınır. Her anneye aynı kalori veya aynı öğün sayısı önerilmez.</p>"
+      ],
+      [
+        "Protein, sıvı ve besin çeşitliliği",
+        "<p>Yeterli protein, sebze-meyve, tahıl, süt veya uygun alternatifler ve yağ kaynakları dengeli biçimde ele alınır. Susama sinyallerine göre yeterli sıvı alımı desteklenir; aşırı sıvı tüketmenin süt miktarını otomatik artırdığı varsayılmaz.</p>"
+      ],
+      [
+        "Kilo verme hedefi varsa",
+        "<p>Doğum sonrası kilo yönetimi hızlı ve kısıtlayıcı diyetlerle değil, annenin toparlanması ve emzirme süreci gözetilerek planlanır. Enerji kısıtlaması kişisel koşullara göre değerlendirilmelidir.</p>"
+      ],
+      [
+        "Takviyeler ve özel durumlar",
+        "<p>Vitamin-mineral takviyeleri, vegan-vejetaryen beslenme, alerji veya kronik hastalık gibi özel durumlarda gereksinimler ayrıca değerlendirilir. Takviye kullanımı hekim önerileriyle uyumlu ele alınır.</p>"
+      ]
+    ],
+    "related": "saglikli-tabak-nasil-hazirlanir",
+    "source": "https://www.cdc.gov/breastfeeding-special-circumstances/hcp/diet-micronutrients/maternal-diet.html"
   }
 ]
