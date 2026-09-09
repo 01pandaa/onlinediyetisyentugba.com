@@ -1,0 +1,74 @@
+name: Optimize mobile performance pass 2
+
+on:
+  push:
+    paths:
+      - '.github/workflows/optimize-mobile-performance-pass2.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  optimize-measure-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Build baseline
+        run: python scripts/build.py
+      - name: Start local server
+        run: |
+          python -m http.server 8000 --directory dist >/tmp/site-server.log 2>&1 &
+          echo $! > /tmp/site-server.pid
+          sleep 2
+      - name: Measure mobile baseline
+        run: |
+          npx --yes lighthouse http://127.0.0.1:8000/ --only-categories=performance --output=json --output-path=/tmp/lh-before.json --chrome-flags="--headless --no-sandbox" --quiet
+      - name: Apply second-pass optimization
+        run: python scripts/optimize-mobile-performance-pass2.py
+      - name: Build optimized site
+        run: python scripts/build.py
+      - name: Measure mobile optimized site
+        run: |
+          npx --yes lighthouse http://127.0.0.1:8000/ --only-categories=performance --output=json --output-path=/tmp/lh-after.json --chrome-flags="--headless --no-sandbox" --quiet
+      - name: Compare Lighthouse metrics
+        run: |
+          python - <<'PY'
+          import json
+          def read(path):
+              d=json.load(open(path))
+              a=d['audits']
+              return {
+                  'score': round(d['categories']['performance']['score']*100),
+                  'FCP_ms': round(a['first-contentful-paint']['numericValue']),
+                  'LCP_ms': round(a['largest-contentful-paint']['numericValue']),
+                  'CLS': round(a['cumulative-layout-shift']['numericValue'],3),
+                  'TBT_ms': round(a['total-blocking-time']['numericValue']),
+                  'SI_ms': round(a['speed-index']['numericValue']),
+              }
+          before=read('/tmp/lh-before.json'); after=read('/tmp/lh-after.json')
+          print('MOBILE LIGHTHOUSE BEFORE:', before)
+          print('MOBILE LIGHTHOUSE AFTER :', after)
+          print('LCP CHANGE (ms):', after['LCP_ms']-before['LCP_ms'])
+          print('SCORE CHANGE:', after['score']-before['score'])
+          PY
+      - name: Validate site
+        run: |
+          python scripts/check.py
+          node scripts/check-calculator.cjs
+      - name: Commit optimized site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/build.py scripts/check.py .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Improve mobile loading and LCP discovery"
+            git push
+          fi
