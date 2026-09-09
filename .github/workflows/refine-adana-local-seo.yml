@@ -1,0 +1,41 @@
+name: Refine Adana local SEO
+
+on:
+  push:
+    paths:
+      - '.github/workflows/refine-adana-local-seo.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine-build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Apply Adana local SEO refinement
+        run: python scripts/refine-adana-local-seo.py
+      - name: Build site
+        run: python scripts/build.py
+      - name: Validate site
+        run: |
+          python scripts/check.py
+          node scripts/check-calculator.cjs
+      - name: Commit refined local SEO page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/build.py .generated-pages.json sitemap.xml feed.xml robots.txt index.html 404.html adana-diyetisyen online-diyetisyen kurumsal iletisim hizmetler blog sikca-sorulan-sorular vucudunu-tani bki-hesaplama videolar kaynaklar gizlilik online-diyetisyen-fiyatlari 2>/dev/null || true
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Strengthen Adana local SEO page"
+            git push
+          fi
