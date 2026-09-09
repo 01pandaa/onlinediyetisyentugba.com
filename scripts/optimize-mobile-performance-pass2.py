@@ -30,7 +30,7 @@ new_load = "    w,h=dims.get(file,(480,360) if file.startswith('video-') else (1
 b = replace_once(b, old_load, new_load, 'image priority separation')
 
 old_head_vars = "    hero_preload=f'<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"{path(\"/assets/images/tugba-hero-cwv.webp\")}\" fetchpriority=\"high\">' if route=='/' else ''\n    calculator_script=f'<script defer src=\"{path(\"/assets/calculator.js\")}\"></script>' if 'data-bmi-form' in body else ''"
-new_head_vars = "    lcp_file='tugba-hero-cwv.webp' if route=='/' else (cover if cover and cover in body[:5000] else '')\n    hero_preload=f'<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"{path(\"/assets/images/\"+lcp_file)}\" fetchpriority=\"high\">' if lcp_file.endswith('.webp') else ''\n    home_critical=f'<style data-home-critical>{HOME_CRITICAL_CSS}</style>' if route=='/' else ''\n    calculator_script=f'<script defer src=\"{path(\"/assets/calculator.js\")}\"></script>' if 'data-bmi-form' in body else ''"
+new_head_vars = "    lcp_match=re.search(r'<img src=\"[^\"]*assets/images/([^\"]+)\"[^>]*loading=\"eager\" fetchpriority=\"high\"',body[:8000])\n    lcp_file='tugba-hero-cwv.webp' if route=='/' else (lcp_match.group(1) if lcp_match else '')\n    hero_preload=f'<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"{path(\"/assets/images/\"+lcp_file)}\" fetchpriority=\"high\">' if lcp_file.endswith('.webp') else ''\n    home_critical=f'<style data-home-critical>{HOME_CRITICAL_CSS}</style>' if route=='/' else ''\n    calculator_script=f'<script defer src=\"{path(\"/assets/calculator.js\")}\"></script>' if 'data-bmi-form' in body else ''"
 b = replace_once(b, old_head_vars, new_head_vars, 'LCP preload and inline home CSS')
 
 old_assets = "{hero_preload}<link rel=\"stylesheet\" href=\"{path('/assets/style.css')}?v=cwv-v1\"><link rel=\"stylesheet\" href=\"{path('/assets/polish.css')}?v=cwv-v1\"><script type=\"application/ld+json\">"
@@ -67,16 +67,15 @@ new_block = """for file,p in pages.items():
     has_calc='/assets/calculator.js' in text
     if has_bmi!=has_calc:errors.append(f'{file}: calculator script loading mismatch')
     if 'loading=\"lazy\"' in text and 'fetchpriority=\"low\"' not in text:errors.append(f'{file}: lazy images should be low priority')
+    high=re.findall(r'<img src=\"([^\"]+)\"[^>]*loading=\"eager\" fetchpriority=\"high\"',text[:12000])
+    for src in high:
+        if f'<link rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"{src}\" fetchpriority=\"high\">' not in text:
+            errors.append(f'{file}: high-priority hero image must be preloaded: {src}')
 home=(OUT/'index.html').read_text()
 if 'rel=\"preload\" as=\"image\" type=\"image/webp\" href=\"/assets/images/tugba-hero-cwv.webp\" fetchpriority=\"high\"' not in home:
     errors.append('Homepage hero preload missing')
 if '<style data-home-critical>' not in home:errors.append('Homepage critical hero CSS must be inline')
 if 'tugba-hero-orijinal.jpg' in home:errors.append('Homepage still references legacy hero JPEG')
-for route in ['/kurumsal/','/online-diyetisyen/','/blog/','/adana-diyetisyen/']:
-    f=OUT/route.strip('/')/'index.html'
-    if f.exists():
-        text=f.read_text()
-        if '<link rel=\"preload\" as=\"image\" type=\"image/webp\"' not in text:errors.append(f'{route}: visible hero image preload missing')
 """
 c = replace_once(c, old_block, new_block, 'CWV regression block')
 CHECK.write_text(c)
