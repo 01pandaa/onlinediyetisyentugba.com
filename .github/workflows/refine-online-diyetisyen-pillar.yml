@@ -1,0 +1,41 @@
+name: Refine online dietitian pillar
+
+on:
+  push:
+    paths:
+      - '.github/workflows/refine-online-diyetisyen-pillar.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  refine-build-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Apply online dietitian pillar refinement
+        run: python scripts/refine-online-diyetisyen-pillar.py
+      - name: Build site
+        run: python scripts/build.py
+      - name: Validate site
+        run: |
+          python scripts/check.py
+          node scripts/check-calculator.cjs
+      - name: Commit online pillar update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/build.py content/site.json content/online-consultation.json .generated-pages.json sitemap.xml feed.xml robots.txt index.html online-diyetisyen || true
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Strengthen online dietitian pillar page"
+            git push
+          fi
