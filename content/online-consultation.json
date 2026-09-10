@@ -2,43 +2,53 @@
   "sections": [
     {
       "id": "online-diyetisyen-nedir",
-      "title": "Online diyetisyen danışmanlığı nasıl bir hizmettir?",
-      "body": "<p>Online diyetisyen danışmanlığı, beslenme değerlendirmesinin ve takibin uzaktan görüşmelerle yürütülmesidir. Tuğba Şeker Ağaç ile Türkiye’nin farklı şehirlerinden görüşmeye katılabilirsiniz. Görüşmenin sesli veya görüntülü yapılması randevu sırasında birlikte belirlenir.</p><p>İlk iletişimde ihtiyacınız ve online yöntemin size uygunluğu konuşulur. Bazı durumlarda hekim görüşü veya yüz yüze değerlendirme gerekebilir. Diyetisyenin eğitim ve çalışma yaklaşımını <a href=\"/kurumsal/\">Tuğba Şeker Ağaç hakkında</a> sayfasında inceleyebilirsiniz.</p>"
+      "title": "Online diyetisyen nedir?",
+      "body": "<p><strong>Online diyetisyen</strong> danışmanlığı; beslenme değerlendirmesi, kişisel planlama ve takibin uzaktan görüşmelerle yürütülmesidir. Diyetisyen Tuğba Şeker Ağaç ile Türkiye’nin farklı şehirlerinden görüşmeye katılabilirsiniz. Görüşmenin sesli veya görüntülü yapılması randevu sırasında birlikte belirlenir.</p><p>Online görüşme, yalnızca hazır bir beslenme listesi gönderilmesi anlamına gelmez. Sağlık öykünüz, günlük düzeniniz, besin tercihleriniz, mevcut tanılarınız ve ihtiyaçlarınız değerlendirilir; plan bu bilgiler doğrultusunda şekillendirilir. Diyetisyenin eğitim ve çalışma yaklaşımını <a href=\"/kurumsal/\">Hakkında</a> sayfasında inceleyebilirsiniz.</p>"
     },
     {
-      "id": "danismanlik-kapsami",
-      "title": "Danışmanlıkta neleri birlikte ele alıyoruz?",
-      "body": "<ul><li><strong>Tanışma ve değerlendirme:</strong> Sağlık öykünüz, mevcut tanılarınız, günlük düzeniniz ve beklentileriniz.</li><li><strong>Kişisel beslenme planı:</strong> Öğün saatleriniz, ulaşabildiğiniz yiyecekler, tercihleriniz ve bireysel gereksinimleriniz.</li><li><strong>Haftalık takip:</strong> Uygulayabildiğiniz öğünler, zorlandığınız durumlar ve ihtiyaç duyduğunuz liste düzenlemeleri.</li><li><strong>Günlük hayata uyarlama:</strong> İş yeri yemekleri, aile sofraları, seyahat ve değişen çalışma saatleri için konuşulacak alternatifler.</li></ul><p>Görüşme sayısı ve süresi, takip yöntemi ve randevu düzeni başlamadan önce netleştirilir. Böylece hangi aşamada nasıl iletişim kuracağınızı bilerek sürece katılabilirsiniz.</p>"
+      "id": "online-diyetisyen-nasil-calisir",
+      "title": "Online diyetisyen nasıl çalışır?",
+      "body": "<p>Süreç ilk iletişimle başlar. Görüşme öncesinde ihtiyaçlarınız, uygun görüşme yöntemi ve randevu zamanı netleştirilir. İlk görüşmede sağlık öyküsü ve günlük yaşam değerlendirilir; ardından kişisel beslenme planı ve takip düzeni oluşturulur.</p><p>Takip görüşmelerinde planın uygulanabilirliği, zorlandığınız öğünler, çalışma saatleri, sosyal yaşam ve ihtiyaç duyduğunuz alternatifler konuşulur. Böylece süreç yalnızca başlangıç listesinden ibaret kalmaz. İlk iletişimden takibe kadar ayrıntılı akışı <a href=\"/blog/online-diyetisyen-sureci/\">online diyetisyen süreci rehberinde</a> okuyabilirsiniz.</p>"
+    },
+    {
+      "id": "kimler-icin-uygun",
+      "title": "Online diyetisyen kimler için uygundur?",
+      "body": "<p>Online danışmanlık; bulunduğu şehirde ofise gitmek istemeyen, yoğun çalışma düzeni olan, seyahat eden veya beslenme takibini kendi yaşam ortamından sürdürmek isteyen yetişkinler için uygun bir seçenek olabilir. Kilo yönetimi, günlük beslenme düzeni ve bazı hekim tanılı durumlarda beslenme takibi kişisel değerlendirmeyle ele alınabilir.</p><p>Her durum yalnızca online görüşmeyle yönetilemeyebilir. Fiziksel muayene, acil değerlendirme veya farklı bir sağlık profesyonelinin görüşü gerektiğinde uygun sağlık hizmetine başvurulmalıdır. Çalışma alanlarını <a href=\"/hizmetler/\">Hizmetler</a> sayfasında inceleyebilirsiniz.</p>"
     },
     {
       "id": "ilk-gorusme",
-      "title": "İlk görüşmeye nasıl hazırlanabilirsiniz?",
-      "body": "<ul><li>Olağan bir gününüzde ne zaman, nerede ve nasıl yemek yediğinizi not edin.</li><li>Mevcut tetkik sonuçlarınızı ve hekim tanılarınızı hazır bulundurun; yeni tetkik gereksinimi kişisel değerlendirmeyle ele alınır.</li><li>Kullandığınız ilaçları ve takviyeleri belirtin.</li><li>Sevdiğiniz yiyecekleri, besin alerjilerinizi ve tolerans sorunlarını paylaşın.</li><li>Görüşmede sormak istediğiniz konuları ve değişmesini istediğiniz günlük alışkanlıkları düşünün.</li></ul><p>Bilgilerinizi hangi kanaldan paylaşacağınızı randevu öncesinde öğrenin. İlk iletişimden takip görüşmesine kadar adımları <a href=\"/blog/online-diyetisyen-sureci/\">online diyetisyen süreci rehberinde</a> bulabilirsiniz.</p>"
+      "title": "İlk online diyetisyen görüşmesinde neler konuşulur?",
+      "body": "<p>İlk görüşmede sağlık öykünüz, mevcut tanılarınız, kullandığınız ilaç ve takviyeler, günlük öğün düzeniniz, çalışma saatleriniz, hareket alışkanlıklarınız, besin tercihleriniz ve beklentileriniz konuşulur. Elinizde güncel tetkikler varsa değerlendirmeyi destekleyebilir.</p><p>Görüşmeden önce olağan bir gününüzde ne zaman ve nerede yemek yediğinizi düşünmeniz, sevdiğiniz yiyecekleri ve zorlandığınız durumları not etmeniz faydalı olabilir. Kan tahlili ve ilk görüşme hakkında ayrıntılı yanıtlar için <a href=\"/sikca-sorulan-sorular/\">Online Diyetisyen SSS</a> sayfasına geçebilirsiniz.</p>"
     },
     {
       "id": "kisisel-plan",
-      "title": "Beslenme planını günlük hayatınıza uyarlamak",
-      "body": "<p>Evde düzenli yemek hazırlayan biriyle öğle yemeğini iş yerinde yiyen birinin günleri farklıdır. Görüşmede size sunulan yemek seçeneklerini, hazırlık için ayırabildiğiniz zamanı ve alışveriş olanaklarınızı konuşuruz. Plan sağlık durumunuz, gereksinimleriniz ve günlük alışkanlıklarınız doğrultusunda ele alınır.</p><p>Örneğin çalışma saatiniz değiştiğinde hangi öğünün zorlaştığını anlatabilirsiniz. Takipte bu durum için ulaşılabilir seçenekler üzerinde durulur. Porsiyonlar ve öğün düzeni kişisel değerlendirmeyle belirlenir.</p>"
+      "title": "Kişiye özel beslenme planı nasıl hazırlanır?",
+      "body": "<p>Evde düzenli yemek hazırlayan biriyle öğle yemeğini iş yerinde yiyen birinin günü aynı değildir. Beslenme planı; sağlık durumu, bireysel gereksinimler, öğün saatleri, ulaşılabilen yiyecekler, alışveriş olanakları ve kişisel tercihler dikkate alınarak ele alınır.</p><p>Amaç günlük yaşamdan kopuk, yalnızca kısa süre uygulanabilecek katı bir liste oluşturmak değildir. İş yeri yemekleri, aile sofraları, dışarıda yemek ve seyahat gibi gerçek yaşam koşulları için alternatifler takip boyunca yeniden değerlendirilebilir.</p>"
     },
     {
       "id": "takip",
-      "title": "Haftalık takip ve WhatsApp iletişimi",
-      "body": "<p>Haftalık takipte planın nasıl uygulandığını, hangi öğünlerde zorlandığınızı ve ihtiyaç duyduğunuz alternatifleri değerlendiririz. Liste düzenlemeleri bu bilgilerle ele alınır. Öğün fotoğrafları uygun olduğunda değerlendirmeyi destekleyebilir.</p><p>WhatsApp üzerinden iletişim <strong>pazartesi–cumartesi 08.00–20.00</strong> saatleri arasındadır. Pazar günleri kapalıdır. Randevulu görüşmenin saati ayrıca belirlenir; iletişim saatleri anında yanıt taahhüdü değildir. Bu kanal acil sağlık hizmeti sunmaz.</p>"
+      "title": "Online diyetisyen takibi nasıl yapılır?",
+      "body": "<p>Takip görüşmelerinde planın nasıl uygulandığı, hangi öğünlerin kolay veya zor olduğu, ihtiyaç duyulan alternatifler ve günlük yaşamda meydana gelen değişiklikler değerlendirilir. Öğün fotoğrafları uygun olduğunda süreci anlamaya yardımcı olabilir.</p><p>WhatsApp üzerinden iletişim <strong>pazartesi–cumartesi 08.00–20.00</strong> saatleri arasındadır. Pazar günleri kapalıdır. İletişim saatleri anında yanıt taahhüdü değildir ve bu kanal acil sağlık hizmeti sunmaz. Görüşme ve takip kapsamı başlamadan önce netleştirilir.</p>"
     },
     {
-      "id": "olcum-ve-izlem",
-      "title": "Online takipte ölçümleri nasıl ele alıyoruz?",
-      "body": "<p>Evde kullanılan ölçüm araçlarını ve sonuçları nasıl paylaşacağınızı görüşmede konuşuruz. Sayılar, kullanılan yöntemin sınırları ve zaman içindeki değişim dikkate alınarak değerlendirilir. Planın günlük yaşamınızda uygulanabilirliği de takipte ele alınır.</p><p><a href=\"/bki-hesaplama/\">BKİ hesaplama aracı</a> boy ve ağırlıktan bir tarama göstergesi üretir; yağ ve kas oranınızı ölçmez. Bu ayrımı <a href=\"/blog/tarti-yag-kas-ve-su-degisimi/\">tartı, yağ, kas ve su değişimi yazısında</a> okuyabilirsiniz.</p>"
+      "id": "kilo-verme-sureci",
+      "title": "Online diyetisyen ile kilo verme süreci nasıl ele alınır?",
+      "body": "<p>Kilo yönetiminde tek hedef tartıdaki sayıyı hızlı biçimde azaltmak değildir. Beslenme düzeninin sürdürülebilirliği, öğün yapısı, günlük hareket, uyku, sağlık öyküsü ve kişinin uygulayabildiği değişiklikler birlikte değerlendirilir.</p><p>Her kişinin başlangıç noktası ve sağlık durumu farklı olduğu için belirli bir sürede kesin kilo kaybı sözü verilmez. Kilo verme danışmanlığının kapsamını <a href=\"/hizmetler/kilo-verme/\">Kilo Verme Diyeti</a> hizmet sayfasında inceleyebilirsiniz.</p>"
     },
     {
-      "id": "baslamadan-once",
-      "title": "Başlamadan önce aklınızdaki soruları netleştirelim",
-      "body": "<p>İlk iletişimde görüşme yöntemi ve süresini, takip sıklığını, programın kapsamını, randevu değişikliği koşullarını ve kişisel bilgilerinizin paylaşım yöntemini sorabilirsiniz. Güncel kapsam ve ücret bilgisi randevu öncesinde teyit edilir. Belirli sürede kesin kilo değişimi taahhüt edilmez.</p><p>Seçim aşamasındaysanız <a href=\"/blog/online-diyetisyen-nasil-secilir/\">Online diyetisyen nasıl seçilir? Başlamadan önce sorulacak 8 soru</a> rehberini kullanabilirsiniz. Rehberde eğitim, kişisel plan, takip ve ölçüm konusunda görüşmeye götürebileceğiniz bir soru listesi bulunur.</p>"
+      "id": "online-diyetisyen-nasil-secilir",
+      "title": "Online diyetisyen seçerken nelere dikkat edilmeli?",
+      "body": "<p>Online diyetisyen seçerken kişinin Beslenme ve Diyetetik lisans eğitimini, çalışma alanlarını, danışmanlık sürecinin nasıl anlatıldığını ve takip kapsamını kontrol etmek önemlidir. Kesin kilo verme garantileri, mucize ürünler veya herkese aynı planı sunan yaklaşımlar güvenilirlik açısından dikkatle değerlendirilmelidir.</p><p>Başlamadan önce görüşme sıklığını, takip yöntemini, kişisel planlamanın nasıl yapıldığını ve ücret kapsamını sorabilirsiniz. Daha ayrıntılı kontrol listesi için <a href=\"/blog/online-diyetisyen-nasil-secilir/\">Online diyetisyen nasıl seçilir?</a> rehberini inceleyebilirsiniz.</p>"
     },
     {
-      "id": "online-ve-adana",
-      "title": "Türkiye genelinde online veya Adana’da yüz yüze",
-      "body": "<p>Online görüşme farklı şehirlerden katılımı kolaylaştırır. Adana’da yüz yüze görüşme isteyenler için Seyhan’daki ofiste randevulu danışmanlık seçeneği vardır. Ulaşım, günlük programınız ve değerlendirme gereksiniminiz birlikte düşünülerek uygun yöntem konuşulur.</p><p><a href=\"/adana-diyetisyen/\">Adana ofisi ve ulaşım bilgilerini</a> inceleyebilir veya <a href=\"/iletisim/\">iletişim sayfasından</a> WhatsApp ve telefonla görüşme bilgisi alabilirsiniz.</p>"
+      "id": "online-mi-yuz-yuze-mi",
+      "title": "Online diyetisyen mi, yüz yüze diyetisyen mi?",
+      "body": "<p>Her iki görüşme biçiminde de temel yaklaşım sağlık öyküsünün değerlendirilmesi, kişisel planlama ve takiptir. Online görüşme şehirden bağımsız katılım kolaylığı sağlarken, yüz yüze görüşme ofise gelmeyi tercih eden kişiler için uygun olabilir.</p><p>Adana’da yaşayanlar Seyhan’daki ofiste randevulu görüşme seçeneğini <a href=\"/adana-diyetisyen/\">Adana Diyetisyen</a> sayfasından inceleyebilir. Şehir dışında yaşayanlar ise online süreci bulunduğu yerden sürdürebilir.</p>"
+    },
+    {
+      "id": "baslangic-ve-ucret",
+      "title": "Türkiye genelinde online diyetisyen hizmetine nasıl başlanır?",
+      "body": "<p>Başlamak için WhatsApp üzerinden online danışmanlık istediğinizi belirtebilirsiniz. Uygun görüşme zamanı, takip süresi ve hizmet kapsamı netleştirildikten sonra randevu planlanır. Türkiye’nin farklı şehirlerinden katılım mümkündür.</p><p>1, 3 ve 6 aylık güncel paketleri <a href=\"/online-diyetisyen-fiyatlari/\">Online Diyetisyen Fiyatları 2026</a> sayfasında karşılaştırabilirsiniz. Ücretler takip süresine ve paket kapsamına göre değerlendirilir; kişisel sağlık sonucu veya belirli kilo değişimi garanti edilmez.</p>"
     }
   ]
 }
