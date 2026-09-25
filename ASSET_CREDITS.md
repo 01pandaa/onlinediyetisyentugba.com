@@ -1,5 +1,7 @@
 # Görsel kaynakları
 
+- `demir-emilimi-kapak.webp`, `demir-emilimi-et-salata.webp`, `demir-emilimi-baklagil.webp`, `demir-emilimi-cay-kahve.webp`, `demir-iceren-besinler.webp`: Kullanıcının 25 Eylül 2026 tarihinde sağladığı Diyetisyen Tuğba Şeker Ağaç imzalı demir emilimi görsel serisi. Metin değiştirilmeden WebP biçimine dönüştürüldü. Tekrarlanan kapak görselinin bir sürümü kullanılmadı; sağlanan sette 6/6 numaralı ayrı bir panel bulunmuyordu.
+
 - `tugba-hero-orijinal.jpg`: Kullanıcının 9 Eylül 2026 tarihinde ana sayfada kullanılmak üzere sağladığı `tuğba 2.jpg` fotoğrafının birebir kopyası (1512 × 1320 piksel). Ana sayfa görseli olarak doğrudan JPEG biçiminde sunulur.
 
 - `tugba-seker-agac.webp`, `adana-ofis.webp`, `tugba-klinik.webp`, `tugba-portre.webp`: Önceki sürümde kullanılan, işletmeye ait https://onlinediyetisyen.online sitesinden ve site sahibinin kullanım talebi kapsamında alınmış fotoğraflar. Geriye dönük uyumluluk için saklanır.

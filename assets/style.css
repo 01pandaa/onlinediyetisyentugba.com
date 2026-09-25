@@ -326,3 +326,5 @@
 .price-cta p{margin:0;max-width:700px}
 @media (max-width:900px){.price-grid{grid-template-columns:1fr}.price-card.featured{transform:none;margin-top:12px}.price-preview-inner,.price-cta{align-items:flex-start;flex-direction:column}.price-card{min-height:0}}
 @media (max-width:560px){.price-card,.price-preview-inner{padding:26px 22px;border-radius:22px}.price-badge{margin-top:-42px}.price-amount{font-size:2.45rem}}
+/* Keep the user-supplied educational panels readable at their full aspect ratio. */
+.prose figure.infographic img{display:block;width:min(100%,680px);height:auto;max-height:none;object-fit:contain;border-radius:12px}

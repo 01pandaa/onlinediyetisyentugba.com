@@ -35,6 +35,7 @@ def img(file,alt,cls='',eager=False):
     dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-blog-calisma.webp':(1200,800),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531),'tugba-ofis-yesil.webp':(750,1000),'tugba-ofis-onluk.webp':(750,1000),'tugba-buket.webp':(750,1000),'tugba-sahil.webp':(750,1000),'tugba-doga.webp':(750,1000),'tugba-doga-genis.webp':(750,1000),'tugba-kirsal.webp':(750,1000),'tugba-doga-yakin.webp':(750,1000),'tugba-hero-cwv.webp':(1200,1048)}
     dims[LOGO]=(720,278)
     dims[LOGO_LIGHT]=(720,278)
+    if file.startswith(('demir-emilimi-','demir-iceren-')):dims[file]=(1254,1254)
     w,h=dims.get(file,(480,360) if file.startswith('video-') else (1280,720));load=('loading="eager"' if file==LOGO else 'loading="eager" fetchpriority="high"') if eager else 'loading="lazy" fetchpriority="low"'
     return f'<img src="{e(path("/assets/images/"+file))}" alt="{e(alt)}" width="{w}" height="{h}" class="{cls}" {load} decoding="async">'
 def brand(eager=False,light=False):
@@ -121,6 +122,7 @@ ANATOMY=[
  ('yag','Yağ dokusu','Bir sayıdan fazlası','Yağ dokusu enerji depolayan ve vücudun yalıtımında rol alan bir dokudur. Tartıdaki toplam ağırlık, bu dokunun miktarını tek başına göstermez.','Beslenme bağlantısı: yağ dokusunu anlamak, kilo takibini daha doğru yorumlamak.','yag-dokusu.webp','Yağ hücreleri, çekirdekleri ve yağ damlacıklarını gösteren çizim ve mikroskop görüntüsü','https://commons.wikimedia.org/wiki/File:409_Adipose_Tissue.jpg','3.0','https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects'),
  ('sindirim','Sindirim','Yediğin besinin yolculuğu','Sindirim ağızda başlar. Mide ve bağırsaklar besinlerin parçalanması ve emiliminde görev alır. Besin öğelerinin büyük bölümü ince bağırsaktan emilir.','Beslenme bağlantısı: öğün düzeni, bireysel tolerans ve sindirim yakınmalarının değerlendirilmesi.','sindirim.webp','Ağız, yemek borusu, mide, karaciğer, pankreas ve bağırsakların anatomik yerleşimi','https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works',None,'https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works')]
 def attribution(file):
+    if file.startswith(('demir-emilimi-','demir-iceren-')):return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan bilgilendirme serisi.'
     if file=='surdurulebilir-beslenme.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
     if file=='online-diyetisyen-kapak.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
     a=next((x for x in ANATOMY if x[5]==file),None)
