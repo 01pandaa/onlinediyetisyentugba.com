@@ -235,7 +235,8 @@ def build():
     layout('/blog/','Online Diyetisyen Blogu | Beslenme ve Vücudunu Tanı','Online diyetisyen rehberleri, kilo yönetimi, sağlıklı öğünler, insülin direnci ve anatomi üzerine kaynaklı beslenme yazıları.',blog,kind='CollectionPage',cover='tugba-blog-calisma.webp')
     for p in POSTS:
         toc='<nav class="toc" aria-label="Yazı içindekiler"><strong>Bu yazıda</strong>'+''.join(f'<a href="#{e(s["id"])}">{e(s["title"])}</a>' for s in p['sections'])+'</nav>'
-        picture=f'<figure>{img(p["image"],p["image_alt"])}<figcaption>{attribution(p["image"])}</figcaption></figure>'
+        picture_class=' class="infographic"' if p.get('infographic_cover') else ''
+        picture=f'<figure{picture_class}>{img(p["image"],p["image_alt"])}<figcaption>{attribution(p["image"])}</figcaption></figure>'
         content=toc+picture+''.join(f'<section id="{e(s["id"])}"><h2>{e(s["title"])}</h2>{s["body"]}</section>' for s in p['sections'])
         content+='<div class="callout">Bu yazı genel bilgilendirme amaçlıdır. Kişisel tanı, tedavi veya beslenme planı yerine geçmez.</div>'
         if p.get('show_sources',True):
