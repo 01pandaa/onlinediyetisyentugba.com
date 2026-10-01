@@ -143,7 +143,7 @@ def post_cards(posts=POSTS,searchable=False):
         cover_class='post-cover'+(' science' if p.get('science') else '')+(' portrait' if p.get('portrait') else '')
         cover_content=img(p['image'],p['image_alt'])
         if p.get('portrait_overlay'):
-            cover_content+=portrait_overlay(p,'position:absolute;left:75.5%;top:45%;transform:translate(-50%,-50%);width:19.5%;height:30.2%;object-fit:cover;object-position:center;border-radius:50%;border:2px solid #fffdf6;box-sizing:border-box;margin:0;max-height:none;max-width:none')
+            cover_content+=portrait_overlay(p,'position:absolute;left:77.1%;top:48.1%;transform:translate(-50%,-50%);width:20.5%;height:31.8%;object-fit:cover;object-position:center;border-radius:50%;border:2px solid #fffdf6;box-sizing:border-box;margin:0;max-height:none;max-width:none')
             cover=link(u,cover_content,cover_class).replace('<a href=', '<a style="position:relative" href=',1)
         else:
             cover=link(u,cover_content,cover_class)
