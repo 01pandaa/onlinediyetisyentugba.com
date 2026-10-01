@@ -32,7 +32,7 @@ def link(url,label,cls='',external=False):
 def btn(url,label,light=False):return link(url,e(label)+' <span aria-hidden="true">↗</span>','button'+(' light' if light else ''),url.startswith('https:'))
 WA='https://wa.me/'+S['phone'].replace('+','')+'?text='+quote('Merhaba, online beslenme danışmanlığı ve görüşme süreci hakkında bilgi almak istiyorum.')
 def img(file,alt,cls='',eager=False):
-    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-blog-calisma.webp':(1200,800),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531),'tugba-ofis-yesil.webp':(750,1000),'tugba-ofis-onluk.webp':(750,1000),'tugba-buket.webp':(750,1000),'tugba-sahil.webp':(750,1000),'tugba-doga.webp':(750,1000),'tugba-doga-genis.webp':(750,1000),'tugba-kirsal.webp':(750,1000),'tugba-doga-yakin.webp':(750,1000),'tugba-hero-cwv.webp':(1200,1048)}
+    dims={'tugba-seker-agac.webp':(1200,1048),'adana-ofis.webp':(760,722),'tugba-klinik.webp':(952,868),'dengeli-beslenme.webp':(1400,933),'surdurulebilir-beslenme.webp':(1200,1600),'online-diyetisyen-kapak.webp':(1077,519),'tugba-kurumsal.webp':(1200,1600),'tugba-hizmetler.webp':(1200,1600),'tugba-blog-calisma.webp':(1200,800),'tugba-logo.webp':(221,292),'iskelet.webp':(1180,1200),'kas.webp':(803,628),'yag-dokusu.webp':(1200,482),'sindirim.webp':(450,531),'tugba-ofis-yesil.webp':(750,1000),'tugba-ofis-onluk.webp':(750,1000),'tugba-buket.webp':(750,1000),'tugba-sahil.webp':(750,1000),'tugba-doga.webp':(750,1000),'tugba-doga-genis.webp':(750,1000),'tugba-kirsal.webp':(750,1000),'tugba-doga-yakin.webp':(750,1000),'tugba-hero-cwv.webp':(1200,1048),'karbonhidratlar-diyette-kapak.svg':(1200,675)}
     dims[LOGO]=(720,278)
     dims[LOGO_LIGHT]=(720,278)
     if file.startswith(('demir-emilimi-','demir-iceren-')):dims[file]=(1254,1254)
@@ -122,6 +122,7 @@ ANATOMY=[
  ('yag','Yağ dokusu','Bir sayıdan fazlası','Yağ dokusu enerji depolayan ve vücudun yalıtımında rol alan bir dokudur. Tartıdaki toplam ağırlık, bu dokunun miktarını tek başına göstermez.','Beslenme bağlantısı: yağ dokusunu anlamak, kilo takibini daha doğru yorumlamak.','yag-dokusu.webp','Yağ hücreleri, çekirdekleri ve yağ damlacıklarını gösteren çizim ve mikroskop görüntüsü','https://commons.wikimedia.org/wiki/File:409_Adipose_Tissue.jpg','3.0','https://openstax.org/books/anatomy-and-physiology-2e/pages/4-3-connective-tissue-supports-and-protects'),
  ('sindirim','Sindirim','Yediğin besinin yolculuğu','Sindirim ağızda başlar. Mide ve bağırsaklar besinlerin parçalanması ve emiliminde görev alır. Besin öğelerinin büyük bölümü ince bağırsaktan emilir.','Beslenme bağlantısı: öğün düzeni, bireysel tolerans ve sindirim yakınmalarının değerlendirilmesi.','sindirim.webp','Ağız, yemek borusu, mide, karaciğer, pankreas ve bağırsakların anatomik yerleşimi','https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works',None,'https://www.niddk.nih.gov/health-information/digestive-diseases/digestive-system-how-it-works')]
 def attribution(file):
+    if file=='karbonhidratlar-diyette-kapak.svg':return 'Kapak tasarımı, Diyetisyen Tuğba Şeker Ağaç’ın portresiyle hazırlanmıştır.'
     if file.startswith(('demir-emilimi-','demir-iceren-')):return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan bilgilendirme serisi.'
     if file=='surdurulebilir-beslenme.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
     if file=='online-diyetisyen-kapak.webp':return 'Görsel: Diyetisyen Tuğba Şeker Ağaç tarafından sağlanan özgün Canva tasarımı.'
@@ -140,9 +141,17 @@ def post_cards(posts=POSTS,searchable=False):
         u='/blog/'+p['slug']+'/'
         attrs=f' data-post data-category="{e(p["category"])}" data-search="{e(p["title"]+" "+p["description"])}"' if searchable else ''
         cover_class='post-cover'+(' science' if p.get('science') else '')+(' portrait' if p.get('portrait') else '')
-        cover=link(u,img(p['image'],p['image_alt']),cover_class)
+        cover_content=img(p['image'],p['image_alt'])
+        if p.get('portrait_overlay'):
+            cover_content+=portrait_overlay(p,'position:absolute;left:75.5%;top:45%;transform:translate(-50%,-50%);width:19.5%;height:30.2%;object-fit:cover;object-position:center;border-radius:50%;border:2px solid #fffdf6;box-sizing:border-box;margin:0;max-height:none;max-width:none')
+            cover=link(u,cover_content,cover_class).replace('<a href=', '<a style="position:relative" href=',1)
+        else:
+            cover=link(u,cover_content,cover_class)
         out.append(f'<article class="post-card"{attrs}>{cover}<div class="micro">{e(p["category"])} · {reading_time(p)} dk okuma</div><h3>{link(u,e(p["title"]))}</h3><p>{e(p["description"])}</p>{link(u,"Yazıyı okuyun ↗","text-link")}</article>')
     return '<div class="grid-3">'+''.join(out)+'</div>'
+def portrait_overlay(p,style):
+    if not p.get('portrait_overlay'):return ''
+    return img('tugba-hero-cwv.webp',p.get('portrait_alt',S['name'])).replace('class=""',f'style="{style}"',1)
 def reading_time(p):return max(2,round(len(re.sub('<[^>]+>',' ',p['intro']+' '.join(s['body'] for s in p['sections'])).split())/180))
 VIDEOS=[('yJBjeg2Csrs','Ramazan ayında beslenme','Ramazan dönemindeki beslenme düzenine ilişkin kanal paylaşımı.'),('6IfEDX0r8zQ','Şekersiz kek tarifi','Evde hazırlanabilecek tariflere kanaldan bir örnek.'),('U-Ae6qZYAZs','Çorba tarifi','Günlük mutfağa uygun bir tarif videosu.')]
 def video_cards():
@@ -236,7 +245,11 @@ def build():
     for p in POSTS:
         toc='<nav class="toc" aria-label="Yazı içindekiler"><strong>Bu yazıda</strong>'+''.join(f'<a href="#{e(s["id"])}">{e(s["title"])}</a>' for s in p['sections'])+'</nav>'
         picture_class=' class="infographic"' if p.get('infographic_cover') else ''
-        picture=f'<figure{picture_class}>{img(p["image"],p["image_alt"])}<figcaption>{attribution(p["image"])}</figcaption></figure>'
+        if p.get('portrait_overlay'):
+            article_portrait_style='position:absolute;left:75.1%;top:47.7%;transform:translate(-50%,-50%);width:19%;height:39.11%;object-fit:cover;object-position:center;border-radius:50%;border:3px solid #fffdf6;box-sizing:border-box;margin:0;max-height:none;max-width:none'
+            image=f'<div style="position:relative;width:100%;line-height:0">{img(p["image"],p["image_alt"])}{portrait_overlay(p,article_portrait_style)}</div>'
+        else:image=img(p['image'],p['image_alt'])
+        picture=f'<figure{picture_class}>{image}<figcaption>{attribution(p["image"])}</figcaption></figure>'
         content=toc+picture+''.join(f'<section id="{e(s["id"])}"><h2>{e(s["title"])}</h2>{s["body"]}</section>' for s in p['sections'])
         content+='<div class="callout">Bu yazı genel bilgilendirme amaçlıdır. Kişisel tanı, tedavi veya beslenme planı yerine geçmez.</div>'
         if p.get('show_sources',True):
@@ -246,14 +259,14 @@ def build():
         editorial=p.get('author_type')=='editorial'
         author_name=S['name']+' · Beslenme rehberi' if editorial else S['name']
         author={'@id':BASE+'/#kurum'} if editorial else {'@id':BASE+'/#diyetisyen'}
-        top=hero(e(p['title']),e(p['intro']),p['category'])
+        top=hero(e(p.get('hero_title',p['title'])),e(p['intro']),p['category'])
         top+='<div class="wrap reading-meta"><span>'+link('/kaynaklar/' if editorial else '/kurumsal/',e(author_name))+'</span><time datetime="'+p['date']+'">'+display_date(p['date'])+'</time>'
         if p.get('updated',p['date'])!=p['date']:top+='<span>Güncelleme: <time datetime="'+p['updated']+'">'+display_date(p['updated'])+'</time></span>'
         top+='<span>'+str(reading_time(p))+' dk okuma</span></div>'
-        schema={'@type':'BlogPosting','headline':p['title'],'description':p['description'],'image':[BASE+'/assets/images/'+p['image']],'datePublished':p['date'],'dateModified':p.get('updated',p['date']),'author':author,'publisher':{'@id':BASE+'/#kurum'},'mainEntityOfPage':BASE+'/blog/'+p['slug']+'/','inLanguage':'tr-TR'}
+        schema={'@type':'BlogPosting','headline':p['title'],'description':p['description'],'image':[BASE+'/assets/images/'+p.get('cover_image',p['image'])],'datePublished':p['date'],'dateModified':p.get('updated',p['date']),'author':author,'publisher':{'@id':BASE+'/#kurum'},'mainEntityOfPage':BASE+'/blog/'+p['slug']+'/','inLanguage':'tr-TR'}
         related=[next(x for x in POSTS if x['slug']==slug) for slug in p['related']] if p.get('related') else [x for x in POSTS if x!=p][:3]
         body=top+article_body(content)+'<section class="section soft"><div class="wrap">'+heading('OKUMAYA DEVAM EDİN','İlgili beslenme notları')+post_cards(related)+'</div></section>'
-        layout('/blog/'+p['slug']+'/',p.get('seo_title',p['title']+' | Tuğba Şeker Ağaç'),p['description'],body,extra=[schema],cover=p['image'])
+        layout('/blog/'+p['slug']+'/',p.get('seo_title',p['title']+' | Tuğba Şeker Ağaç'),p['description'],body,extra=[schema],cover=p.get('cover_image',p['image']))
 
     body=hero('Beslenme ve anatomi:<br><span class="accent">vücudunu tanı.</span>','İskelet, kas, yağ dokusu ve sindirim sisteminin beslenmeyle ilişkisini kaynaklı görsellerle keşfedin. Çizimler eğitim içindir; kişisel sağlık durumunuzu göstermez.','Vücudunu Tanı')+'<section class="section"><div class="wrap">'+anatomy()+'</div></section>'
     body+=article_body('<h2>Aynı ağırlık, farklı vücut bileşimi</h2><p>Boy ve kilonun aynı olması kas, yağ ve su miktarlarının da aynı olduğu anlamına gelmez. Genel bir hesaplama aracı dokuları tek tek ölçemez. Değerlendirme yöntemi kişisel ihtiyaca göre belirlenir.</p><h2>Çizimlerdeki temel terimler</h2><ul><li><strong>İskelet:</strong> Skull kafatası, vertebral column omurga, pelvis leğen kemiği, femur uyluk kemiğidir.</li><li><strong>Kas:</strong> Muscle fiber kas lifi, nucleus çekirdek, myofibril miyofibril, sarcomere sarkomerdir.</li><li><strong>Yağ dokusu:</strong> Adipocyte yağ hücresi, nucleus çekirdek, fat droplet yağ damlacığıdır.</li><li><strong>Sindirim:</strong> Stomach mide, small intestine ince bağırsak, large intestine kalın bağırsak, liver karaciğerdir.</li></ul><h2>Görselleri nasıl kullanabilirsiniz?</h2><p>Yukarıdaki konu düğmeleriyle ilgili anatomik çizimi açabilirsiniz. Kaynak bağlantıları ve görsel lisansları her çizimin altında yer alır. Beslenmeyle ilgili kişisel kararlar için yalnızca çizimlere dayanmayın.</p>')
