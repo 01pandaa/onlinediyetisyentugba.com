@@ -328,3 +328,5 @@
 @media (max-width:560px){.price-card,.price-preview-inner{padding:26px 22px;border-radius:22px}.price-badge{margin-top:-42px}.price-amount{font-size:2.45rem}}
 /* Keep the user-supplied educational panels readable at their full aspect ratio. */
 .prose figure.infographic img{display:block;width:min(100%,680px);height:auto;max-height:none;object-fit:contain;border-radius:12px}
+
+.post-cover.portrait-cover{padding:0;aspect-ratio:16/9}.post-card:hover .portrait-cover img:first-child{transform:none}
